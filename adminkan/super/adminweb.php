@@ -91,14 +91,14 @@ while($tampilQuery = mysqli_fetch_array($queryLihat)){
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
           <li class="header">MAIN NAVIGATION</li>
-          <li class="home selectedNav">
+          <li class="home edit_home edit_header selectedNav">
             <a href="adminweb.php?module=home">
               <i class="fa fa-home"></i>
               <span>Profile</span>
             </a>
           </li>
 
-          <li class="treeview cust sosmed">
+          <li class="treeview cust edit_cust sosmed edit_sosmed">
             <a href="#">
               <i class="fa fa-phone"></i>
               <span>Contact Person</span>
@@ -119,25 +119,25 @@ while($tampilQuery = mysqli_fetch_array($queryLihat)){
               </li>
             </ul>
           </li>
-          <li class="produk">
+          <li class="produk edit_produk">
             <a href="adminweb.php?module=produk">
               <i class="fa fa-shopping-cart"></i>
               <span>Produk</span>
             </a>
           </li>
-          <li class="paketwisata">
+          <li class="paketwisata edit_paketwisata">
             <a href="adminweb.php?module=paketwisata">
               <i class="fa fa-plane"></i>
               <span>Paket Wisata</span>
             </a>
           </li>
-          <li class="artikel">
+          <li class="artikel edit_artikel">
             <a href="adminweb.php?module=artikel">
               <i class="fa fa-pencil-square-o"></i>
               <span>Artikel</span>
             </a>
           </li>
-          <li class="admsuper">
+          <li class="admsuper edit_admsuper">
             <a href="adminweb.php?module=admsuper">
               <i class="fa fa-user"></i>
               <span>Admin</span>

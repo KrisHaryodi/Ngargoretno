@@ -49,20 +49,24 @@ if(!isset($_SESSION)) {
                 <th style="width: 110px">Aksi</th>
               </tr>
               <?php
-                            include "lib/config.php";
-                            include "lib/koneksi.php";
-                    
-                            $kueriMember = mysqli_query($konek,"select * from tbl_produk");
-                            $n = 1;
-                            while ($mbr = mysqli_fetch_array($kueriMember)) {
-                            ?>
+                include "lib/config.php";
+                include "lib/koneksi.php";
+        
+                $kueriMember = mysqli_query($konek,"select * from tbl_produk");
+                $n = 1;
+                while ($mbr = mysqli_fetch_array($kueriMember)) {
+              ?>
               <tr>
                 <td><?= $n ?></td>
 
                 <td><?php echo $mbr['produk_nama'];?></td>
                 <td><?php echo $mbr['produk_harga'];?></td>
-                <td><?php echo $mbr['produk_cerita'];?></td>
-                <td><?php echo $mbr['produk_deskripsi'];?></td>
+                <td>
+                  <?php echo substr($mbr['produk_cerita'],0,200);?>...
+                </td>
+                <td>
+                  <?php echo substr($mbr['produk_deskripsi'],0,200);?>...
+                </td>
                 <td><?php echo $mbr['produk_link'];?></td>
                 <td><img src="../img/<?php echo $mbr['produk_sampul'];?>" height="100" width="150"></td>
                 <td><img src="../img/<?php echo $mbr['produk_foto1'];?>" height="100" width="150"></td>
@@ -71,17 +75,12 @@ if(!isset($_SESSION)) {
 
                 <td>
                   <div class="btn-group">
-                    <a 
-                      href="<?php echo $admin_url; ?>adminweb.php?module=edit_produk&id_produk=<?php echo $mbr['id_produk'];?>" 
-                      class="btn btn-warning"
-                    >
+                    <a href="<?php echo $admin_url; ?>adminweb.php?module=edit_produk&id_produk=<?php echo $mbr['id_produk'];?>"
+                      class="btn btn-warning">
                       <i class='fa fa-pencil'></i>
                     </a>
-                    <a 
-                      href="<?php echo $admin_url; ?>module/produk/aksi_hapus.php?id_produk=<?php echo $mbr['id_produk'];?>"
-                      onClick="return confirm('Anda yakin ingin menghapus data ini?')" 
-                      class="btn btn-danger"
-                    >
+                    <a href="<?php echo $admin_url; ?>module/produk/aksi_hapus.php?id_produk=<?php echo $mbr['id_produk'];?>"
+                      onClick="return confirm('Anda yakin ingin menghapus data ini?')" class="btn btn-danger">
                       <i class='fa fa-power-off'></i>
                     </a>
                   </div>

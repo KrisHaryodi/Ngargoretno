@@ -11,3 +11,7 @@
 .btn-group {
   display: flex;
 }
+
+.selectedNav {
+  background-color: #1a2226;
+}
