@@ -1,0 +1,12 @@
+.box-body {
+  overflow: auto;
+  min-width: 100%;
+}
+
+.table {
+  min-width: 1000px;
+}
+
+.btn-group {
+  display: flex;
+}
