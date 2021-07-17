@@ -40,15 +40,14 @@ $foto=$hasilQuery['gambar_header'];
 				<div class="box-header with-border">
 					<h3 class="box-title">Horizontal Form</h3>
 				</div>
-				<form method="post" class="form-horizontal" action="../../adminkan/super/module/home/aksi_edit_header.php" enctype="multipart/form-data">
+				<form method="post" class="form-horizontal" action="../../adminkan/super/module/home/aksi_edit_header.php"
+					enctype="multipart/form-data">
 					<input type="hidden" class="form-control" id="id_header" name="id_header" value="<?php echo $id_header; ?>">
-					
-                 
-                    <div class="control-group">
-							<label for="inputEmail3" class="col-sm-2 control-label">Foto</label>
-                            <img src="img/<?php echo $foto; ?>" height="100" width="150">
-								<input type="file" id="gambar" name="gambar"><br>
-						</div>
+					<div class="control-group">
+						<label for="inputEmail3" class="col-sm-2 control-label">Foto</label>
+						<img src="img/<?php echo $foto; ?>" height="100" width="150">
+						<input type="file" id="gambar" name="gambar"><br>
+					</div>
 					<div class="box-footer">
 						<button type="submit" class="btn btn-info pull-right">Simpan</button>
 					</div>
