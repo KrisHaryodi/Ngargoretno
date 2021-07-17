@@ -1,0 +1,113 @@
+[21-Nov-2020 15:02:50 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/desangar/public_html/index.php on line 179
+[21-Nov-2020 15:02:54 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/desangar/public_html/index.php on line 179
+[21-Nov-2020 16:23:40 UTC] PHP Notice:  Undefined variable: isi in /home/desangar/public_html/paket-wisata-single.php on line 152
+[21-Nov-2020 16:26:53 UTC] PHP Notice:  Undefined variable: isi in /home/desangar/public_html/paket-wisata-single.php on line 152
+[21-Nov-2020 18:08:09 UTC] PHP Notice:  Undefined variable: isi in /home/desangar/public_html/paket-wisata-single.php on line 152
+[21-Nov-2020 19:57:05 UTC] PHP Notice:  Undefined variable: isi in /home/desangar/public_html/paket-wisata-single.php on line 152
+[21-Nov-2020 19:57:11 UTC] PHP Notice:  Undefined variable: isi in /home/desangar/public_html/paket-wisata-single.php on line 152
+[21-Nov-2020 19:57:15 UTC] PHP Notice:  Undefined variable: isi in /home/desangar/public_html/paket-wisata-single.php on line 152
+[21-Nov-2020 19:57:20 UTC] PHP Notice:  Undefined variable: isi in /home/desangar/public_html/paket-wisata-single.php on line 152
+[21-Nov-2020 19:57:24 UTC] PHP Notice:  Undefined variable: isi in /home/desangar/public_html/paket-wisata-single.php on line 152
+[21-Nov-2020 20:00:26 UTC] PHP Notice:  Undefined variable: isi in /home/desangar/public_html/paket-wisata-single.php on line 152
+[21-Nov-2020 20:01:11 UTC] PHP Notice:  Undefined variable: isi in /home/desangar/public_html/paket-wisata-single.php on line 152
+[21-Nov-2020 20:51:37 UTC] PHP Notice:  Undefined variable: isi in /home/desangar/public_html/paket-wisata-single.php on line 152
+[21-Nov-2020 21:17:26 UTC] PHP Notice:  Undefined variable: isi in /home/desangar/public_html/paket-wisata-single.php on line 152
+[21-Nov-2020 21:27:59 UTC] PHP Notice:  Undefined index: id_wisata in /home/desangar/public_html/paket-wisata-single.php on line 96
+[21-Nov-2020 21:27:59 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/desangar/public_html/paket-wisata-single.php on line 98
+[18-Dec-2020 10:53:19 UTC] PHP Notice:  Undefined index: id_artikel in /home/desangar/public_html/blog-single.php on line 121
+[18-Dec-2020 10:53:19 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/desangar/public_html/blog-single.php on line 123
+[19-Dec-2020 00:56:51 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/desangar/public_html/produk-single.php on line 98
+[19-Dec-2020 10:50:37 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/desangar/public_html/produk-single.php on line 98
+[19-Dec-2020 10:55:50 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/desangar/public_html/paket-wisata-single.php on line 98
+[19-Dec-2020 12:01:40 UTC] PHP Warning:  symlink(): No such file or directory in /home/desangar/public_html/test.php on line 4
+[19-Dec-2020 12:14:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_real_escape_string() in /home/desangar/public_html/paket-wisata-single.php:96
+Stack trace:
+#0 {main}
+  thrown in /home/desangar/public_html/paket-wisata-single.php on line 96
+[19-Dec-2020 12:15:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_real_escape_string() in /home/desangar/public_html/produk-single.php:96
+Stack trace:
+#0 {main}
+  thrown in /home/desangar/public_html/produk-single.php on line 96
+[19-Dec-2020 12:17:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_real_escape_string() in /home/desangar/public_html/produk-single.php:96
+Stack trace:
+#0 {main}
+  thrown in /home/desangar/public_html/produk-single.php on line 96
+[19-Dec-2020 12:23:32 UTC] PHP Notice:  Undefined index: artikel_judul in /home/desangar/public_html/blog-single.php on line 131
+[19-Dec-2020 12:23:32 UTC] PHP Notice:  Undefined index: artikel_tgl in /home/desangar/public_html/blog-single.php on line 132
+[19-Dec-2020 12:23:32 UTC] PHP Notice:  Undefined index: artikel_penulis in /home/desangar/public_html/blog-single.php on line 133
+[19-Dec-2020 12:23:32 UTC] PHP Notice:  Undefined index: artikel_isi in /home/desangar/public_html/blog-single.php on line 134
+[19-Dec-2020 12:23:32 UTC] PHP Notice:  Undefined index: artikel_foto in /home/desangar/public_html/blog-single.php on line 135
+[19-Dec-2020 12:23:38 UTC] PHP Notice:  Undefined index: artikel_judul in /home/desangar/public_html/blog-single.php on line 131
+[19-Dec-2020 12:23:38 UTC] PHP Notice:  Undefined index: artikel_tgl in /home/desangar/public_html/blog-single.php on line 132
+[19-Dec-2020 12:23:38 UTC] PHP Notice:  Undefined index: artikel_penulis in /home/desangar/public_html/blog-single.php on line 133
+[19-Dec-2020 12:23:38 UTC] PHP Notice:  Undefined index: artikel_isi in /home/desangar/public_html/blog-single.php on line 134
+[19-Dec-2020 12:23:38 UTC] PHP Notice:  Undefined index: artikel_foto in /home/desangar/public_html/blog-single.php on line 135
+[19-Dec-2020 12:23:40 UTC] PHP Notice:  Undefined index: artikel_judul in /home/desangar/public_html/blog-single.php on line 131
+[19-Dec-2020 12:23:40 UTC] PHP Notice:  Undefined index: artikel_tgl in /home/desangar/public_html/blog-single.php on line 132
+[19-Dec-2020 12:23:40 UTC] PHP Notice:  Undefined index: artikel_penulis in /home/desangar/public_html/blog-single.php on line 133
+[19-Dec-2020 12:23:40 UTC] PHP Notice:  Undefined index: artikel_isi in /home/desangar/public_html/blog-single.php on line 134
+[19-Dec-2020 12:23:40 UTC] PHP Notice:  Undefined index: artikel_foto in /home/desangar/public_html/blog-single.php on line 135
+[19-Dec-2020 12:25:21 UTC] PHP Notice:  Undefined index: artikel_judul in /home/desangar/public_html/blog-single.php on line 133
+[19-Dec-2020 12:25:21 UTC] PHP Notice:  Undefined index: artikel_tgl in /home/desangar/public_html/blog-single.php on line 134
+[19-Dec-2020 12:25:21 UTC] PHP Notice:  Undefined index: artikel_penulis in /home/desangar/public_html/blog-single.php on line 135
+[19-Dec-2020 12:25:21 UTC] PHP Notice:  Undefined index: artikel_isi in /home/desangar/public_html/blog-single.php on line 136
+[19-Dec-2020 12:25:21 UTC] PHP Notice:  Undefined index: artikel_foto in /home/desangar/public_html/blog-single.php on line 137
+[19-Dec-2020 12:26:12 UTC] PHP Notice:  Undefined index: artikel_judul in /home/desangar/public_html/blog-single.php on line 133
+[19-Dec-2020 12:26:12 UTC] PHP Notice:  Undefined index: artikel_tgl in /home/desangar/public_html/blog-single.php on line 135
+[19-Dec-2020 12:26:12 UTC] PHP Notice:  Undefined index: artikel_penulis in /home/desangar/public_html/blog-single.php on line 136
+[19-Dec-2020 12:26:12 UTC] PHP Notice:  Undefined index: artikel_isi in /home/desangar/public_html/blog-single.php on line 137
+[19-Dec-2020 12:26:12 UTC] PHP Notice:  Undefined index: artikel_foto in /home/desangar/public_html/blog-single.php on line 138
+[07-May-2021 00:30:14 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:30:14 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:30:14 UTC] PHP Fatal error:  require(): Failed opening required 'wp-blog-header.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:31:30 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:31:30 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:31:30 UTC] PHP Fatal error:  require(): Failed opening required 'wp-blog-header.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:35:12 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:35:12 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:35:12 UTC] PHP Fatal error:  require(): Failed opening required 'wp-blog-header.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:36:02 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:36:02 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:36:02 UTC] PHP Fatal error:  require(): Failed opening required 'wp-blog-header.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:36:42 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:36:42 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:36:42 UTC] PHP Fatal error:  require(): Failed opening required 'wp-blog-header.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:38:02 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:38:02 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:38:02 UTC] PHP Fatal error:  require(): Failed opening required 'wp-blog-header.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:38:52 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:38:52 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:38:52 UTC] PHP Fatal error:  require(): Failed opening required 'wp-blog-header.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:40:17 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:40:17 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:40:17 UTC] PHP Fatal error:  require(): Failed opening required 'wp-blog-header.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:43:30 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:43:30 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:43:30 UTC] PHP Fatal error:  require(): Failed opening required 'wp-blog-header.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:45:38 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:45:38 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 00:45:38 UTC] PHP Fatal error:  require(): Failed opening required 'wp-blog-header.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:05:02 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:05:02 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:05:02 UTC] PHP Fatal error:  require(): Failed opening required 'wp-blog-header.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:11:38 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:11:38 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:11:38 UTC] PHP Fatal error:  require(): Failed opening required 'wp-blog-header.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:13:39 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:13:39 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:13:39 UTC] PHP Fatal error:  require(): Failed opening required 'wp-blog-header.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:18:16 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:18:16 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:18:16 UTC] PHP Fatal error:  require(): Failed opening required 'wp-blog-header.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:20:56 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:20:56 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:20:56 UTC] PHP Fatal error:  require(): Failed opening required 'wp-blog-header.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:25:23 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:25:23 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:25:23 UTC] PHP Fatal error:  require(): Failed opening required 'wp-blog-header.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:28:36 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:28:36 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:28:36 UTC] PHP Fatal error:  require(): Failed opening required 'wp-blog-header.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:28:44 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:28:44 UTC] PHP Warning:  require(wp-blog-header.php): failed to open stream: No such file or directory in /home/desangar/public_html/sapp-wp-signon.php on line 12
+[07-May-2021 01:28:44 UTC] PHP Fatal error:  require(): Failed opening required 'wp-blog-header.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/desangar/public_html/sapp-wp-signon.php on line 12

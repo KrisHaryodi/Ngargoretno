@@ -1,0 +1,8 @@
+[17-Feb-2021 11:27:49 UTC] PHP Notice:  Undefined index: id_admin in /home/desangar/public_html/adminkan/super/module/admin/admsuper/aksi_edit.php on line 9
+[17-Feb-2021 11:27:49 UTC] PHP Notice:  Undefined index: username in /home/desangar/public_html/adminkan/super/module/admin/admsuper/aksi_edit.php on line 10
+[17-Feb-2021 11:27:49 UTC] PHP Notice:  Undefined index: password in /home/desangar/public_html/adminkan/super/module/admin/admsuper/aksi_edit.php on line 11
+[17-Feb-2021 11:27:49 UTC] PHP Notice:  Undefined index: nama in /home/desangar/public_html/adminkan/super/module/admin/admsuper/aksi_edit.php on line 12
+[17-Feb-2021 11:27:49 UTC] PHP Notice:  Undefined index: email in /home/desangar/public_html/adminkan/super/module/admin/admsuper/aksi_edit.php on line 13
+[17-Feb-2021 11:27:49 UTC] PHP Notice:  Undefined index: level in /home/desangar/public_html/adminkan/super/module/admin/admsuper/aksi_edit.php on line 14
+[17-Feb-2021 11:27:49 UTC] PHP Notice:  Undefined index: foto in /home/desangar/public_html/adminkan/super/module/admin/admsuper/aksi_edit.php on line 16
+[17-Feb-2021 11:27:49 UTC] PHP Notice:  Undefined index: foto in /home/desangar/public_html/adminkan/super/module/admin/admsuper/aksi_edit.php on line 17
