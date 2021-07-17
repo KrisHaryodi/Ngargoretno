@@ -10,6 +10,7 @@ while($tampilQuery = mysqli_fetch_array($queryLihat)){
 
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,123 +48,124 @@ while($tampilQuery = mysqli_fetch_array($queryLihat)){
   <![endif]-->
 
   <!-- Google Font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini ">
-<div class="wrapper">
+  <div class="wrapper">
 
-  <header class="main-header">
-    <!-- Logo -->
-    <a href="" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>Desa Ngargoretno</b></span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b></span>
-    </a>
-    <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top">
-      <!-- Sidebar toggle button-->
-      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-        <span class="sr-only">Toggle navigation</span>
-      </a>    
-    </nav>
-  </header>
-  <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-      <!-- Sidebar user panel -->
-      <div class="user-panel">
-        <div class="pull-left image">
-          <img src="img/<?php echo $tampilQuery['foto'] ?>" class="img-circle" alt="User Image">
+    <header class="main-header">
+      <!-- Logo -->
+      <a href="" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>Desa Ngargoretno</b></span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><b>Admin</b></span>
+      </a>
+      <!-- Header Navbar: style can be found in header.less -->
+      <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+      </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+          <div class="pull-left image">
+            <img src="img/<?php echo $tampilQuery['foto'] ?>" class="img-circle" alt="User Image">
+          </div>
+          <div class="pull-left info">
+            <p><a href="#"><?php echo $tampilQuery['nama']; ?></a></p>
+          </div>
         </div>
-        <div class="pull-left info">
-          <p><a href="#"><?php echo $tampilQuery['nama']; ?></a></p>
-        </div>
-      </div>
-      
-      <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">MAIN NAVIGATION</li>
-        <li>
-          <a href="adminweb.php?module=home">
-            <i class="fa fa-home"></i>
-            <span>Profile</span>
-          </a>
-        </li>
-          
-          <li class="treeview">
-          <a href="#">
-            <i class="fa fa-phone"></i> 
-            <span>Contact Person</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li <?php if($_GET['module'] == 'cust'){ echo 'class="active"'; }else{ echo '';}?>>
-              <a href="adminweb.php?module=cust">
-                <i class="fa fa-circle-o"></i> Customer Service
-              </a>
-            </li>
-            <li <?php if($_GET['module'] == 'sosmed'){ echo 'class="active"'; }else{ echo '';}?>>
-              <a href="adminweb.php?module=sosmed">
-                <i class="fa fa-circle-o"></i> Sosial Media
-              </a>
-            </li> 
-          </ul>
-        </li>
-        <li>
-          <a href="adminweb.php?module=produk">
-            <i class="fa fa-shopping-cart"></i> 
-            <span>Produk</span>
-          </a>
-        </li>
-          <li>
-          <a href="adminweb.php?module=paketwisata">
-            <i class="fa fa-plane"></i> 
-            <span>Paket Wisata</span>
-          </a>
-        </li>
-          <li>
-          <a href="adminweb.php?module=artikel">
-            <i class="fa fa-pencil-square-o"></i> 
-            <span>Artikel</span>
-          </a>
-        </li>
-        <li>
-          <a href="adminweb.php?module=admsuper">
-            <i class="fa fa-user"></i> 
-            <span>Admin</span>
-          </a>
-        </li>
-        <li>
-          <a href="logout.php">
-            <i class="fa fa-power-off"></i>
-            <span>Logout</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            
-          </a>
-        </li>
-        
-      </ul>
-    </section>
-    <!-- /.sidebar -->
-  </aside>
-  <!-- script php -->
-  <!-- /.content-wrapper -->
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <?php
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="header">MAIN NAVIGATION</li>
+          <li class="home selectedNav">
+            <a href="adminweb.php?module=home">
+              <i class="fa fa-home"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+
+          <li class="treeview cust sosmed">
+            <a href="#">
+              <i class="fa fa-phone"></i>
+              <span>Contact Person</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li <?php if($_GET['module'] == 'cust'){ echo 'class="active"'; }else{ echo '';}?>>
+                <a href="adminweb.php?module=cust">
+                  <i class="fa fa-circle-o"></i> Customer Service
+                </a>
+              </li>
+              <li <?php if($_GET['module'] == 'sosmed'){ echo 'class="active"'; }else{ echo '';}?>>
+                <a href="adminweb.php?module=sosmed">
+                  <i class="fa fa-circle-o"></i> Sosial Media
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="produk">
+            <a href="adminweb.php?module=produk">
+              <i class="fa fa-shopping-cart"></i>
+              <span>Produk</span>
+            </a>
+          </li>
+          <li class="paketwisata">
+            <a href="adminweb.php?module=paketwisata">
+              <i class="fa fa-plane"></i>
+              <span>Paket Wisata</span>
+            </a>
+          </li>
+          <li class="artikel">
+            <a href="adminweb.php?module=artikel">
+              <i class="fa fa-pencil-square-o"></i>
+              <span>Artikel</span>
+            </a>
+          </li>
+          <li class="admsuper">
+            <a href="adminweb.php?module=admsuper">
+              <i class="fa fa-user"></i>
+              <span>Admin</span>
+            </a>
+          </li>
+          <li>
+            <a href="logout.php">
+              <i class="fa fa-power-off"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+
+            </a>
+          </li>
+
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+    <!-- script php -->
+    <!-- /.content-wrapper -->
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <?php
     if ($_GET['module'] == 'home'){
       include "module/home/home.php";
     }elseif ($_GET['module'] == 'tambah_home'){
@@ -233,61 +235,62 @@ while($tampilQuery = mysqli_fetch_array($queryLihat)){
 
    
     ?>
-  </div>
-
-  <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-        <b></b>
     </div>
-    <strong>Copyright &copy; 2020.</strong> All rights
-    reserved.
-  </footer>
-  <?php  
+
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <div class="pull-right hidden-xs">
+        <b></b>
+      </div>
+      <strong>Copyright &copy; 2020.</strong> All rights
+      reserved.
+    </footer>
+    <?php  
    }
   ?>
-  <div class="control-sidebar-bg"></div>
-</div>
-<!-- ./wrapper -->
+    <div class="control-sidebar-bg"></div>
+  </div>
+  <!-- ./wrapper -->
 
-<!-- jQuery 3 -->
-<script src="asset/bower_components/jquery/dist/jquery.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="asset/bower_components/jquery-ui/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button);
-</script>
-<!-- Bootstrap 3.3.7 -->
-<script src="asset/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- Morris.js charts -->
-<script src="asset/bower_components/raphael/raphael.min.js"></script>
-<script src="asset/bower_components/morris.js/morris.min.js"></script>
-<!-- Sparkline -->
-<script src="asset/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
-<!-- jvectormap -->
-<script src="asset/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="asset/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-<!-- jQuery Knob Chart -->
-<script src="asset/bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
-<!-- daterangepicker -->
-<script src="asset/bower_components/moment/min/moment.min.js"></script>
-<script src="asset/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
-<!-- datepicker -->
-<script src="asset/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<!-- Bootstrap WYSIHTML5 -->
-<script src="asset/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
-<!-- Slimscroll -->
-<script src="asset/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-<!-- FastClick -->
-<script src="asset/bower_components/fastclick/lib/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="asset/dist/js/adminlte.min.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="asset/dist/js/pages/dashboard.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="asset/dist/js/demo.js"></script>
-
+  <!-- jQuery 3 -->
+  <script src="asset/bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- jQuery UI 1.11.4 -->
+  <script src="asset/bower_components/jquery-ui/jquery-ui.min.js"></script>
+  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+  <script>
+    $.widget.bridge('uibutton', $.ui.button);
+  </script>
+  <!-- Bootstrap 3.3.7 -->
+  <script src="asset/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Morris.js charts -->
+  <script src="asset/bower_components/raphael/raphael.min.js"></script>
+  <script src="asset/bower_components/morris.js/morris.min.js"></script>
+  <!-- Sparkline -->
+  <script src="asset/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+  <!-- jvectormap -->
+  <script src="asset/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+  <script src="asset/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+  <!-- jQuery Knob Chart -->
+  <script src="asset/bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
+  <!-- daterangepicker -->
+  <script src="asset/bower_components/moment/min/moment.min.js"></script>
+  <script src="asset/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <!-- datepicker -->
+  <script src="asset/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+  <!-- Bootstrap WYSIHTML5 -->
+  <script src="asset/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+  <!-- Slimscroll -->
+  <script src="asset/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+  <!-- FastClick -->
+  <script src="asset/bower_components/fastclick/lib/fastclick.js"></script>
+  <!-- AdminLTE App -->
+  <script src="asset/dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+  <script src="asset/dist/js/pages/dashboard.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="asset/dist/js/demo.js"></script>
+  <!-- Custom Javascript -->
+  <script src="js/app.js"></script>
 </body>
-</html>
 
+</html>

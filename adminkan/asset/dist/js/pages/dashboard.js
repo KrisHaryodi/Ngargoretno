@@ -6,7 +6,6 @@
  **/
 
  $(function () {
-  console.log('test');
     $('.preview').css('width' , '50%');
     $('.preview').css('margin' , '20px 0');
 
