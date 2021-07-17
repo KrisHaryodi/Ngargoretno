@@ -137,7 +137,6 @@ $foto3 = $hasilQuery['produk_foto3'];
         </div>
     </div>
 
-  
 	<!--Product Single-->
     <div class="product_single_wrapper clv_section">
         <div class="container">
@@ -169,8 +168,6 @@ $foto3 = $hasilQuery['produk_foto3'];
                                                     <img style="width: 116px; height: 116px; object-fit: cover;" src="admin/img/<?php echo $foto3; ?>" alt="image">
                                                 </div>
                                             </div>
-                                            
-                                            
                                         </div>
                                     </div>
                                 </div>
@@ -211,17 +208,11 @@ $foto3 = $hasilQuery['produk_foto3'];
                     <div class="product_single_details">
                         <div class="product_price_box"> 
                             <h3><?php echo $nama; ?></h3>  
-                        </div>          
-                         
-                 
-                        
+                        </div>       
                         <p><?php echo $cerita; ?></p>
                         <div class="product_prices">
                             <h2>Rp.<?php echo $harga; ?></h2>
-                            
                         </div>
-                       
-                 
                         <a href="https://<?php echo $link; ?>" class="clv_btn">order now</a>
                     </div>
                 </div>
@@ -236,26 +227,17 @@ $foto3 = $hasilQuery['produk_foto3'];
                     <div class="product_detail_tab">
                         <ul class="nav nav-tabs">
                             <li><a data-toggle="tab" class="active" href="#description">Description</a></li>
-                            
-                        
                         </ul>
-                        <div class="tab-content">
+                        <div class="tab-content productDetails">
                             <div id="description" class="tab-pane fade show active">
                                 <p><?php echo $deskripsi; ?></p>
                             </div>
-                            
-                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-	
-
-
-
-	
 	
 	<!--Footer-->
     <div class="clv_footer_wrapper clv_section">
