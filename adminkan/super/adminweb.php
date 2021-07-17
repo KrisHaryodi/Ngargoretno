@@ -47,6 +47,9 @@ while($tampilQuery = mysqli_fetch_array($queryLihat)){
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini ">
