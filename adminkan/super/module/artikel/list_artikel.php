@@ -48,7 +48,7 @@ if(!isset($_SESSION)) {
                             <?php
                             include "lib/config.php";
                             include "lib/koneksi.php";
-                            $kueriMember = mysqli_query($konek,"select * from tbl_artikel");
+                            $kueriMember = mysqli_query($konek,"select * from tbl_artikel order by artikel_tgl desc");
                             $n = 1;
                             while ($mbr = mysqli_fetch_array($kueriMember)) {
                             ?>
@@ -66,7 +66,7 @@ if(!isset($_SESSION)) {
                                   <i class='fa fa-pencil'></i>
                                 </a>
                                 <a href="<?php echo $super_url; ?>module/artikel/aksi_hapus.php?id_artikel=<?php echo $mbr['id_artikel'];?>" onClick="return confirm('Anda yakin ingin menghapus data ini?')" class="btn btn-danger">
-                                  <i class='fa fa-power-off'></i>
+                                  <i class='fa fa-trash'></i>
                                 </a>
                             </div>
                         </td>
