@@ -160,7 +160,9 @@ while($tampilQuery = mysqli_fetch_array($queryLihat)){
       include "module/home/form_tambah.php";
     }elseif ($_GET['module'] == 'edit_home'){
       include "module/home/form_edit.php";
-    } 
+    }elseif ($_GET['module'] == 'edit_header'){
+      include "module/home/form_edit_header.php";
+    }
 
     elseif ($_GET['module'] == 'admsuper'){
       include "module/admin/admsuper/list_admin.php";
