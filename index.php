@@ -63,12 +63,6 @@ $foto2=$hasilQuery['gambar_header'];
 	
 </head>
 <body>
-	<div class="preloader_wrapper">
-		<div class="preloader_inner">
-			<img src="images/new-preloader.gif" alt="image" />
-		</div>
-	</div>
-
 <!--Div section V3-->
 <div class="clv_main_wrapper index_v3">
 	<div class="header2_wrapper">

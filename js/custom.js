@@ -99,7 +99,7 @@ Assigned to: Theme Forest
 					depth: 0,
 				},
 				autoplay: {
-					delay: 2500,
+					delay: 10000,
 					disableOnInteraction: false,
 				},
 				navigation: {
