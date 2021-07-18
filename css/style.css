@@ -883,6 +883,10 @@ Purchase:
      z-index: -1;
  }
  
+ .clv_slide_inner p {
+     line-height: 1.5;
+ }
+ 
  .clv_banner_slider .clv_slide .clv_slide_inner h3 {
      font-size: 20px;
      font-weight: 700;
@@ -2408,6 +2412,7 @@ Purchase:
  
  .index_v2 .clv_heading h3 {
      color: #DE281D;
+     font-family: 'Playfair Display', serif;
  }
  /*Header Start*/
  
@@ -2758,6 +2763,7 @@ Purchase:
      margin-bottom: 14px;
      padding-bottom: 14px;
      position: relative;
+     font-family: 'Playfair Display', serif;
  }
  
  .clv_features_wrapper .feature_block h3:before,
@@ -2824,10 +2830,11 @@ Purchase:
  }
  
  .clv_about_agriculture_wrapper .about_agri_content h2 {
+     font-family: 'Playfair Display', serif;
      font-size: 40px;
      font-weight: 700;
      text-transform: capitalize;
-     color: #222222;
+     color: #DE281D;
      margin-bottom: 15px;
  }
  
@@ -3332,6 +3339,7 @@ Purchase:
  }
  
  .blog_section .agri_blog_content h3>a {
+     font-family: 'Playfair Display', serif;
      color: #222222;
      transition: all 0.3s ease-in-out;
      -webkit-transition: all 0.3s ease-in-out;
@@ -3433,6 +3441,7 @@ Purchase:
  }
  
  .right_blog_section .right_blog_block .right_blog_content h3 {
+     font-family: 'Playfair Display', serif;
      font-size: 22px;
      line-height: 33px;
      font-weight: 700;
@@ -3948,7 +3957,8 @@ Purchase:
  
  .index_v3 .clv_banner_slider .clv_slide .clv_slide_inner h1 {
      font-size: 72px;
-     max-width: 550px;
+     max-width: 800px;
+     font-family: 'Playfair Display', serif;
  }
  
  .index_v3 .clv_banner_slider .clv_slide .clv_slide_inner>img {
@@ -6888,6 +6898,7 @@ Purchase:
      text-transform: capitalize;
      font-weight: 600;
      margin-bottom: 10px;
+     font-family: 'Playfair Display', serif;
  }
  
  .org_product_block h3 {
@@ -8424,6 +8435,7 @@ Purchase:
      font-weight: 600;
      color: #ffffff;
      text-transform: capitalize;
+     font-family: 'Playfair Display', serif;
  }
  
  .breadcrumb_block {
