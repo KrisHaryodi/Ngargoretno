@@ -15,7 +15,7 @@ if(empty($_SESSION['username']) AND empty($_SESSION['passuser'])){
 
 	$judul = $_POST['judul'];
 	$tgl = $_POST['tgl'];
-    $penulis = $_POST['penulis'];
+  $penulis = $_POST['penulis'];
 	$isi = $_POST['isi'];
 
   //set folder penyimpanan gambar
