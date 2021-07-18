@@ -29,7 +29,7 @@ if(!isset($_SESSION)) {
 				<div class="box-header with-border">
 					<h3 class="box-title">Horizontal Form</h3>
 				</div>
-				<form method="post" class="form-horizontal" action="../../adminkankan/super/module/produk/aksi_simpan.php" enctype="multipart/form-data">
+				<form method="post" class="form-horizontal" action="../../adminkan/super/module/produk/aksi_simpan.php" enctype="multipart/form-data">
                     <?php 
 include "lib/config.php";
 include "lib/koneksi.php";
