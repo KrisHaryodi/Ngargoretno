@@ -29,7 +29,7 @@ if(!isset($_SESSION)) {
 				<div class="box-header with-border">
 					<h3 class="box-title">Horizontal Form</h3>
 				</div>
-				<form method="post" class="form-horizontal" action="../adminkan/module/produk/aksi_simpan.php" enctype="multipart/form-data">
+				<form method="post" class="form-horizontal" action="../../adminkan/super/module/produk/aksi_simpan.php" enctype="multipart/form-data">
                     <?php 
 include "lib/config.php";
 include "lib/koneksi.php";
@@ -81,9 +81,20 @@ $produk = $id_produk + 1;
 						</div>
 						<div class="form-group">
 							<label for="inputEmail3" class="col-sm-2 control-label">Foto Sampul</label>
-								<input type="file" id="gambar[]" name="gambar[]" multiple><br>
+								<input type="file" id="sampul" name="sampul" multiple><br>
 						</div>
-                        
+                        <div class="form-group">
+							<label for="inputEmail3" class="col-sm-2 control-label">Foto Produk 1</label>
+								<input type="file" id="foto1" name="foto1" multiple><br>
+						</div>
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-2 control-label">Foto Produk 2</label>
+								<input type="file" id="foto2" name="foto2" multiple><br>
+						</div>
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-2 control-label">Foto Produk 3</label>
+								<input type="file" id="foto3" name="foto3" multiple><br>
+						</div>
 					</div>
 					<div class="box-footer">
 						<button type="submit" class="btn btn-info pull-right">Simpan</button>

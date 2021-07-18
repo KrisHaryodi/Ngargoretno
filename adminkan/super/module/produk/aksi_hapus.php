@@ -10,9 +10,9 @@ if (empty($_SESSION['username']) AND empty($_SESSION['passuser'])) {
 	$queryHapus = mysqli_query($konek, "DELETE FROM tbl_produk WHERE id_produk='$id_produk'");
 
 	if ($queryHapus) {
-		echo "<script> alert('Data Berhasil Dihapus'); window.location = '$admin_url'+'adminweb.php?module=produk';</script>";
+		echo "<script> alert('Data Berhasil Dihapus'); window.location = '$super_url'+'adminweb.php?module=produk';</script>";
 	} else {
-		echo "<script> alert('Data Gagal Dihapus'); window.location = '$admin_url'+'adminweb.php?module=produk';</script>";
+		echo "<script> alert('Data Gagal Dihapus'); window.location = '$super_url'+'adminweb.php?module=produk';</script>";
 	}
 }
  ?>
