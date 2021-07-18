@@ -13,7 +13,8 @@ if (empty($_SESSION['username']) AND empty($_SESSION['passuser'])) {
 	$namafile = $_FILES['gambar']['name'];
 	$lokasifile = $_FILES['gambar']['tmp_name'];
 
-  	$uploaddir = "../../../img/";
+  	// $uploaddir = "../../../img/";
+	$uploaddir = "../../img/";
   	$uploadfile = $uploaddir.$namafile;
 	
 	if(!empty($lokasifile)){
