@@ -3039,6 +3039,10 @@ ul{
 }
 .index_v2 .footer_post_slider .footer_post_slide .footer_post_content p a{
 	color: #ffffff;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
 }
 .index_v2 .footer_post_slider .swiper-container {
 	max-height: 150px;
