@@ -122,7 +122,7 @@
 								<div class="container">
 									<div class="clv_slide_inner">
 										<h1><?php echo $abot['artikel_judul'];?></h1>
-										<h6><?php echo substr ($abot['artikel_isi'],0,50);?></h6>
+										<h6><?php echo substr ($abot['artikel_isi'],0,200);?>...</h6>
 										<a 
 											href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"
 											class="clv_btn2"
@@ -145,7 +145,7 @@
 								<div class="container">
 									<div class="clv_slide_inner">
 										<h1><?php echo $abot['artikel_judul'];?></h1>
-										<h6><?php echo substr ($abot['artikel_isi'],0,50);?></h6>
+										<h6><?php echo substr ($abot['artikel_isi'],0,200);?>...</h6>
 										<a 
 											href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"
 											class="clv_btn2"
