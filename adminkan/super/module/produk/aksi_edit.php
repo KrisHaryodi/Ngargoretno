@@ -48,41 +48,41 @@ if (empty($_SESSION['username']) AND empty($_SESSION['passuser'])) {
 		$queryEdit = mysqli_query($konek,"UPDATE tbl_produk SET produk_nama = '$nama', produk_harga = '$harga', produk_cerita = '$cerita', produk_deskripsi = '$deskripsi', produk_link = '$link', produk_sampul = '$namafile' WHERE id_produk='$id_produk'");
 		if($queryEdit){
 		move_uploaded_file($lokasifile, $uploadfile);
-		echo "<script>alert('Data Berhasil Diedit'); window.location = '$admin_url'+'adminweb.php?module=produk';</script>";
+		echo "<script>alert('Data Berhasil Diedit'); window.location = '$super_url'+'adminweb.php?module=produk';</script>";
 		}else{
-		echo "<script>alert('Data Gagal Diedit'); window.location = '$admin_url'+'adminweb.php?module=produk';</script>";
+		echo "<script>alert('Data Gagal Diedit'); window.location = '$super_url'+'adminweb.php?module=produk';</script>";
 		}
 	}
     elseif(!empty($lokasifile1)){
 		$queryEdit = mysqli_query($konek,"UPDATE tbl_produk SET produk_nama = '$nama', produk_harga = '$harga', produk_cerita = '$cerita', produk_deskripsi = '$deskripsi', produk_link = '$link', produk_foto1 = '$namafile1' WHERE id_produk='$id_produk'");
 		if($queryEdit){
 		move_uploaded_file($lokasifile1, $uploadfile1);
-		echo "<script>alert('Data Berhasil Diedit'); window.location = '$admin_url'+'adminweb.php?module=produk';</script>";
+		echo "<script>alert('Data Berhasil Diedit'); window.location = '$super_url'+'adminweb.php?module=produk';</script>";
 		}else{
-		echo "<script>alert('Data Gagal Diedit'); window.location = '$admin_url'+'adminweb.php?module=produk';</script>";
+		echo "<script>alert('Data Gagal Diedit'); window.location = '$super_url'+'adminweb.php?module=produk';</script>";
 		}
 	}
     elseif(!empty($lokasifile2)){
 		$queryEdit = mysqli_query($konek,"UPDATE tbl_produk SET produk_nama = '$nama', produk_harga = '$harga', produk_cerita = '$cerita', produk_deskripsi = '$deskripsi', produk_link = '$link', produk_foto2 = '$namafile2' WHERE id_produk='$id_produk'");
 		if($queryEdit){
 		move_uploaded_file($lokasifile2, $uploadfile2);
-		echo "<script>alert('Data Berhasil Diedit'); window.location = '$admin_url'+'adminweb.php?module=produk';</script>";
+		echo "<script>alert('Data Berhasil Diedit'); window.location = '$super_url'+'adminweb.php?module=produk';</script>";
 		}else{
-		echo "<script>alert('Data Gagal Diedit'); window.location = '$admin_url'+'adminweb.php?module=produk';</script>";
+		echo "<script>alert('Data Gagal Diedit'); window.location = '$super_url'+'adminweb.php?module=produk';</script>";
 		}
 	}
     elseif(!empty($lokasifile3)){
 		$queryEdit = mysqli_query($konek,"UPDATE tbl_produk SET produk_nama = '$nama', produk_harga = '$harga', produk_cerita = '$cerita', produk_deskripsi = '$deskripsi', produk_link = '$link', produk_foto3 = '$namafile3' WHERE id_produk='$id_produk'");
 		if($queryEdit){
 		move_uploaded_file($lokasifile3, $uploadfile3);
-		echo "<script>alert('Data Berhasil Diedit'); window.location = '$admin_url'+'adminweb.php?module=produk';</script>";
+		echo "<script>alert('Data Berhasil Diedit'); window.location = '$super_url'+'adminweb.php?module=produk';</script>";
 		}else{
-		echo "<script>alert('Data Gagal Diedit'); window.location = '$admin_url'+'adminweb.php?module=produk';</script>";
+		echo "<script>alert('Data Gagal Diedit'); window.location = '$super_url'+'adminweb.php?module=produk';</script>";
 		}
 	}
     else{
 		$queryEdit = mysqli_query($konek,"UPDATE tbl_produk SET produk_nama = '$nama', produk_harga = '$harga', produk_cerita = '$cerita', produk_deskripsi = '$deskripsi', produk_link = '$link' WHERE id_produk='$id_produk'");
-		echo "<script>alert('Data Berhasil Diedit'); window.location = '$admin_url'+'adminweb.php?module=produk';</script>";
+		echo "<script>alert('Data Berhasil Diedit'); window.location = '$super_url'+'adminweb.php?module=produk';</script>";
 
 	}
 }
