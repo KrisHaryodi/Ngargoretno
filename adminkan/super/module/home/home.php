@@ -67,7 +67,7 @@ if(!isset($_SESSION)) {
     												<button class='btn btn-warning'><i class='fa fa-pencil'></i></button>
     											</a>
     											<a href="<?php echo $super_url;?>module/home/aksi_hapus.php?id_profile=<?php echo $abot['id_profile'];?>" onClick="return confirm('Anda yakin ingin menghapus data ini?')">
-    												<button class="btn btn-danger"><i class='fa fa-power-off'></i></button>
+    												<button class="btn btn-danger"><i class='fa fa-trash'></i></button>
 											     </a>
 										    </div>
 									      </td>
