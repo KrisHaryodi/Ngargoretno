@@ -63,7 +63,8 @@ $foto=$hasilQuery['profile_foto'];
 					</div>
                     <div class="control-group">
 							<label for="inputEmail3" class="col-sm-2 control-label">Foto</label>
-                            <img src="../img/<?php echo $foto; ?>" height="100" width="150">
+                            <!-- <img src="../img/<?php echo $foto; ?>" height="100" width="150"> -->
+							<img src="img/<?php echo $foto; ?>" height="100" width="150">
 								<input type="file" id="gambar" name="gambar"><br>
 						</div>
 					<div class="box-footer">

@@ -59,7 +59,7 @@ if(!isset($_SESSION)) {
                         <td>
                             <div class="btn-group">
                                 <a href="<?php echo $super_url; ?>adminweb.php?module=edit_admsuper&id_admin=<?php echo $adm['id_admin'];?>" class="btn btn-warning"><i class='fa fa-pencil'></i></a>
-                                <a href="<?php echo $super_url; ?>module/admin/admsuper/aksi_hapus.php?id_admin=<?php echo $adm['id_admin'];?>" onClick="return confirm('Anda yakin ingin menghapus data ini?')" class="btn btn-danger"><i class='fa fa-power-off'></i></a>
+                                <a href="<?php echo $super_url; ?>module/admin/admsuper/aksi_hapus.php?id_admin=<?php echo $adm['id_admin'];?>" onClick="return confirm('Anda yakin ingin menghapus data ini?')" class="btn btn-danger"><i class='fa fa-trash'></i></a>
                             </div>
                         </td>
                     </tr>             

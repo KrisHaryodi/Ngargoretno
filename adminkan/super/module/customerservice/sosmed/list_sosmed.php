@@ -65,7 +65,7 @@ if(!isset($_SESSION)) {
 											</a>
 											<a href="<?php echo $super_url;?>module/customerservice/sosmed/aksi_hapus.php?id_sosmed=<?php echo $form['id_sosmed'];?>" onClick="return confirm('Anda yakin ingin menghapus data ini?')">
 												<button class="btn btn-danger">
-													<i class='fa fa-power-off'></i>
+													<i class='fa fa-trash'></i>
 												</button>
 											</a>
 										</div>

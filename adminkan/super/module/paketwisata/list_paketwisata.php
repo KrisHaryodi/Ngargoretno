@@ -68,7 +68,7 @@ if(!isset($_SESSION)) {
                     </a>
                     <a href="<?php echo $super_url; ?>module/paketwisata/aksi_hapus.php?id_wisata=<?php echo $mbr['id_wisata'];?>"
                       onClick="return confirm('Anda yakin ingin menghapus data ini?')" class="btn btn-danger">
-                      <i class='fa fa-power-off'></i>
+                      <i class='fa fa-trash'></i>
                     </a>
                   </div>
                 </td>

@@ -13,7 +13,8 @@ if (empty($_SESSION['username']) AND empty($_SESSION['passuser'])) {
 	$judul = $_POST['judul'];
     $isi = $_POST['isi'];
     
-    $uploaddir = "../../../img/";
+    // $uploaddir = "../../../img/";
+    $uploaddir = "../../img/";
     $uploadfile = $uploaddir.$namafile;
 	
     if(move_uploaded_file($lokasifile, $uploadfile)){
