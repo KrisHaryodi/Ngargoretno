@@ -148,25 +148,25 @@
                                                 <div class="swiper-slide">
                                                     <div class="fd_pro_img_thumnail">
                                                         <img style="width: 116px; height: 116px; object-fit: cover;"
-                                                            src="admin/img/<?php echo $sampul; ?>" alt="image">
+                                                            src="adminkan/img/<?php echo $sampul; ?>" alt="image">
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide">
                                                     <div class="fd_pro_img_thumnail">
                                                         <img style="width: 116px; height: 116px; object-fit: cover;"
-                                                            src="admin/img/<?php echo $foto1; ?>" alt="image">
+                                                            src="adminkan/img/<?php echo $foto1; ?>" alt="image">
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide">
                                                     <div class="fd_pro_img_thumnail">
                                                         <img style="width: 116px; height: 116px; object-fit: cover;"
-                                                            src="admin/img/<?php echo $foto2; ?>" alt="image">
+                                                            src="adminkan/img/<?php echo $foto2; ?>" alt="image">
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide">
                                                     <div class="fd_pro_img_thumnail">
                                                         <img style="width: 116px; height: 116px; object-fit: cover;"
-                                                            src="admin/img/<?php echo $foto3; ?>" alt="image">
+                                                            src="adminkan/img/<?php echo $foto3; ?>" alt="image">
                                                     </div>
                                                 </div>
                                             </div>
@@ -179,25 +179,25 @@
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
                                                     <div class="fd_pro_img">
-                                                        <img src="admin/img/<?php echo $sampul; ?>" alt="image"
+                                                        <img src="adminkan/img/<?php echo $sampul; ?>" alt="image"
                                                             style="width: 508px; height: 529px; object-fit: cover;">
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide">
                                                     <div class="fd_pro_img">
-                                                        <img src="admin/img/<?php echo $foto1; ?>" alt="image"
+                                                        <img src="adminkan/img/<?php echo $foto1; ?>" alt="image"
                                                             style="width: 508px; height: 529px; object-fit: cover;">
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide">
                                                     <div class="fd_pro_img">
-                                                        <img src="admin/img/<?php echo $foto2; ?>" alt="image"
+                                                        <img src="adminkan/img/<?php echo $foto2; ?>" alt="image"
                                                             style="width: 508px; height: 529px; object-fit: cover;">
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide">
                                                     <div class="fd_pro_img">
-                                                        <img src="admin/img/<?php echo $foto3; ?>" alt="image"
+                                                        <img src="adminkan/img/<?php echo $foto3; ?>" alt="image"
                                                             style="width: 508px; height: 529px; object-fit: cover;">
                                                     </div>
                                                 </div>
@@ -295,7 +295,7 @@
                                         <div class="swiper-slide">
                                             <div class="footer_post_slide">
                                                 <div class="footer_post_image">
-                                                    <img src="admin/img/<?php echo $abot['artikel_foto'];?>" alt="image"
+                                                    <img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="image"
                                                         style="width: 75px; height: 65px; object-fit: cover;">
                                                 </div>
                                                 <div class="footer_post_content">

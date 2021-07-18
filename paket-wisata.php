@@ -121,7 +121,7 @@
 					<div class="col-md-4 col-lg-4">
 						<div class="feature_block">
 							<div class="item_image">
-								<img src="admin/img/<?php echo $abot['wisata_foto'];?>" alt="image" class="img-fluid"
+								<img src="adminkan/img/<?php echo $abot['wisata_foto'];?>" alt="image" class="img-fluid"
 									style="width: 320px; height: 320px; object-fit: cover;">
 							</div>
 							<br>
@@ -188,7 +188,7 @@
 										<div class="swiper-slide">
 											<div class="footer_post_slide">
 												<div class="footer_post_image">
-													<img src="admin/img/<?php echo $abot['artikel_foto'];?>" alt="image"
+													<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="image"
 														style="width: 75px; height: 65px; object-fit: cover;">
 												</div>
 												<div class="footer_post_content">

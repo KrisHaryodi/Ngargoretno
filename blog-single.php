@@ -140,7 +140,7 @@
                                     <!-- 870x410
                                     KUDU DI CROP
                                      -->
-                                    <img src="admin/img/<?php echo $foto; ?>" alt="image"
+                                    <img src="adminkan/img/<?php echo $foto; ?>" alt="image"
                                         style="width: 870px; height: 410px; object-fit: cover;">
                                     <span class="agri_blog_date"><?php echo $tgl; ?></span>
                                 </div>
@@ -174,7 +174,7 @@
                                         ?>
                                         <li>
                                             <div class="post_image">
-                                                <img src="admin/img/<?php echo $abot['artikel_foto'];?>" alt="image"
+                                                <img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="image"
                                                     style="width: 75px; height: 65px; object-fit: cover;">
                                             </div>
                                             <div class="post_content">
@@ -245,7 +245,7 @@
                                         <div class="swiper-slide">
                                             <div class="footer_post_slide">
                                                 <div class="footer_post_image">
-                                                    <img src="admin/img/<?php echo $abot['artikel_foto'];?>" alt="image"
+                                                    <img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="image"
                                                         style="width: 75px; height: 65px; object-fit: cover;">
                                                 </div>
                                                 <div class="footer_post_content">
