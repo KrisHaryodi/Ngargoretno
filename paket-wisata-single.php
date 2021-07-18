@@ -139,8 +139,7 @@
                                     <!-- 870x410
                                     KUDU DI CROP
                                      -->
-                                    <img src="admin/img/<?php echo $foto; ?>" alt="image"
-                                        style="width: 870px; height: 410px; object-fit: cover;">
+                                    <img src="adminkan/img/<?php echo $foto; ?>" alt="image">
                                 </div>
                                 <div class="agri_blog_content">
                                     <h3><a href=""><?php echo $nama; ?></a></h3>
