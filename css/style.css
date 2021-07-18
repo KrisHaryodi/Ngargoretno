@@ -7922,7 +7922,7 @@ ul{
 .fd_pro_thumnail .swiper-slide.swiper-slide-active .fd_pro_img_thumnail img{
 	border: 2px solid #fec007;
 }
-.product_single_details * {
+.product_single_details p {
 	text-align: justify;
 }
 .product_single_details{
@@ -8125,6 +8125,11 @@ ul{
 .product_detail_tab > ul > li > a.active{
 	color: #ffffff;
 	background-color: #fec007;
+}
+.product-detail__header {
+	font-size: 24px;
+	font-weight: bold;
+	color: #fec007;
 }
 .additional_info{
 	width: 86%;

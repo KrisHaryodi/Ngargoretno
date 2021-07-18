@@ -230,7 +230,7 @@
                     <div class="col-lg-12 col-md-12">
                         <div class="product_detail_tab">
                             <ul class="nav nav-tabs">
-                                <li><a data-toggle="tab" class="active" href="#description">Description</a></li>
+                                <li><h5 class="product-detail__header" data-toggle="tab">Description</h5></li>
                             </ul>
                             <div class="tab-content productDetails">
                                 <div id="description" class="tab-pane fade show active">
