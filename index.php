@@ -151,7 +151,7 @@
 											href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"
 											class="clv_btn2"
 										>
-											read more
+										Let's Go!
 										</a>
 									</div>
 								</div>
