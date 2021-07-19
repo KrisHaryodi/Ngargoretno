@@ -128,7 +128,10 @@
 											href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"
 											class="clv_btn2"
 										>
-										Let's Go!
+											Selengkapnya
+											<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+												<path fill="currentColor" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+											</svg>
 										</a>
 									</div>
 								</div>
@@ -151,7 +154,10 @@
 											href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"
 											class="clv_btn2"
 										>
-										Let's Go!
+											Selengkapnya
+											<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+												<path fill="currentColor" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+											</svg>
 										</a>
 									</div>
 								</div>
@@ -185,7 +191,7 @@
 	<div class="clv_main_wrapper index_v2">
 		<!--Revolution Silder-->
 		<!--About Agriculture-->
-		<div class="clv_about_agriculture_wrapper clv_section">
+		<div class="clv_about_agriculture_wrapper first_section clv_section">
 			<div class="container">
 				<?php
 					include "lib/config.php";
@@ -202,23 +208,24 @@
 							</div>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row align-items-center">
 						<div class="col-md-6 col-lg-6">
 							<div class="about_agri_image">
 								<img 
 									src="adminkan/img/<?php echo $abot['profile_foto'];?>" 
 									alt="foto_profil"
-									style="width: 530px; height: 570px; object-fit: cover;"
 								>
 							</div>
 						</div>
 						<div class="col-md-6 col-lg-6">
 							<div class="about_agri_content">
-								<!-- <h2><?php echo $abot['profile_judul'];?></h2> -->
 								<p><?php echo substr ($abot['profile_isi'],0,387);?></p>
 								<div class="auth_sign_block">
-									<a href="tentang-kami.php" class="clv_btn">Selengkapnya
-										<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ffffff"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"/></svg>
+									<a href="tentang-kami.php" class="clv_btn">
+										Selengkapnya
+										<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+											<path fill="currentColor" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+										</svg>
 									</a>
 								</div>
 							</div>
@@ -229,7 +236,7 @@
 		</div>
 
 		<!--Shop-->
-		<div class="agri_blog_wrapper clv_section">
+		<div class="agri_blog_wrapper clv_section blog_section">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-6 col-md-6">
@@ -258,13 +265,12 @@
 														src="adminkan/img/<?php echo $abot['produk_sampul'];?>" 
 														alt="<?php echo $abot['produk_nama'];?>" 
 														class="img-fluid"
-														style="width: 100%; height: 173px; object-fit: cover; border-radius: 8px 8px 0px 0px;"
 													>
 												</div>
 												<div class="item_details">
 													<div class="item_name">
-														<h5><?php echo $abot['produk_nama'];?></h5>
-														<h3>Rp.<?php echo $abot['produk_harga'];?></h3>
+														<h3><?php echo $abot['produk_nama'];?></h5>
+														<h5>Rp.<?php echo $abot['produk_harga'];?></h3>
 													</div>
 												</div>
 												<div class="item_overlay">
@@ -301,7 +307,9 @@
 							<div class="row justify-content-center">
 								<a href="produk.php" class="clv_btn">
 									Lihat Semua Produk
-									<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ffffff"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"/></svg>
+									<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+										<path fill="currentColor" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+									</svg>
 								</a>
 							</div>
 							<br>

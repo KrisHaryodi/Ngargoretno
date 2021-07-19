@@ -112,7 +112,7 @@
         </div>
 
         <!--Produst List-->
-        <div class="products_wrapper clv_section">
+        <div class="products_wrapper first_section clv_section">
             <div class="container">
                 <div class="row">
 
