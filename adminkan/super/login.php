@@ -23,7 +23,7 @@ if (!ctype_alnum($username) OR !ctype_alnum($password)) {
 		$level_user=$r['level_user'];
 
 		if($level_user=='Admin Super'){
-            header('location:super/adminweb.php?module=home');
+            header('location:adminweb.php?module=home');
         }
 		elseif($level_user=='Admin Biasa'){
 			header('location:../adminweb.php?module=home');
