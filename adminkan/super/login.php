@@ -14,8 +14,8 @@ if (!ctype_alnum($username) OR !ctype_alnum($password)) {
 	if ($ketemu > 0 ) {
 		session_start();
 
-		$_SESSION['namauser'] = $r['username'];
-		$_SESSION['passuser'] = $r['password'];
+		$_SESSION['username'] = $r['username'];
+		$_SESSION['password'] = $r['password'];
 		$_SESSION['id_admin'] = $r['id_admin'];
 		$_SESSION['nama']=$r['nama'];
     	$_SESSION['level_user']=$r['level_user'];
@@ -26,7 +26,7 @@ if (!ctype_alnum($username) OR !ctype_alnum($password)) {
             header('location:super/adminweb.php?module=home');
         }
 		elseif($level_user=='Admin Biasa'){
-			header('location:adminweb.php?module=home');
+			header('location:../adminweb.php?module=home');
 		}
 		else{
 			echo "<center>LOGIN GAGAL! <br>
