@@ -138,28 +138,31 @@
 									<!-- 870x410
                                     KUDU DI CROP
                                      -->
-									<img src="adminkan/img/<?php echo $foto; ?>" alt="image">
-								</div>
-								<div class="agri_blog_content">
-									<h3><a href=""><?php echo $nama; ?></a></h3>
-									<div class="blog_user">
-										<a href=""><span>Rp.<?php echo $harga; ?></span></a>
-									</div>
-									<p><?php echo $deskripsi; ?></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-3">
-						<div class="blog_sidebar">
-							<div class="sidebar_block">
-								<div class="sidebar_heading">
-									<h3>recent post</h3>
-									<img src="images/new_underline3.png" alt="image">
-								</div>
-								<div class="sidebar_post">
-									<ul>
-										<?php
+                                    <img src="adminkan/img/<?php echo $foto; ?>" alt="image">
+                                </div>
+                                <div class="agri_blog_content">
+                                    <h3><a href=""><?php echo $nama; ?></a></h3>
+                                    <div class="blog_user">
+                                        <a href=""><span>Rp.<?php echo $harga; ?></span></a>
+                                    </div>
+                                    <p><?php echo $deskripsi; ?></p>
+                                </div>
+								<center>
+									<a href="https://api.whatsapp.com/send?phone=6282147435525" class="clv_btn">Order Now</a>
+								</center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="blog_sidebar">
+                            <div class="sidebar_block">
+                                <div class="sidebar_heading">
+                                    <h3>recent post</h3>
+                                    <img src="images/new_underline3.png" alt="image">
+                                </div>
+                                <div class="sidebar_post">
+                                    <ul>
+                                        <?php
                                             include "lib/config.php";
                                             include "lib/koneksi.php";
                                             $kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_wisata ORDER BY id_wisata DESC LIMIT 10");
