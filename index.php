@@ -322,7 +322,7 @@
 							</div>
 							<center>
 								<a href="https://shopee.co.id/desa_ngargoretno" target="_blank" rel="noopener noreferrer"><img src="adminkan/img/image 18.png" alt="logo_shopee" style="width: 13%; object-fit: contain;"></a> &emsp; &emsp; 
-								<a href="https://www.tokopedia.com/desangargoretno" target="_blank" rel="noopener noreferrer"><img src="adminkan/img/image 19.png" alt="logo_tokopedia" style="width: 13%; object-fit: contain;"></a>
+								<a href="https://www.tokopedia.com/desangargoretno" target="_blank" rel="noopener noreferrer"><img src="adminkan/img/image 19.png" alt="logo_tokopedia" style="width: 14%; object-fit: contain;"></a>
 							</center>
 						</div>
 					</div>
