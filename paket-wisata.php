@@ -359,11 +359,11 @@
 					</div>
 				</div>
 				<center>
-					<img src="images/logo/kemendikbud.png" alt="logo_kemendikbud" style="width: 75px; height: 65px; object-fit: contain;">
-					<img src="images/logo/favicon.png" alt="logo_ngargoretno" style="width: 75px; height: 65px; object-fit: contain;">
-					<img src="images/logo/ugm.png" alt="logo_ugm" style="width: 75px; height: 65px; object-fit: contain;">
-					<img src="images/logo/bem.png" alt="logo_bem" style="width: 75px; height: 65px; object-fit: contain;">
-					<img src="images/logo/pdm.png" alt="logo_pdm" style="width: 75px; height: 65px; object-fit: contain;">
+					<a href="https://www.kemdikbud.go.id/" target="_blank" rel="noopener noreferrer"><img src="images/logo/kemendikbud.png" alt="logo_kemendikbud" style="width: 75px; height: 65px; object-fit: contain;"></a>
+					<a href="https://desangargoretno.com/" target="_blank" rel="noopener noreferrer"><img src="images/logo/favicon.png" alt="logo_ngargoretno" style="width: 75px; height: 65px; object-fit: contain;"></a>
+					<a href="https://ugm.ac.id/" target="_blank" rel="noopener noreferrer"><img src="images/logo/ugm.png" alt="logo_ugm" style="width: 75px; height: 65px; object-fit: contain;"></a>
+					<a href="https://bemkm.ugm.ac.id/" target="_blank" rel="noopener noreferrer"><img src="images/logo/bem.png" alt="logo_bem" style="width: 75px; height: 65px; object-fit: contain;"></a>
+					<a href="https://www.instagram.com/pdm_ugm/" target="_blank" rel="noopener noreferrer"><img src="images/logo/pdm.png" alt="logo_pdm" style="width: 75px; height: 65px; object-fit: contain;"></a>
 				</center>
 			</div>
 		</div>

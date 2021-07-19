@@ -77,7 +77,6 @@ if(!isset($_SESSION)) {
 					        </table>
 				        </div>
 			        </div>
-
               <div class="box">
                 <div class="box-header">
                   <h4><strong>Header</strong></h4>
@@ -112,9 +111,7 @@ if(!isset($_SESSION)) {
                     </tbody>
                   </table>
                 </div>
-              </div>
-                    
-                    
+              </div>        
 		        </div>
 	        </div>
       </section>
