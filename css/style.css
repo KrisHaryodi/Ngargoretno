@@ -1490,7 +1490,12 @@ ul {
     position: relative;
 }
 
+.swiper_control_container {
+    position: relative;
+}
+
 .shop_slider .swiper-container {
+    position: relative;
     padding: 15px 10px 20px;
 }
 
@@ -1686,6 +1691,23 @@ ul {
 .clv_shop_wrapper .shop_slider .slider_arrow:hover>svg>path {
     fill: #fec007;
 }
+
+.slider_arrow {
+    position: absolute;
+    top: 45%;
+    z-index: 2;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.left_arrow {
+    left: -1%;
+}
+.right_arrow {
+    right: -1%;
+}
+
 /********************************************************
 9. shop end
 *******************************************************/
