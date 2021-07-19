@@ -361,7 +361,9 @@
 				</div>
 				<br><br>
 				<div class="row justify-content-center">
-					<a href="paket-wisata.php" class="clv_btn">Lihat Semua Produk</a>
+					<a href="paket-wisata.php" class="clv_btn">Lihat Semua Paket
+						<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ffffff"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"/></svg>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -405,8 +407,8 @@
 											</div>
 										</div>
 										<p style="text-align: justify;"><?php echo substr ($abot['artikel_isi'],0,280);?> . . .</p>
-										<a href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>">read
-											more <span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
+										<a href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"> Selengkapnya
+											 <span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
 									</div>
 								</div>
 							</div>
@@ -441,8 +443,8 @@
 												</div>
 											</div>
 											<p><?php echo substr ($abot['artikel_isi'],0,120);?> . . .</p>
-											<a href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>">read
-												more <span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
+											<a href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>">Selengkapnya
+												 <span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
 										</div>
 									</div>
 								<?php } ?>
