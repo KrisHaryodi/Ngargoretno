@@ -7,8 +7,8 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 if ( !ctype_alnum ($username) OR !ctype_alnum ($password)) {
     echo "<center>LOGIN GAGAL ! <br>
-        username atau password anda tidak benar.<br>
-        atau account anda sedang diblokir.<br>";
+        Username atau password Anda tidak benar.<br>
+        Atau akun Anda sedang diblokir.<br>";
 
 } else {
     $login = mysqli_query($konek,"SELECT * FROM tbl_admin where username='$username' AND password='$password'");
@@ -34,18 +34,18 @@ if ($ketemu>0) {
     }
     else{
         echo "<center>LOGIN GAGAL! <br>
-		Username atau password anda tidak benar.<br>
-		Atau akun anda sedang diblokir.<br>";
-		echo "<a href=index.php><b>ULANGI LAGI</b></a></center>";
+		Username atau password Anda tidak benar.<br>
+		Atau akun Anda sedang diblokir.<br>";
+		echo "<a href=index.php><b>Mohon Coba Login Kembali</b></a></center>";
     }
 
     
 }
 else{
 	echo "<center>LOGIN GAGAL ! <br>
-    username atau password anda tidak benar.<br>
-    atau account anda sedang diblokir.<br>";
-    echo "<a href='index.php'> ULANGI LOGIN </a>";
+    Username atau password Anda tidak benar.<br>
+    Atau account Anda sedang diblokir.<br>";
+    echo "<a href='index.php'> Mohon Coba Login Kembali </a>";
 }
 }
 
