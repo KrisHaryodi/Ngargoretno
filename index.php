@@ -191,7 +191,7 @@
 	<div class="clv_main_wrapper index_v2">
 		<!--Revolution Silder-->
 		<!--About Agriculture-->
-		<div class="clv_about_agriculture_wrapper first_section clv_section">
+		<div class="clv_about_agriculture_wrapper clv_section">
 			<div class="container">
 				<?php
 					include "lib/config.php";
@@ -323,14 +323,14 @@
 		</div>
 
 		<!--Features-->
-		<div class="clv_features_wrapper clv_section">
+		<div class="clv_features_wrapper clv_section paket_wisata_section">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-6 col-md-6">
 						<div class="clv_heading">
-							<h3>Paket Wisata Ngargoretno</h3>
-							<div class="clv_underline"><img src="images/new_underline2.png" alt="gambar_garis_bawah" /></div>
-							<p>Lestari, Makmur, Rahayu.</p>
+							<h3 class="text-white">Paket Wisata Ngargoretno</h3>
+							<div class="clv_underline"><img src="images/new_white_underline2.png" alt="gambar_garis_bawah" /></div>
+							<p class="text-white">Lestari, Makmur, Rahayu.</p>
 						</div>
 					</div>
 				</div>
@@ -348,14 +348,14 @@
 									<img 
 										src="adminkan/img/<?php echo $abot['wisata_foto'];?>" 
 										alt="<?php echo $abot['wisata_nama'];?>" class="img-fluid"
-										style="width: 320px; height: 320px; object-fit: cover;"
 									>
 								</div>
-								<br>
-								<h3><?php echo $abot['wisata_nama'];?></h3>
-								<p><?php echo substr ($abot['wisata_deskripsi'],0,200);?></p>
-								<a href="<?php echo $base_url;?>paket-wisata-single.php?id_wisata=<?php echo $abot['id_wisata'];?>"
-									class="clv_btn">read more</a>
+								<div class="item_desc">
+									<h3><?php echo $abot['wisata_nama'];?></h3>
+									<p><?php echo substr ($abot['wisata_deskripsi'],0,200);?></p>
+									<a href="<?php echo $base_url;?>paket-wisata-single.php?id_wisata=<?php echo $abot['id_wisata'];?>"
+										class="clv_btn">read more</a>
+								</div>
 							</div>
 						</div>
 					<?php } ?>

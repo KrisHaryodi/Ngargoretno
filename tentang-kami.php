@@ -109,7 +109,7 @@
 			</div>
 		</div>
 
-		<div class="clv_about_agriculture_wrapper first_section clv_section">
+		<div class="clv_about_agriculture_wrapper clv_section">
 			<div class="container">
 				<div class="row">
 					<?php

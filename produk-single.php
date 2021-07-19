@@ -136,7 +136,7 @@
         </div>
 
         <!--Product Single-->
-        <div class="product_single_wrapper first_section clv_section">
+        <div class="product_single_wrapper clv_section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-md-7">
