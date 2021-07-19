@@ -383,7 +383,7 @@
 				</div>
 				<div class="agri_blog_inner">
 					<div class="row">
-						<?php
+						<!-- <?php
 							include "lib/config.php";
 							include "lib/koneksi.php";
 							$kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_artikel ORDER BY id_artikel DESC LIMIT 1");
@@ -450,7 +450,7 @@
 									</div>
 								<?php } ?>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
