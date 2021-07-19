@@ -455,6 +455,37 @@
 				</div>
 			</div>
 		</div>
+		
+		<div class="clv_youtube_wrapper clv_section">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-6 col-md-6">
+						<div class="clv_heading">
+							<h3>Ngargoretno di YouTube</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-lg-8">
+						<div class="video-wrapper left">
+							<div class="video-1">
+								<iframe style="width: 100%; height: 405px;" src="https://www.youtube-nocookie.com/embed/29CWSGlUHhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4">
+						<div class="video-wrapper right">
+							<div class="video-2">
+								<iframe style="width: 100%; height: 200px;" src="https://www.youtube-nocookie.com/embed/pQiGynzAngE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<div class="video-3">
+								<iframe style="width: 100%; height: 200px;" src="https://www.youtube-nocookie.com/embed/bPdGJrXD94A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!--Footer-->
 		<div class="clv_footer_wrapper clv_section">
