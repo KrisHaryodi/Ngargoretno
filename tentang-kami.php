@@ -120,7 +120,7 @@
 					?>
 					<div class="col-md-6 col-lg-6">
 						<div class="about_agri_image">
-							<img src="admin/img/<?php echo $abot['profile_foto'];?>" alt="image"
+							<img src="adminkan/img/<?php echo $abot['profile_foto'];?>" alt="image"
 								style="width: 530px; height: 570px; object-fit: cover;">
 						</div>
 					</div>
