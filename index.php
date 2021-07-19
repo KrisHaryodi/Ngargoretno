@@ -76,7 +76,7 @@
 											<li><a href="blog.php">blog</a></li>
 											<li><a href="tentang-kami.php">tentang kami</a></li>
 											<li><a href="#">downloads</a></li>
-											<li><a href="kontak.php" class="clv_btn2">kontak</a></li>
+											<li><a href="kontak.php" class="clv_btn2">kontak kami</a></li>
 										</ul>
 									</div>
 									<div class="cart_nav">
