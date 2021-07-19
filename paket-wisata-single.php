@@ -2,91 +2,90 @@
 <html lang="zxx">
 
 <head>
-    <title> Desa Wisata Ngargoretno </title>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="kamleshyadav">
-    <meta name="MobileOptimized" content="320">
-    <!--Start Style -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
-    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="css/layers.css">
-    <link rel="stylesheet" type="text/css" href="css/navigation.css">
-    <link rel="stylesheet" type="text/css" href="css/settings.css">
-    <link rel="stylesheet" type="text/css" href="css/range.css">
-    <link rel="stylesheet" type="text/css" href="css/nice-select.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- Favicon Link -->
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+	<title> Desa Wisata Ngargoretno </title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="kamleshyadav">
+	<meta name="MobileOptimized" content="320">
+	<!--Start Style -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="css/layers.css">
+	<link rel="stylesheet" type="text/css" href="css/navigation.css">
+	<link rel="stylesheet" type="text/css" href="css/settings.css">
+	<link rel="stylesheet" type="text/css" href="css/range.css">
+	<link rel="stylesheet" type="text/css" href="css/nice-select.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Favicon Link -->
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
-    <!--Div section V3-->
-    <div class="clv_main_wrapper index_v3">
-        <div class="header2_wrapper">
-            <div class="container">
-                <div class="clv_header2">
-                    <div class="row">
-                        <div class="col-lg-2 col-md-2">
-                            <div class="clv_left_header">
-                                <div class="clv_logo">
-                                    <a href="index.php"><img src="images/header-logo.png" alt="Cultivation" /></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-10 col-md-10">
-                            <div class="clv_right_header">
-                                <div class="clv_menu">
-                                    <div class="clv_menu_nav">
-                                        <ul>
-                                            <li class="nav-active"><a href="index.php">home</a></li>
-                                            <li><a href="produk.php">produk</a></li>
-                                            <li><a href="paket-wisata.php">paket wisata</a></li>
-                                            <li><a href="blog.php">blog</a></li>
-                                            <li><a href="tentang-kami.php">tentang kami</a></li>
-                                            <li><a href="kontak.php">kontak</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="cart_nav">
-                                        <ul>
-                                            <li class="menu_toggle">
-                                                <span>
+	<!--Div section V3-->
+	<div class="clv_main_wrapper index_v3">
+		<div class="header2_wrapper">
+			<div class="container">
+				<div class="clv_header2">
+					<div class="row">
+						<div class="col-lg-2 col-md-2">
+							<div class="clv_left_header">
+								<div class="clv_logo">
+									<a href="index.php"><img src="images/header-logo.png" alt="Cultivation" /></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-10 col-md-10">
+							<div class="clv_right_header">
+								<div class="clv_menu">
+									<div class="clv_menu_nav">
+										<ul>
+											<li class="nav-active"><a href="index.php">home</a></li>
+											<li><a href="produk.php">produk</a></li>
+											<li><a href="paket-wisata.php">paket wisata</a></li>
+											<li><a href="blog.php">blog</a></li>
+											<li><a href="tentang-kami.php">tentang kami</a></li>
+											<li><a href="kontak.php" class="clv_btn2">kontak</a></li>
+										</ul>
+									</div>
+									<div class="cart_nav">
+										<ul>
+											<li class="menu_toggle">
+												<span>
 
-                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                        viewBox="0 0 53 53" style="enable-background:new 0 0 53 53;"
-                                                        xml:space="preserve" width="20px" height="20px">
-                                                        <g>
-                                                            <g>
-                                                                <path
-                                                                    d="M2,13.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,13.5,2,13.5z" />
-                                                                <path
-                                                                    d="M2,28.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,28.5,2,28.5z" />
-                                                                <path
-                                                                    d="M2,43.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,43.5,2,43.5z" />
-                                                            </g>
-                                                        </g>
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+													<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 53 53"
+														style="enable-background:new 0 0 53 53;" xml:space="preserve" width="20px" height="20px">
+														<g>
+															<g>
+																<path
+																	d="M2,13.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,13.5,2,13.5z" />
+																<path
+																	d="M2,28.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,28.5,2,28.5z" />
+																<path
+																	d="M2,43.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,43.5,2,43.5z" />
+															</g>
+														</g>
+													</svg>
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    </div>
-    <!--Div section V3-->
-    <?php 
+	</div>
+	<!--Div section V3-->
+	<?php 
         include "lib/config.php";
         include "lib/koneksi.php";
         
@@ -106,100 +105,101 @@
         $foto = $hasilQuery['wisata_foto'];
     ?>
 
-    <!--Div section V2-->
-    <div class="clv_main_wrapper index_v2">
-        <!--Breadcrumb-->
-        <div class="breadcrumb_wrapper">
-            <br><br><br><br><br>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-4">
-                        <div class="breadcrumb_inner">
-                            <h3>Paket Wisata</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="breadcrumb_block">
-                <ul>
-                    <li><a href="index.php">home</a></li>
-                    <li>paket wisata</li>
-                </ul>
-            </div>
-        </div>
+	<!--Div section V2-->
+	<div class="clv_main_wrapper index_v2">
+		<!--Breadcrumb-->
+		<div class="breadcrumb_wrapper">
+			<br><br><br><br><br>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-4">
+						<div class="breadcrumb_inner">
+							<h3>Paket Wisata</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="breadcrumb_block">
+				<ul>
+					<li><a href="index.php">home</a></li>
+					<li>paket wisata</li>
+				</ul>
+			</div>
+		</div>
 
-        <!--Blog With Sidebar-->
-        <div class="blog_sidebar_wrapper clv_section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9 col-md-9">
-                        <div class="blog_left_section">
-                            <div class="blog_section">
-                                <div class="agri_blog_image">
-                                    <!-- 870x410
+		<!--Blog With Sidebar-->
+		<div class="blog_sidebar_wrapper clv_section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9 col-md-9">
+						<div class="blog_left_section">
+							<div class="blog_section">
+								<div class="agri_blog_image">
+									<!-- 870x410
                                     KUDU DI CROP
                                      -->
-                                    <img src="adminkan/img/<?php echo $foto; ?>" alt="image">
-                                </div>
-                                <div class="agri_blog_content">
-                                    <h3><a href=""><?php echo $nama; ?></a></h3>
-                                    <div class="blog_user">
-                                        <a href=""><span>Rp.<?php echo $harga; ?></span></a>
-                                    </div>
-                                    <p><?php echo $deskripsi; ?></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3">
-                        <div class="blog_sidebar">
-                            <div class="sidebar_block">
-                                <div class="sidebar_heading">
-                                    <h3>recent post</h3>
-                                    <img src="images/new_underline3.png" alt="image">
-                                </div>
-                                <div class="sidebar_post">
-                                    <ul>
-                                        <?php
+									<img src="adminkan/img/<?php echo $foto; ?>" alt="image">
+								</div>
+								<div class="agri_blog_content">
+									<h3><a href=""><?php echo $nama; ?></a></h3>
+									<div class="blog_user">
+										<a href=""><span>Rp.<?php echo $harga; ?></span></a>
+									</div>
+									<p><?php echo $deskripsi; ?></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3">
+						<div class="blog_sidebar">
+							<div class="sidebar_block">
+								<div class="sidebar_heading">
+									<h3>recent post</h3>
+									<img src="images/new_underline3.png" alt="image">
+								</div>
+								<div class="sidebar_post">
+									<ul>
+										<?php
                                             include "lib/config.php";
                                             include "lib/koneksi.php";
                                             $kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_wisata ORDER BY id_wisata DESC LIMIT 10");
                                             while ($abot=mysqli_fetch_array($kueriAbout)) {
                                         ?>
-                                        <li>
-                                            <div class="post_image">
-                                                <img src="adminkan/img/<?php echo $abot['wisata_foto'];?>" alt="image"
-                                                    style="width: 75px; height: 65px; object-fit: cover;">
-                                            </div>
-                                            <div class="post_content">
-                                                <p>Rp.<?php echo $abot['wisata_harga'];?></p>
-                                                <a
-                                                    href="<?php echo $base_url;?>paket-wisata-single.php?id_wisata=<?php echo $abot['id_wisata'];?>"><?php echo $abot['wisata_nama'];?></a>
-                                            </div>
-                                        </li>
-                                        <?php } ?>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+										<li>
+											<div class="post_image">
+												<img src="adminkan/img/<?php echo $abot['wisata_foto'];?>" alt="image"
+													style="width: 75px; height: 65px; object-fit: cover;">
+											</div>
+											<div class="post_content">
+												<p>Rp.<?php echo $abot['wisata_harga'];?></p>
+												<a
+													href="<?php echo $base_url;?>paket-wisata-single.php?id_wisata=<?php echo $abot['id_wisata'];?>"><?php echo $abot['wisata_nama'];?></a>
+											</div>
+										</li>
+										<?php } ?>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <!--Footer-->
-        <div class="clv_footer_wrapper clv_section">
+		<!--Footer-->
+		<div class="clv_footer_wrapper clv_section">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3 col-lg-3">
 						<div class="footer_block">
-							<div class="footer_logo"><a href="javascript:;"><img src="images/footer-logo.png" alt="image" /></a></div>
+							<div class="footer_logo"><a href="javascript:;"><img src="images/footer-logo.png"
+										alt="logo_ngargoretno" /></a></div>
 							<?php
-                                include "lib/config.php";
-                                include "lib/koneksi.php";
-                                $kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_profile");
-                                while ($abot=mysqli_fetch_array($kueriAbout)) {
-                            ?>
+								include "lib/config.php";
+								include "lib/koneksi.php";
+								$kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_profile");
+								while ($abot=mysqli_fetch_array($kueriAbout)) {
+							?>
 							<p><?php echo substr ($abot['profile_isi'],0,387);?></p>
 							<?php } ?>
 						</div>
@@ -208,7 +208,7 @@
 						<div class="footer_block">
 							<div class="footer_heading">
 								<h4>recent post</h4>
-								<img src="images/new_underline3.png" alt="image" />
+								<img src="images/new_underline3.png" alt="gambar_garis_bawah" />
 								<div class="footer_slider_arrows">
 									<span class="footer_arrow footer_left">
 										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6px"
@@ -238,16 +238,14 @@
 										<div class="swiper-slide">
 											<div class="footer_post_slide">
 												<div class="footer_post_image">
-													<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="image"
+													<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>"
+														alt="<?php echo $abot['artikel_judul'];?>"
 														style="width: 75px; height: 65px; object-fit: cover;">
 												</div>
 												<div class="footer_post_content">
 													<span><?php echo $abot['artikel_tgl'];?></span>
-													<p>
-														<a
-															href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>">
-															<?php echo $abot['artikel_judul'];?>
-														</a>
+													<p><a
+															href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"><?php echo $abot['artikel_judul'];?></a>
 													</p>
 												</div>
 											</div>
@@ -262,25 +260,48 @@
 						<div class="footer_block">
 							<div class="footer_heading">
 								<h4>quick link</h4>
-								<img src="images/new_underline3.png" alt="image" />
+								<img src="images/new_underline3.png" alt="gambar_garis_bawah" />
 							</div>
 							<ul class="useful_links">
 								<li>
-									<a href="produk.php"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span>Produk</a>
+									<a href="produk.php">
+										<span>
+											<i class="fa fa-angle-right" aria-hidden="true"></i>
+										</span>
+										Produk
+									</a>
 								</li>
 								<li>
-									<a href="paket-wisata.php"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span>Paket
-										Wisata</a>
+									<a href="paket-wisata.php">
+										<span>
+											<i class="fa fa-angle-right" aria-hidden="true"></i>
+										</span>
+										Paket Wisata
+									</a>
 								</li>
 								<li>
-									<a href="blog.php"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span>Blog</a>
+									<a href="blog.php">
+										<span>
+											<i class="fa fa-angle-right" aria-hidden="true"></i>
+										</span>
+										Blog
+									</a>
 								</li>
 								<li>
-									<a href="tentang-kami.php"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span>Tentang
-										Kami</a>
+									<a href="tentang-kami.php">
+										<span>
+											<i class="fa fa-angle-right" aria-hidden="true"></i>
+										</span>
+										Tentang Kami
+									</a>
 								</li>
 								<li>
-									<a href="kontak.php"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span>Kontak</a>
+									<a href="kontak.php">
+										<span>
+											<i class="fa fa-angle-right" aria-hidden="true"></i>
+										</span>
+										Kontak
+									</a>
 								</li>
 							</ul>
 						</div>
@@ -289,14 +310,14 @@
 						<div class="footer_block">
 							<div class="footer_heading">
 								<h4>contact</h4>
-								<img src="images/new_underline3.png" alt="image" />
+								<img src="images/new_underline3.png" alt="gambar_garis_bawah" />
 							</div>
 							<?php
-                                include "lib/config.php";
-                                include "lib/koneksi.php";
-                                $kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_contact");
-                                while ($abot=mysqli_fetch_array($kueriAbout)) {
-                            ?>
+                include "lib/config.php";
+                include "lib/koneksi.php";
+                $kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_contact");
+                while ($abot=mysqli_fetch_array($kueriAbout)) {
+							?>
 							<p>
 								<span>
 									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px"
@@ -356,11 +377,11 @@
 							</p>
 							<?php } ?>
 							<?php
-                                include "lib/config.php";
-                                include "lib/koneksi.php";
-                                $kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_sosmed");
-                                while ($abot=mysqli_fetch_array($kueriAbout)) {
-                            ?>
+                include "lib/config.php";
+                include "lib/koneksi.php";
+                $kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_sosmed");
+                while ($abot=mysqli_fetch_array($kueriAbout)) {
+            	?>
 							<ul class="agri_social_links">
 								<li>
 									<a href="https://<?php echo $abot['sosmed_facebook'];?>">
@@ -388,11 +409,13 @@
 					</div>
 				</div>
 				<center>
-					<img src="images/logo/kemendikbud.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;">
-					<img src="images/logo/favicon.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;">
-					<img src="images/logo/ugm.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;">
-					<img src="images/logo/bem.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;">
-					<img src="images/logo/pdm.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;">
+					<img src="images/logo/kemendikbud.png" alt="logo_kemendikbud"
+						style="width: 75px; height: 65px; object-fit: contain;">
+					<img src="images/logo/favicon.png" alt="logo_ngargoretno"
+						style="width: 75px; height: 65px; object-fit: contain;">
+					<img src="images/logo/ugm.png" alt="logo_ugm" style="width: 75px; height: 65px; object-fit: contain;">
+					<img src="images/logo/bem.png" alt="logo_bem" style="width: 75px; height: 65px; object-fit: contain;">
+					<img src="images/logo/pdm.png" alt="logo_pdm" style="width: 75px; height: 65px; object-fit: contain;">
 				</center>
 			</div>
 		</div>
@@ -447,29 +470,29 @@
 			</div>
 		</div>
 	</div>
-    <!--Div section V2-->
+	<!--Div section V2-->
 
-    <!--Main js file Style-->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/magnific-popup.min.js"></script>
-    <script src="js/jquery.themepunch.tools.min.js"></script>
-    <script src="js/jquery.themepunch.revolution.min.js"></script>
-    <script src="js/jquery.appear.js"></script>
-    <script src="js/jquery.countTo.js"></script>
-    <script src="js/isotope.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/range.js"></script>
-    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-    <script src="js/revolution.extension.actions.min.js"></script>
-    <script src="js/revolution.extension.kenburn.min.js"></script>
-    <script src="js/revolution.extension.layeranimation.min.js"></script>
-    <script src="js/revolution.extension.migration.min.js"></script>
-    <script src="js/revolution.extension.parallax.min.js"></script>
-    <script src="js/revolution.extension.slideanims.min.js"></script>
-    <script src="js/revolution.extension.video.min.js"></script>
-    <script src="js/custom.js"></script>
+	<!--Main js file Style-->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/magnific-popup.min.js"></script>
+	<script src="js/jquery.themepunch.tools.min.js"></script>
+	<script src="js/jquery.themepunch.revolution.min.js"></script>
+	<script src="js/jquery.appear.js"></script>
+	<script src="js/jquery.countTo.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/nice-select.min.js"></script>
+	<script src="js/range.js"></script>
+	<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+	<script src="js/revolution.extension.actions.min.js"></script>
+	<script src="js/revolution.extension.kenburn.min.js"></script>
+	<script src="js/revolution.extension.layeranimation.min.js"></script>
+	<script src="js/revolution.extension.migration.min.js"></script>
+	<script src="js/revolution.extension.parallax.min.js"></script>
+	<script src="js/revolution.extension.slideanims.min.js"></script>
+	<script src="js/revolution.extension.video.min.js"></script>
+	<script src="js/custom.js"></script>
 </body>
 
 </html>

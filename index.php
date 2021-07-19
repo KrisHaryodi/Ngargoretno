@@ -74,7 +74,7 @@
 											<li><a href="paket-wisata.php">paket wisata</a></li>
 											<li><a href="blog.php">blog</a></li>
 											<li><a href="tentang-kami.php">tentang kami</a></li>
-											<li><a href="kontak.php">kontak</a></li>
+											<li><a href="kontak.php" class="clv_btn2">kontak</a></li>
 										</ul>
 									</div>
 									<div class="cart_nav">
@@ -192,22 +192,31 @@
 					$kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_profile");
 					while ($abot=mysqli_fetch_array($kueriAbout)) {
 				?>
+					<div class="row justify-content-center">
+						<div class="col-lg-6 col-md-6">
+							<div class="clv_heading">
+								<h3>Deswita Ngargoretno</h3>
+								<div class="clv_underline"><img src="images/new_underline2.png" alt="gambar_garis_bawah" /></div>
+								<p>Lestari, Makmur, Rahayu.</p>
+							</div>
+						</div>
+					</div>
 					<div class="row">
 						<div class="col-md-6 col-lg-6">
 							<div class="about_agri_image">
 								<img 
 									src="adminkan/img/<?php echo $abot['profile_foto'];?>" 
-									alt="image"
+									alt="foto_profil"
 									style="width: 530px; height: 570px; object-fit: cover;"
 								>
 							</div>
 						</div>
 						<div class="col-md-6 col-lg-6">
 							<div class="about_agri_content">
-								<h2><?php echo $abot['profile_judul'];?></h2>
+								<!-- <h2><?php echo $abot['profile_judul'];?></h2> -->
 								<p><?php echo substr ($abot['profile_isi'],0,387);?></p>
 								<div class="auth_sign_block">
-									<a href="tentang-kami.php" class="clv_btn">read more</a>
+									<a href="tentang-kami.php" class="clv_btn">Selengkapnya</a>
 								</div>
 							</div>
 						</div>
@@ -223,7 +232,7 @@
 					<div class="col-lg-6 col-md-6">
 						<div class="clv_heading">
 							<h3>Produk Ngargoretno</h3>
-							<div class="clv_underline"><img src="images/new_underline2.png" alt="image" /></div>
+							<div class="clv_underline"><img src="images/new_underline2.png" alt="gambar_garis_bawah" /></div>
 							<p>Lestari, Makmur, Rahayu.</p>
 						</div>
 					</div>
@@ -244,7 +253,7 @@
 												<div class="item_image">
 													<img 
 														src="adminkan/img/<?php echo $abot['produk_sampul'];?>" 
-														alt="image" 
+														alt="<?php echo $abot['produk_nama'];?>" 
 														class="img-fluid"
 														style="width: 173px; height: 173px; object-fit: cover;"
 													>
@@ -302,7 +311,7 @@
 					<div class="col-lg-6 col-md-6">
 						<div class="clv_heading">
 							<h3>Paket Wisata Ngargoretno</h3>
-							<div class="clv_underline"><img src="images/new_underline2.png" alt="image" /></div>
+							<div class="clv_underline"><img src="images/new_underline2.png" alt="gambar_garis_bawah" /></div>
 							<p>Lestari, Makmur, Rahayu.</p>
 						</div>
 					</div>
@@ -320,7 +329,7 @@
 								<div class="item_image">
 									<img 
 										src="adminkan/img/<?php echo $abot['wisata_foto'];?>" 
-										alt="image" class="img-fluid"
+										alt="<?php echo $abot['wisata_nama'];?>" class="img-fluid"
 										style="width: 320px; height: 320px; object-fit: cover;"
 									>
 								</div>
@@ -347,7 +356,7 @@
 					<div class="col-lg-6 col-md-6">
 						<div class="clv_heading">
 							<h3>Tulisan ngargoretno</h3>
-							<div class="clv_underline"><img src="images/new_underline2.png" alt="image" /></div>
+							<div class="clv_underline"><img src="images/new_underline2.png" alt="gambar_garis_bawah" /></div>
 							<p>Lestari, Makmur, Rahayu.</p>
 						</div>
 					</div>
@@ -363,7 +372,7 @@
 							<div class="col-lg-6 col-md-6">
 								<div class="blog_section">
 									<div class="agri_blog_image">
-										<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="image">
+										<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="<?php echo $abot['artikel_judul'];?>">
 										<span class="agri_blog_date"><?php echo $abot['artikel_tgl'];?></span>
 									</div>
 									<div class="agri_blog_content">
@@ -374,7 +383,7 @@
 										</h3>
 										<div class="blog_user">
 											<div class="user_name">
-												<img src="images/user.png" alt="image" />
+												<img src="images/user.png" alt="gambar_penulis" />
 												<a href="javascript:;"><span><?php echo $abot['artikel_penulis'];?></span></a>
 											</div>
 										</div>
@@ -397,7 +406,7 @@
 										<div class="right_blog_image">
 											<img 
 												src="adminkan/img/<?php echo $abot['artikel_foto'];?>" 
-												alt="image"
+												alt="<?php echo $abot['artikel_judul'];?>"
 												style="width: 230px; height: 285px; object-fit: cover;"
 											/>
 										</div>
@@ -410,7 +419,7 @@
 											</h3>
 											<div class="blog_user">
 												<div class="user_name">
-													<img src="images/user.png" alt="image" />
+													<img src="images/user.png" alt="gambar_penulis" />
 													<a href="javascript:;"><span><?php echo $abot['artikel_penulis'];?></span></a>
 												</div>
 											</div>
@@ -433,7 +442,7 @@
 				<div class="row">
 					<div class="col-md-3 col-lg-3">
 						<div class="footer_block">
-							<div class="footer_logo"><a href="javascript:;"><img src="images/footer-logo.png" alt="image" /></a></div>
+							<div class="footer_logo"><a href="javascript:;"><img src="images/footer-logo.png" alt="logo_ngargoretno" /></a></div>
 							<?php
 								include "lib/config.php";
 								include "lib/koneksi.php";
@@ -448,7 +457,7 @@
 						<div class="footer_block">
 							<div class="footer_heading">
 								<h4>recent post</h4>
-								<img src="images/new_underline3.png" alt="image" />
+								<img src="images/new_underline3.png" alt="gambar_garis_bawah" />
 								<div class="footer_slider_arrows">
 									<span class="footer_arrow footer_left">
 										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6px"
@@ -482,7 +491,7 @@
 											<div class="swiper-slide">
 												<div class="footer_post_slide">
 													<div class="footer_post_image">
-														<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="image"
+														<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="<?php echo $abot['artikel_judul'];?>"
 															style="width: 75px; height: 65px; object-fit: cover;">
 													</div>
 													<div class="footer_post_content">
@@ -503,7 +512,7 @@
 						<div class="footer_block">
 							<div class="footer_heading">
 								<h4>quick link</h4>
-								<img src="images/new_underline3.png" alt="image" />
+								<img src="images/new_underline3.png" alt="gambar_garis_bawah" />
 							</div>
 							<ul class="useful_links">
 								<li>
@@ -553,7 +562,7 @@
 						<div class="footer_block">
 							<div class="footer_heading">
 								<h4>contact</h4>
-								<img src="images/new_underline3.png" alt="image" />
+								<img src="images/new_underline3.png" alt="gambar_garis_bawah" />
 							</div>
 							<?php
                 include "lib/config.php";
@@ -649,11 +658,11 @@
 					</div>
 				</div>
 				<center>
-					<img src="images/logo/kemendikbud.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;">
-					<img src="images/logo/favicon.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;">
-					<img src="images/logo/ugm.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;">
-					<img src="images/logo/bem.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;">
-					<img src="images/logo/pdm.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;">
+					<img src="images/logo/kemendikbud.png" alt="logo_kemendikbud" style="width: 75px; height: 65px; object-fit: contain;">
+					<img src="images/logo/favicon.png" alt="logo_ngargoretno" style="width: 75px; height: 65px; object-fit: contain;">
+					<img src="images/logo/ugm.png" alt="logo_ugm" style="width: 75px; height: 65px; object-fit: contain;">
+					<img src="images/logo/bem.png" alt="logo_bem" style="width: 75px; height: 65px; object-fit: contain;">
+					<img src="images/logo/pdm.png" alt="logo_pdm" style="width: 75px; height: 65px; object-fit: contain;">
 				</center>
 			</div>
 		</div>

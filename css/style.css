@@ -356,7 +356,7 @@ ul {
     font-size: 16px;
     font-weight: 400;
     color: #ffffff;
-    padding: 5px 10px;
+    margin: 5px 10px;
     text-transform: capitalize;
     position: relative;
     font-family: 'Source Sans Pro', sans-serif;
@@ -3879,7 +3879,8 @@ ul {
 }
 
 .index_v3 .clv_right_header .clv_menu .clv_menu_nav>ul>li:last-child>a {
-    padding-right: 0;
+    margin-right: 0;
+    color: #fff;
 }
 
 .index_v3 .clv_right_header .clv_menu .clv_menu_nav>ul>li>a:hover {
