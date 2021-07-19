@@ -21,6 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="css/range.css">
 	<link rel="stylesheet" type="text/css" href="css/nice-select.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- Favicon Link -->
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
 	<?php 
@@ -255,7 +256,7 @@
 														src="adminkan/img/<?php echo $abot['produk_sampul'];?>" 
 														alt="<?php echo $abot['produk_nama'];?>" 
 														class="img-fluid"
-														style="width: 173px; height: 173px; object-fit: cover;"
+														style="width: 100%; height: 173px; object-fit: cover; border-radius: 8px 8px 0px 0px;"
 													>
 												</div>
 												<div class="item_details">
@@ -296,7 +297,10 @@
 							<br>
 							<br>
 							<div class="row justify-content-center">
-								<a href="produk.php" class="clv_btn">Lihat Semua Produk</a>
+								<a href="produk.php" class="clv_btn">
+									Lihat Semua Produk
+									<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ffffff"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"/></svg>
+								</a>
 							</div>
 						</div>
 					</div>
