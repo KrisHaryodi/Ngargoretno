@@ -336,29 +336,54 @@
 				</div>
 				<br>
 				<div class="row">
-					<?php
-						include "lib/config.php";
-						include "lib/koneksi.php";
-						$kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_wisata ORDER BY id_wisata DESC LIMIT 3");
-						while ($abot=mysqli_fetch_array($kueriAbout)) {
-					?>
-						<div class="col-md-4 col-lg-4">
-							<div class="feature_block">
-								<div class="item_image">
-									<img 
-										src="adminkan/img/<?php echo $abot['wisata_foto'];?>" 
-										alt="<?php echo $abot['wisata_nama'];?>" class="img-fluid"
-									>
+					<div class="col-lg-12 col-md-12">
+						<div class="blog_slider">
+							<div class="swiper_control_container">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<?php
+											include "lib/config.php";
+											include "lib/koneksi.php";
+											$kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_wisata ORDER BY id_wisata DESC LIMIT 6");
+											while ($abot=mysqli_fetch_array($kueriAbout)) {
+										?>
+											<div class="swiper-slide">
+												<div class="feature_block travel_slide">
+													<div class="item_image">
+														<img 
+															src="adminkan/img/<?php echo $abot['wisata_foto'];?>" 
+															alt="<?php echo $abot['wisata_nama'];?>" class="img-fluid"
+														>
+													</div>
+													<div class="item_desc">
+														<h3><?php echo $abot['wisata_nama'];?></h3>
+														<?php echo substr ($abot['wisata_deskripsi'],0,100);?>
+														<a 
+															href="<?php echo $base_url;?>paket-wisata-single.php?id_wisata=<?php echo $abot['id_wisata'];?>"
+															class="clv_btn"
+														>
+															Selengkapnya
+														</a>
+													</div>
+												</div>
+											</div>
+										<?php } ?>
+									</div>
 								</div>
-								<div class="item_desc">
-									<h3><?php echo $abot['wisata_nama'];?></h3>
-									<p><?php echo substr ($abot['wisata_deskripsi'],0,200);?></p>
-									<a href="<?php echo $base_url;?>paket-wisata-single.php?id_wisata=<?php echo $abot['id_wisata'];?>"
-										class="clv_btn">read more</a>
-								</div>
+								<!-- Add Arrows -->
+								<span class="slider_arrow travel_packet_left left_arrow">
+									<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+										<path fill="#000" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+									</svg>
+								</span>
+								<span class="slider_arrow travel_packet_right right_arrow">
+									<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+										<path fill="#000" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+									</svg>
+								</span>
 							</div>
 						</div>
-					<?php } ?>
+					</div>
 				</div>
 				<br><br>
 				<div class="row justify-content-center">
@@ -383,74 +408,58 @@
 				</div>
 				<div class="agri_blog_inner">
 					<div class="row">
-						<!-- <?php
-							include "lib/config.php";
-							include "lib/koneksi.php";
-							$kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_artikel ORDER BY id_artikel DESC LIMIT 1");
-							while ($abot=mysqli_fetch_array($kueriAbout)) {
-            ?>
-							<div class="col-lg-6 col-md-6">
-								<div class="blog_section">
-									<div class="agri_blog_image">
-										<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="<?php echo $abot['artikel_judul'];?>">
-										<span class="agri_blog_date"><?php echo $abot['artikel_tgl'];?></span>
-									</div>
-									<div class="agri_blog_content">
-										<h3>
-											<a href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>">
-												<?php echo $abot['artikel_judul'];?>
-											</a>
-										</h3>
-										<div class="blog_user">
-											<div class="user_name">
-												<img src="images/user.png" alt="gambar_penulis" />
-												<a href="javascript:;"><span><?php echo $abot['artikel_penulis'];?></span></a>
-											</div>
+						<div class="col-lg-12 col-md-12">
+							<div class="blog_slider">
+								<div class="swiper_control_container">
+									<div class="swiper-container">
+										<div class="swiper-wrapper">
+											<?php
+												include "lib/config.php";
+												include "lib/koneksi.php";
+												$kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_artikel ORDER BY id_artikel DESC LIMIT 6");
+												while ($abot=mysqli_fetch_array($kueriAbout)) {
+											?>
+												<div class="swiper-slide">
+													<div class="blog_section">
+														<div class="agri_blog_image">
+															<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="<?php echo $abot['artikel_judul'];?>">
+															<span class="agri_blog_date"><?php echo $abot['artikel_tgl'];?></span>
+														</div>
+														<div class="agri_blog_content">
+															<h3>
+																<a href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>">
+																	<?php echo $abot['artikel_judul'];?>
+																</a>
+															</h3>
+															<div class="blog_user">
+																<div class="user_name">
+																	<img src="images/user.png" alt="gambar_penulis" />
+																	<a href="javascript:;"><span><?php echo $abot['artikel_penulis'];?></span></a>
+																</div>
+															</div>
+															<p style="text-align: justify;"><?php echo substr ($abot['artikel_isi'],0,280);?> . . .</p>
+															<a href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"> Selengkapnya
+																<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
+														</div>
+													</div>
+												</div>
+											<?php } ?>
 										</div>
-										<p style="text-align: justify;"><?php echo substr ($abot['artikel_isi'],0,280);?> . . .</p>
-										<a href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"> Selengkapnya
-											 <span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
 									</div>
+									<!-- Add Arrows -->
+									<span class="slider_arrow blog_left left_arrow">
+										<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+											<path fill="#000" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+										</svg>
+									</span>
+									<span class="slider_arrow blog_right right_arrow">
+										<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+											<path fill="#000" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+										</svg>
+									</span>
 								</div>
 							</div>
-						<?php } ?>
-						<div class="col-lg-6 col-md-6">
-							<div class="right_blog_section">
-								<?php
-									include "lib/config.php";
-									include "lib/koneksi.php";
-									$kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_artikel ORDER BY id_artikel DESC LIMIT 2");
-									while ($abot=mysqli_fetch_array($kueriAbout)) {
-								?>
-									<div class="right_blog_block">
-										<div class="right_blog_image">
-											<img 
-												src="adminkan/img/<?php echo $abot['artikel_foto'];?>" 
-												alt="<?php echo $abot['artikel_judul'];?>"
-												style="width: 230px; height: 285px; object-fit: cover;"
-											/>
-										</div>
-										<div class="right_blog_content">
-											<span class="agri_blog_date"><?php echo $abot['artikel_tgl'];?></span>
-											<h3>
-												<a href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>">
-													<?php echo $abot['artikel_judul'];?>
-												</a>
-											</h3>
-											<div class="blog_user">
-												<div class="user_name">
-													<img src="images/user.png" alt="gambar_penulis" />
-													<a href="javascript:;"><span><?php echo $abot['artikel_penulis'];?></span></a>
-												</div>
-											</div>
-											<p><?php echo substr ($abot['artikel_isi'],0,120);?> . . .</p>
-											<a href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>">Selengkapnya
-												 <span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
-										</div>
-									</div>
-								<?php } ?>
-							</div>
-						</div> -->
+						</div>
 					</div>
 				</div>
 			</div>

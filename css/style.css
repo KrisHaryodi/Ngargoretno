@@ -1495,13 +1495,8 @@ ul {
     padding: 15px 10px 20px;
 }
 
-.shop_slider .swiper-slide {
-    /* padding: 10px; */
-}
-
 .shop_slider .shop_slide {
     text-align: center;
-    /* padding: 60px 20px 28px; */
     position: relative;
     border-radius: 10px;
     background-color: #ffffff;
@@ -2791,6 +2786,13 @@ ul {
     padding: 20px;
 }
 
+.item_desc h3 {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
 .item_desc a {
     display: block;
 }
@@ -3248,6 +3250,7 @@ ul {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     padding: 24px;
+    height: 130px;
 }
 
 .index_v2 .shop_slider .shop_slide .item_name {
@@ -3313,22 +3316,15 @@ ul {
 /*Agriculture Shop End*/
 /*Agriculture Blog Start*/
 
-/* .agri_blog_wrapper {
-    padding-top: 88px;
-    padding-bottom: 95px;
-} */
-
-.agri_blog_inner {
-    margin-top: 25px;
-}
-
 .blog_section .agri_blog_image {
     position: relative;
+    overflow: hidden;
+    height: 200px;
 }
 
 .blog_section .agri_blog_image img {
     width: 100%;
-    border-radius: 10px 10px 0px 0px;
+    height: auto;
 }
 
 .blog_section .agri_blog_image .agri_blog_date {
@@ -11880,9 +11876,6 @@ ul {
     .index_v2 .shop_slider .shop_slide .item_details h6 {
         display: block;
         float: none;
-    }
-    .index_v2 .shop_slider .shop_slide .item_details {
-        text-align: center;
     }
     .clv_features_wrapper .feature_block h3 {
         font-size: 20px;
