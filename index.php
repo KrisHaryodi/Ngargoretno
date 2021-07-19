@@ -128,7 +128,7 @@
 											href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"
 											class="clv_btn2"
 										>
-											read more
+										Let's Go!
 										</a>
 									</div>
 								</div>
@@ -217,7 +217,7 @@
 								<!-- <h2><?php echo $abot['profile_judul'];?></h2> -->
 								<p><?php echo substr ($abot['profile_isi'],0,387);?></p>
 								<div class="auth_sign_block">
-									<a href="tentang-kami.php" class="clv_btn">Let's Go!
+									<a href="tentang-kami.php" class="clv_btn">Selengkapnya
 										<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ffffff"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"/></svg>
 									</a>
 								</div>
