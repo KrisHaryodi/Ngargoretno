@@ -649,11 +649,11 @@
 					</div>
 				</div>
 				<center>
-					<img src="images/logo/kemendikbud.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;">
-					<img src="images/logo/favicon.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;">
-					<img src="images/logo/ugm.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;">
-					<img src="images/logo/bem.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;">
-					<img src="images/logo/pdm.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;">
+					<a href="https://www.kemdikbud.go.id/" target="_blank" rel="noopener noreferrer"><img src="images/logo/kemendikbud.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;"></a>
+					<a href="https://desangargoretno.com/" target="_blank" rel="noopener noreferrer"><img src="images/logo/favicon.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;"></a>
+					<a href="https://ugm.ac.id/" target="_blank" rel="noopener noreferrer"><img src="images/logo/ugm.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;"></a>
+					<a href="https://bemkm.ugm.ac.id/" target="_blank" rel="noopener noreferrer"><img src="images/logo/bem.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;"></a>
+					<a href="https://www.instagram.com/pdm_ugm/" target="_blank" rel="noopener noreferrer"><img src="images/logo/pdm.png" alt="image" style="width: 75px; height: 65px; object-fit: contain;"></a>
 				</center>
 			</div>
 		</div>
