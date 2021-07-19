@@ -269,8 +269,8 @@
 												</div>
 												<div class="item_details">
 													<div class="item_name">
-														<h5><?php echo $abot['produk_nama'];?></h5>
-														<h3>Rp.<?php echo $abot['produk_harga'];?></h3>
+														<h3><?php echo $abot['produk_nama'];?></h5>
+														<h5>Rp.<?php echo $abot['produk_harga'];?></h3>
 													</div>
 												</div>
 												<div class="item_overlay">
