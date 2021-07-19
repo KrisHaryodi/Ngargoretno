@@ -177,7 +177,7 @@ Assigned to: Theme Forest
 				spaceBetween: 15,
 				loop: true,
 				autoplay: {
-					delay: 2500,
+					delay: 100000000000,
 					disableOnInteraction: false,
 				},
 				navigation: {

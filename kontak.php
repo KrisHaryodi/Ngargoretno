@@ -108,7 +108,7 @@
 		</div>
 
 		<!--Contact Block-->
-		<div class="contact_blocks_wrapper clv_section">
+		<div class="contact_blocks_wrapper first_section clv_section">
 			<div class="container">
 				<div class="row">
 					<?php

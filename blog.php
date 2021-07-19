@@ -111,7 +111,7 @@
         </div>
 
         <!--Blog With Sidebar-->
-        <div class="blog_sidebar_wrapper clv_section">
+        <div class="blog_sidebar_wrapper first_section clv_section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9 col-md-9">

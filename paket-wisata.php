@@ -109,7 +109,7 @@
 		</div>
 
 		<!--Paket Wisata-->
-		<div class="clv_features_wrapper clv_section">
+		<div class="clv_features_wrapper first_section clv_section">
 			<div class="container">
 				<div class="row">
 					<?php

@@ -127,7 +127,10 @@
 											href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"
 											class="clv_btn2"
 										>
-											read more
+											Selengkapnya
+											<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+												<path fill="currentColor" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+											</svg>
 										</a>
 									</div>
 								</div>
@@ -150,7 +153,10 @@
 											href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"
 											class="clv_btn2"
 										>
-											read more
+											Selengkapnya
+											<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+												<path fill="currentColor" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+											</svg>
 										</a>
 									</div>
 								</div>
@@ -184,7 +190,7 @@
 	<div class="clv_main_wrapper index_v2">
 		<!--Revolution Silder-->
 		<!--About Agriculture-->
-		<div class="clv_about_agriculture_wrapper clv_section">
+		<div class="clv_about_agriculture_wrapper first_section clv_section">
 			<div class="container">
 				<?php
 					include "lib/config.php";
@@ -201,22 +207,25 @@
 							</div>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row align-items-center">
 						<div class="col-md-6 col-lg-6">
 							<div class="about_agri_image">
 								<img 
 									src="adminkan/img/<?php echo $abot['profile_foto'];?>" 
 									alt="foto_profil"
-									style="width: 530px; height: 570px; object-fit: cover;"
 								>
 							</div>
 						</div>
 						<div class="col-md-6 col-lg-6">
 							<div class="about_agri_content">
-								<!-- <h2><?php echo $abot['profile_judul'];?></h2> -->
 								<p><?php echo substr ($abot['profile_isi'],0,387);?></p>
 								<div class="auth_sign_block">
-									<a href="tentang-kami.php" class="clv_btn">Selengkapnya</a>
+									<a href="tentang-kami.php" class="clv_btn">
+										Selengkapnya
+										<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+											<path fill="currentColor" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+										</svg>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -226,7 +235,7 @@
 		</div>
 
 		<!--Shop-->
-		<div class="agri_blog_wrapper clv_section">
+		<div class="agri_blog_wrapper clv_section blog_section">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-6 col-md-6">
@@ -255,7 +264,6 @@
 														src="adminkan/img/<?php echo $abot['produk_sampul'];?>" 
 														alt="<?php echo $abot['produk_nama'];?>" 
 														class="img-fluid"
-														style="width: 173px; height: 173px; object-fit: cover;"
 													>
 												</div>
 												<div class="item_details">
@@ -296,7 +304,12 @@
 							<br>
 							<br>
 							<div class="row justify-content-center">
-								<a href="produk.php" class="clv_btn">Lihat Semua Produk</a>
+								<a href="produk.php" class="clv_btn">
+									Lihat Semua Produk
+									<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+										<path fill="currentColor" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+									</svg>
+								</a>
 							</div>
 						</div>
 					</div>
