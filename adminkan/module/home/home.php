@@ -76,8 +76,41 @@ if(!isset($_SESSION)) {
 					        </table>
 				        </div>
 			        </div>
-                    
-                    
+					<div class="box">
+						<div class="box-header">
+						<h4><strong>Header</strong></h4>
+						</div>
+						<div class="box-body table-responsive no-padding">
+						<table class="table table-hover">
+							<tbody>
+							<tr>
+								<th style="width: 50px">ID</th>
+								<th>Foto Profile Desa Ngargoretno</th>
+								<th style="width: 110px">Aksi</th>
+							</tr>
+									<?php
+									include "lib/config.php";
+									include "lib/koneksi.php";
+									$kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_header");
+									$n = 1;
+									while ($abot=mysqli_fetch_array($kueriAbout)) {
+									?>
+							<tr>
+								<td><?= $n ?></td>
+								<td><img src="img/<?php echo $abot['gambar_header'];?>" height="100" width="150"></td>
+								<td>
+								<div class="btn-group">
+								<a href="<?php echo $super_url;?>adminweb.php?module=edit_header&id_header=<?php echo $abot['id_header'];?>">
+									<button class='btn btn-warning'><i class='fa fa-pencil'></i></button>
+								</a>
+								</div>
+								</td>
+							</tr>
+							<?php $n++; } ?>
+							</tbody>
+						</table>
+						</div>
+					</div>                 
 		        </div>
 	        </div>
       </section>
