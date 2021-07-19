@@ -75,7 +75,8 @@
 											<li><a href="paket-wisata.php">paket wisata</a></li>
 											<li><a href="blog.php">blog</a></li>
 											<li><a href="tentang-kami.php">tentang kami</a></li>
-											<li><a href="kontak.php" class="clv_btn2">kontak</a></li>
+											<li><a href="#">downloads</a></li>
+											<li><a href="kontak.php" class="clv_btn2">kontak kami</a></li>
 										</ul>
 									</div>
 									<div class="cart_nav">
@@ -315,7 +316,7 @@
 							</div>
 							<center>
 								<a href="https://shopee.co.id/desa_ngargoretno" target="_blank" rel="noopener noreferrer"><img src="adminkan/img/image 18.png" alt="logo_shopee" style="width: 13%; object-fit: contain;"></a> &emsp; &emsp; 
-								<a href="https://www.tokopedia.com/desangargoretno" target="_blank" rel="noopener noreferrer"><img src="adminkan/img/image 19.png" alt="logo_tokopedia" style="width: 13%; object-fit: contain;"></a>
+								<a href="https://www.tokopedia.com/desangargoretno" target="_blank" rel="noopener noreferrer"><img src="adminkan/img/image 19.png" alt="logo_tokopedia" style="width: 14%; object-fit: contain;"></a>
 							</center>
 						</div>
 					</div>
@@ -452,6 +453,11 @@
 								<?php } ?>
 							</div>
 						</div>
+					</div>
+					<div class="row justify-content-center">
+						<a href="blog.php" class="clv_btn">Lihat Semua Artikel
+							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ffffff"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"/></svg>
+						</a>
 					</div>
 				</div>
 			</div>
