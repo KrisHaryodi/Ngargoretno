@@ -21,6 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="css/range.css">
 	<link rel="stylesheet" type="text/css" href="css/nice-select.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- Favicon Link -->
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
 	<?php 

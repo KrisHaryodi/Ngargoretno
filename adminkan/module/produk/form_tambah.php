@@ -81,19 +81,19 @@ $produk = $id_produk + 1;
 						</div>
 						<div class="form-group">
 							<label for="inputEmail3" class="col-sm-2 control-label">Foto Sampul</label>
-								<input type="file" id="sampul" name="sampul" multiple><br>
+								<input type="file" id="sampul" name="sampul"><br>
 						</div>
                         <div class="form-group">
 							<label for="inputEmail3" class="col-sm-2 control-label">Foto Produk 1</label>
-								<input type="file" id="foto1" name="foto1" multiple><br>
+								<input type="file" id="foto1" name="foto1"><br>
 						</div>
 						<div class="form-group">
 							<label for="inputEmail3" class="col-sm-2 control-label">Foto Produk 2</label>
-								<input type="file" id="foto2" name="foto2" multiple><br>
+								<input type="file" id="foto2" name="foto2"><br>
 						</div>
 						<div class="form-group">
 							<label for="inputEmail3" class="col-sm-2 control-label">Foto Produk 3</label>
-								<input type="file" id="foto3" name="foto3" multiple><br>
+								<input type="file" id="foto3" name="foto3"><br>
 						</div>
 					</div>
 					<div class="box-footer">
