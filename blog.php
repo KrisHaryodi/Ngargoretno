@@ -111,9 +111,11 @@
             </div>
         </div>
 		<br>
-		<div class="searchbar" style="float: right;">
-			<input type="text" placeholder="Search.." name="search">
-			<button type="submit"><i class="fa fa-search"></i></button>
+		<div class="container">
+			<div class="searchbar" style="text-align: right;">
+				<input type="text" placeholder="Search.." name="search">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</div>
 		</div>
         <!--Blog With Sidebar-->
         <div class="blog_sidebar_wrapper clv_section">
@@ -127,26 +129,30 @@
                                 $kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_artikel ORDER BY id_artikel DESC LIMIT 1");
                                 while ($abot=mysqli_fetch_array($kueriAbout)) {
                             ?>
-                            <div class="blog_section">
-                                <div class="agri_blog_image">
-                                    <img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="image">
-                                    <span class="agri_blog_date"><?php echo $abot['artikel_tgl'];?></span>
-                                </div>
-                                <div class="agri_blog_content">
-                                    <h3><a
-                                            href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"><?php echo $abot['artikel_judul'];?></a>
-                                    </h3>
-                                    <div class="blog_user">
-                                        <div class="user_name">
-                                            <img src="images/user.png" alt="image">
-                                            <a
-                                                href="javascript:;"><span><?php echo $abot['artikel_penulis'];?></span></a>
-                                        </div>
-                                    </div>
-                                    <p><?php echo substr ($abot['artikel_isi'],0,200);?></p>
-                                    <a
-                                        href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>">read
-                                        more <span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
+                            <div class="blog_section row" style="padding-bottom: 50px;">
+								<div class="col-6">
+									<div class="agri_blog_image">
+										<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="image">
+										<span class="agri_blog_date"><?php echo $abot['artikel_tgl'];?></span>
+									</div>
+								</div>
+								<div class="col-6" style="margin-top: -20px;">
+                                	<div class="agri_blog_content">
+										<h3><a
+												href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"><?php echo $abot['artikel_judul'];?></a>
+										</h3>
+										<div class="blog_user">
+											<div class="user_name">
+												<img src="images/user.png" alt="image">
+												<a
+													href="javascript:;"><span><?php echo $abot['artikel_penulis'];?></span></a>
+											</div>
+										</div>
+										<p><?php echo substr ($abot['artikel_isi'],0,200);?></p>
+										<a
+											href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>">read
+											more <span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
+									</div>
                                 </div>
                             </div>
                             <?php } ?>
