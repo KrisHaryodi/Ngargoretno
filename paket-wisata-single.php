@@ -135,35 +135,32 @@
 					<div class="col-lg-9 col-md-9">
 						<div class="blog_left_section">
 							<div class="blog_section">
-								<div class="agri_blog_image">
-									<!-- 870x410
-                                    KUDU DI CROP
-                                     -->
-                                    <img src="adminkan/img/<?php echo $foto; ?>" alt="image">
-                                </div>
-                                <div class="agri_blog_content">
-                                    <h3><a href=""><?php echo $nama; ?></a></h3>
-                                    <div class="blog_user">
-                                        <a href=""><span>Rp.<?php echo $harga; ?></span></a>
-                                    </div>
-                                    <p><?php echo $deskripsi; ?></p>
-                                </div>
+								<div class="agri_blog_image_full">
+									<img src="adminkan/img/<?php echo $foto; ?>" alt="image">
+								</div>
+								<div class="agri_blog_content">
+									<h3><a href=""><?php echo $nama; ?></a></h3>
+									<div class="blog_user">
+										<a href=""><span>Rp.<?php echo $harga; ?></span></a>
+									</div>
+									<p><?php echo $deskripsi; ?></p>
+								</div>
 								<center>
 									<a href="https://api.whatsapp.com/send?phone=6282147435525" class="clv_btn">Order Now</a>
 								</center>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3">
-                        <div class="blog_sidebar">
-                            <div class="sidebar_block">
-                                <div class="sidebar_heading">
-                                    <h3>recent post</h3>
-                                    <img src="images/new_underline3.png" alt="image">
-                                </div>
-                                <div class="sidebar_post">
-                                    <ul>
-                                        <?php
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3">
+						<div class="blog_sidebar">
+							<div class="sidebar_block">
+								<div class="sidebar_heading">
+									<h3>recent post</h3>
+									<img src="images/new_underline3.png" alt="image">
+								</div>
+								<div class="sidebar_post">
+									<ul>
+										<?php
                                             include "lib/config.php";
                                             include "lib/koneksi.php";
                                             $kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_wisata ORDER BY id_wisata DESC LIMIT 10");
@@ -413,11 +410,18 @@
 					</div>
 				</div>
 				<center>
-					<a href="https://www.kemdikbud.go.id/" target="_blank" rel="noopener noreferrer"><img src="images/logo/kemendikbud.png" alt="logo_kemendikbud" style="width: 75px; height: 65px; object-fit: contain;"></a>
-					<a href="https://desangargoretno.com/" target="_blank" rel="noopener noreferrer"><img src="images/logo/favicon.png" alt="logo_ngargoretno" style="width: 75px; height: 65px; object-fit: contain;"></a>
-					<a href="https://ugm.ac.id/" target="_blank" rel="noopener noreferrer"><img src="images/logo/ugm.png" alt="logo_ugm" style="width: 75px; height: 65px; object-fit: contain;"></a>
-					<a href="https://bemkm.ugm.ac.id/" target="_blank" rel="noopener noreferrer"><img src="images/logo/bem.png" alt="logo_bem" style="width: 75px; height: 65px; object-fit: contain;"></a>
-					<a href="https://www.instagram.com/pdm_ugm/" target="_blank" rel="noopener noreferrer"><img src="images/logo/pdm.png" alt="logo_pdm" style="width: 75px; height: 65px; object-fit: contain;"></a>
+					<a href="https://www.kemdikbud.go.id/" target="_blank" rel="noopener noreferrer"><img
+							src="images/logo/kemendikbud.png" alt="logo_kemendikbud"
+							style="width: 75px; height: 65px; object-fit: contain;"></a>
+					<a href="https://desangargoretno.com/" target="_blank" rel="noopener noreferrer"><img
+							src="images/logo/favicon.png" alt="logo_ngargoretno"
+							style="width: 75px; height: 65px; object-fit: contain;"></a>
+					<a href="https://ugm.ac.id/" target="_blank" rel="noopener noreferrer"><img src="images/logo/ugm.png"
+							alt="logo_ugm" style="width: 75px; height: 65px; object-fit: contain;"></a>
+					<a href="https://bemkm.ugm.ac.id/" target="_blank" rel="noopener noreferrer"><img src="images/logo/bem.png"
+							alt="logo_bem" style="width: 75px; height: 65px; object-fit: contain;"></a>
+					<a href="https://www.instagram.com/pdm_ugm/" target="_blank" rel="noopener noreferrer"><img
+							src="images/logo/pdm.png" alt="logo_pdm" style="width: 75px; height: 65px; object-fit: contain;"></a>
 				</center>
 			</div>
 		</div>
