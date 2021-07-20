@@ -110,17 +110,21 @@
                 </ul>
             </div>
         </div>
-
+		<br>
+		<div class="searchbar" style="float: right;">
+			<input type="text" placeholder="Search.." name="search">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</div>
         <!--Blog With Sidebar-->
         <div class="blog_sidebar_wrapper clv_section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-9 col-md-9">
+                    <div class="col-lg-12 col-md-12">
                         <div class="blog_left_section">
                             <?php
                                 include "lib/config.php";
                                 include "lib/koneksi.php";
-                                $kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_artikel ORDER BY id_artikel DESC LIMIT 3");
+                                $kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_artikel ORDER BY id_artikel DESC LIMIT 1");
                                 while ($abot=mysqli_fetch_array($kueriAbout)) {
                             ?>
                             <div class="blog_section">
@@ -148,7 +152,7 @@
                             <?php } ?>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3">
+                    <!-- <div class="col-lg-3 col-md-3">
                         <div class="blog_sidebar">
                             <div class="sidebar_block">
                                 <div class="sidebar_heading">
@@ -179,8 +183,43 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
+				<div class="row">
+					<div class="swiper-wrapper col-lg-4">
+						<?php
+                                include "lib/config.php";
+                                include "lib/koneksi.php";
+                                $kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_artikel ORDER BY id_artikel DESC LIMIT 3");
+                                while ($abot=mysqli_fetch_array($kueriAbout)) {
+                            ?>
+							<div class="swiper-slide">
+								<div class="blog_section">
+									<div class="agri_blog_image">
+										<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="image">
+										<span class="agri_blog_date"><?php echo $abot['artikel_tgl'];?></span>
+									</div>
+									<div class="agri_blog_content">
+										<h3><a
+												href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"><?php echo $abot['artikel_judul'];?></a>
+										</h3>
+										<div class="blog_user">
+											<div class="user_name">
+												<img src="images/user.png" alt="image">
+												<a
+													href="javascript:;"><span><?php echo $abot['artikel_penulis'];?></span></a>
+											</div>
+										</div>
+										<p><?php echo substr ($abot['artikel_isi'],0,200);?></p>
+										<a
+											href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>">read
+											more <span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
+									</div>
+								</div>
+							</div>
+                            <?php } ?>
+					</div>
+				</div>
             </div>
         </div>
 
