@@ -75,7 +75,7 @@ a:hover,
 a:focus {
     text-decoration: none;
     cursor: pointer;
-    color: #757575;
+    color: #000;
     outline: none;
 }
 
@@ -361,7 +361,6 @@ ul {
     display: inline-block;
     font-size: 16px;
     font-weight: 400;
-    color: #ffffff;
     margin: 5px 10px;
     text-transform: capitalize;
     position: relative;
@@ -3917,9 +3916,9 @@ ul {
     height: 100%;
 }
 
-.index_v3 .clv_right_header .clv_menu .clv_menu_nav>ul>li>a {
+/* .index_v3 .clv_right_header .clv_menu .clv_menu_nav>ul>li>a {
     color: #222222;
-}
+} */
 
 .index_v3 .clv_right_header .clv_menu .clv_menu_nav>ul>li:last-child {
     margin-right: 0;
