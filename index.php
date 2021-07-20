@@ -275,7 +275,6 @@
 														</div>
 													</div>
 													<div class="item_overlay">
-														<!-- <h5><?php echo $abot['produk_nama'];?></h5> -->
 														<a href="<?php echo $base_url;?>produk-single.php?id_produk=<?php echo $abot['id_produk'];?>"
 															class="overlay_btn">lihat produk</a>
 													</div>
@@ -357,7 +356,6 @@
 													</div>
 													<div class="item_desc">
 														<h3><?php echo $abot['wisata_nama'];?></h3>
-														<!-- <?php echo substr ($abot['wisata_deskripsi'],0,100);?> -->
 														<h5>Rp.<?php echo $abot['wisata_harga'];?></h5>
 													</div>
 													<div class="item_overlay">
