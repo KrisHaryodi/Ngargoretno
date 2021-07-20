@@ -260,7 +260,7 @@
 											while ($abot=mysqli_fetch_array($kueriAbout)) {
 										?>
 											<div class="swiper-slide">
-												<div class="shop_slide">
+												<div class="shop_slide card">
 													<div class="item_image">
 														<img 
 															src="adminkan/img/<?php echo $abot['produk_sampul'];?>" 
@@ -268,16 +268,16 @@
 															class="img-fluid"
 														>
 													</div>
-													<div class="item_details">
+													<div class="item_details item_desc">
 														<div class="item_name">
-															<h3><?php echo $abot['produk_nama'];?></h5>
-															<h5>Rp.<?php echo $abot['produk_harga'];?></h3>
+															<h3><?php echo $abot['produk_nama'];?></h3>
+															<h5>Rp.<?php echo $abot['produk_harga'];?></h5>
 														</div>
 													</div>
 													<div class="item_overlay">
-														<h5><?php echo $abot['produk_nama'];?></h5>
+														<!-- <h5><?php echo $abot['produk_nama'];?></h5> -->
 														<a href="<?php echo $base_url;?>produk-single.php?id_produk=<?php echo $abot['id_produk'];?>"
-															class="shop_btn">lihat produk</a>
+															class="overlay_btn">lihat produk</a>
 													</div>
 												</div>
 											</div>
@@ -348,7 +348,7 @@
 											while ($abot=mysqli_fetch_array($kueriAbout)) {
 										?>
 											<div class="swiper-slide">
-												<div class="feature_block travel_slide">
+												<div class="feature_block travel_slide card">
 													<div class="item_image">
 														<img 
 															src="adminkan/img/<?php echo $abot['wisata_foto'];?>" 
@@ -357,10 +357,13 @@
 													</div>
 													<div class="item_desc">
 														<h3><?php echo $abot['wisata_nama'];?></h3>
-														<?php echo substr ($abot['wisata_deskripsi'],0,100);?>
+														<!-- <?php echo substr ($abot['wisata_deskripsi'],0,100);?> -->
+														<h5>Rp.<?php echo $abot['wisata_harga'];?></h5>
+													</div>
+													<div class="item_overlay">
 														<a 
 															href="<?php echo $base_url;?>paket-wisata-single.php?id_wisata=<?php echo $abot['id_wisata'];?>"
-															class="clv_btn"
+															class="overlay_btn"
 														>
 															Selengkapnya
 														</a>
@@ -423,9 +426,9 @@
 													<div class="blog_section">
 														<div class="agri_blog_image">
 															<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="<?php echo $abot['artikel_judul'];?>">
-															<span class="agri_blog_date"><?php echo $abot['artikel_tgl'];?></span>
 														</div>
 														<div class="agri_blog_content">
+															<span class="agri_blog_date"><?php echo $abot['artikel_tgl'];?></span>
 															<h3>
 																<a href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>">
 																	<?php echo $abot['artikel_judul'];?>
@@ -437,7 +440,7 @@
 																	<a href="javascript:;"><span><?php echo $abot['artikel_penulis'];?></span></a>
 																</div>
 															</div>
-															<p style="text-align: justify;"><?php echo substr ($abot['artikel_isi'],0,280);?> . . .</p>
+															<p style="text-align: justify;"><?php echo substr ($abot['artikel_isi'],0,180);?> . . .</p>
 															<a href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"> Selengkapnya
 																<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
 														</div>
