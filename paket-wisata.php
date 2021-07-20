@@ -120,16 +120,23 @@
 						while ($abot=mysqli_fetch_array($kueriAbout)) {
 					?>
 					<div class="col-md-4 col-lg-4">
-						<div class="feature_block">
+						<div class="feature_block card">
 							<div class="item_image">
-								<img src="adminkan/img/<?php echo $abot['wisata_foto'];?>" alt="image" class="img-fluid"
-									style="width: 320px; height: 320px; object-fit: cover;">
+								<img src="adminkan/img/<?php echo $abot['wisata_foto'];?>" alt="image" class="img-fluid">
 							</div>
 							<br>
-							<h3><?php echo $abot['wisata_nama'];?></h3>
-							<p><?php echo substr ($abot['wisata_deskripsi'],0,50);?></p>
-							<a href="<?php echo $base_url;?>paket-wisata-single.php?id_wisata=<?php echo $abot['id_wisata'];?>"
-								class="clv_btn">read more</a>
+							<div class="item_desc">
+								<h3><?php echo $abot['wisata_nama'];?></h3>
+								<h5>Rp.<?php echo $abot['wisata_harga'];?></h5>
+							</div>
+							<div class="item_overlay">
+								<a
+									href="<?php echo $base_url;?>paket-wisata-single.php?id_wisata=<?php echo $abot['id_wisata'];?>"
+									class="overlay_btn"
+								>
+									Selengkapnya
+								</a>
+							</div>
 						</div>
 						<br><br>
 					</div>
