@@ -213,7 +213,8 @@
 							<div class="about_agri_image">
 								<img 
 									src="adminkan/img/<?php echo $abot['profile_foto'];?>" 
-									alt="foto_profil"
+									alt="foto_profil" 
+									style="width: 530px; height: 570px; object-fit: cover;"
 								>
 							</div>
 						</div>

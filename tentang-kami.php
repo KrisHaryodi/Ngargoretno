@@ -111,7 +111,7 @@
 
 		<div class="clv_about_agriculture_wrapper clv_section">
 			<div class="container">
-				<div class="row">
+				<div class="row align-items-center">
 					<?php
 						include "lib/config.php";
 						include "lib/koneksi.php";
@@ -120,8 +120,7 @@
 					?>
 					<div class="col-md-6 col-lg-6">
 						<div class="about_agri_image">
-							<img src="adminkan/img/<?php echo $abot['profile_foto'];?>" alt="image"
-								style="width: 530px; height: 570px; object-fit: cover;">
+							<img src="adminkan/img/<?php echo $abot['profile_foto'];?>" alt="image">
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-6">
