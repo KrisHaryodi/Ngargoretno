@@ -467,12 +467,12 @@
 			</div>
 		</div>
 		
-		<div class="clv_youtube_wrapper clv_section">
+		<div class="clv_youtube_wrapper clv_section youtube_section">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-6 col-md-6">
 						<div class="clv_heading">
-							<h3>Ngargoretno di YouTube</h3>
+							<h3 class="text-white">Ngargoretno di YouTube</h3>
 						</div>
 					</div>
 				</div>
