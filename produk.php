@@ -45,8 +45,8 @@
 								<div class="clv_menu">
 									<div class="clv_menu_nav">
 										<ul>
-											<li class="nav-active"><a href="index.php">home</a></li>
-											<li><a href="produk.php">produk</a></li>
+											<li><a href="index.php">home</a></li>
+											<li><a href="produk.php" class="nav-active">produk</a></li>
 											<li><a href="paket-wisata.php">paket wisata</a></li>
 											<li><a href="blog.php">blog</a></li>
 											<li><a href="tentang-kami.php">tentang kami</a></li>
