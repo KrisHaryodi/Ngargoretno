@@ -314,7 +314,6 @@ ul {
     height: 35px;
     color: #fec007;
     font-size: 18px;
-    float: left;
     margin-right: 11px;
     display: inline-block;
     border-radius: 7px;
@@ -357,6 +356,7 @@ ul {
     position: relative;
 }
 
+
 .clv_right_header .clv_menu .clv_menu_nav>ul>li>a {
     display: inline-block;
     font-size: 16px;
@@ -377,10 +377,15 @@ ul {
     left: 10px;
     width: 0%;
     height: 2px;
-    background-color: #ffffff;
+    background-color: #444242;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
+}
+
+.clv_right_header .clv_menu .clv_menu_nav>ul>li>a.nav-active {
+   font-weight: bold;
+   color: #DE281D;
 }
 
 .clv_right_header .clv_menu .clv_menu_nav>ul>li>a:hover:after {
@@ -14200,10 +14205,6 @@ color: #666;
      .product_items_section>ul>li {
          width: 100%;
      }
- }
-
- .nav-active {
-     color: #DE281D;
  }
 
  .agri_blog_content ul {
