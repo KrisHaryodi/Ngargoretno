@@ -159,45 +159,25 @@
 							<?php } ?>
 						</div>
 					</div>
-					<!-- <div class="col-lg-3 col-md-3">
-						<div class="blog_sidebar">
-							<div class="sidebar_block">
-								<div class="sidebar_heading">
-										<h3>recent post</h3>
-										<img src="images/new_underline3.png" alt="image">
-								</div>
-								<div class="sidebar_post">
-									<ul>
-										<?php
-											include "lib/config.php";
-											include "lib/koneksi.php";
-											$kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_artikel ORDER BY id_artikel DESC LIMIT 10");
-											while ($abot=mysqli_fetch_array($kueriAbout)) {
-										?>
-										<li>
-											<div class="post_image">
-												<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="image"
-												style="width: 75px; height: 65px; object-fit: cover;">
-											</div>
-											<div class="post_content">
-													<p><?php echo $abot['artikel_tgl'];?></p>
-													<a
-														href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"><?php echo $abot['artikel_judul'];?></a>
-											</div>
-										</li>
-										<?php } ?>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div> -->
 				</div>
 				<div class="row">
 					<div class="swiper-wrapper col-lg-4">
 						<?php
 							include "lib/config.php";
 							include "lib/koneksi.php";
-							$kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_artikel ORDER BY id_artikel DESC LIMIT 3");
+							
+							$page_size = 1;
+							$page_num = isset($_GET['halaman'])?(int)$_GET['halaman'] : 1;
+							$initial_index = ($page_num > 1) ? ($page_num * $page_size) - $page_size : 0;	
+
+							$previous = $page_num - 1;
+							$next = $page_num + 1;
+
+							$data = mysqli_query($konek,"SELECT * FROM tbl_artikel");
+							$num_of_data = mysqli_num_rows($data);
+							$num_of_page = ceil($num_of_data / $page_size);
+
+							$kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_artikel ORDER BY id_artikel DESC LIMIT $initial_index, $page_size");
 							while ($abot=mysqli_fetch_array($kueriAbout)) {
 						?>
 						<div class="swiper-slide">
@@ -226,6 +206,57 @@
 						</div>
 						<?php } ?>
 					</div>
+				</div>
+				<div>
+					<ul class="pagination justify-content-center">
+						<li class="page-item">
+							<a class="page-link" <?php if($page_num > 1){ echo "href='?halaman=$previous'"; } ?>>Prev</a>
+						</li>
+						<?php if ($num_of_page > 5) { ?>
+							<?php	if ($num_of_page - $page_num <= 2) { ?>
+								<li class="page-item">
+									<span class="page-link">...</span>
+								</li>
+			
+								<?php for ($i = $num_of_page - 3; $i <= $num_of_page; $i++) { ?>
+									<li class="page-item">
+										<a class="page-link" href="?halaman=<?php echo $i ?>"><?php echo $i; ?></a>
+									</li>
+								<?php } ?>
+							<?php } else if ($page_num < 4) { ?>
+								<?php for ($i = 1; $i <= 4; $i++) { ?>
+									<li class="page-item">
+										<a class="page-link" href="?halaman=<?php echo $i ?>"><?php echo $i; ?></a>
+									</li>
+								<?php } ?>
+								<li class="page-item">
+									<span class="page-link">...</span>
+								</li>
+			
+							<?php } else { ?>
+								<li class="page-item">
+									<span class="page-link">...</span>
+								</li>
+								<?php for ($i = $page_num - 1; $i < $page_num + 2; $i++) { ?>
+									<li class="page-item">
+										<a class="page-link" href="?halaman=<?php echo $i ?>"><?php echo $i; ?></a>
+									</li>
+								<?php } ?>
+								<li class="page-item">
+									<span class="page-link">...</span>
+								</li>
+							<?php } ?>
+						<?php } else { ?>
+								<?php for ($i = 1; $i <= $num_of_page; $i++) { ?>
+									<li class="page-item">
+										<a class="page-link" href="?halaman=<?php echo $i ?>"><?php echo $i; ?></a>
+									</li>
+								<?php } ?>
+						<?php } ?>
+						<li class="page-item">
+							<a  class="page-link" <?php if($page_num < $num_of_page) { echo "href='?halaman=$next'"; } ?>>Next</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
