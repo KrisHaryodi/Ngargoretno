@@ -468,7 +468,7 @@
 		<div class="clv_youtube_wrapper clv_section youtube_section">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-lg-6 col-md-6">
+					<div class="col-lg-12 col-md-12">
 						<div class="clv_heading">
 							<h3 class="text-white">Ngargoretno di YouTube</h3>
 						</div>
@@ -495,6 +495,25 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="clv_maps_wrapper clv_section">
+			<div class="container">
+			<div class="row justify-content-center">
+					<div class="col-lg-12 col-md-12">
+						<div class="clv_heading">
+							<h3>Ngargoretno di Peta</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<div class="maps-wrapper">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11295.776419413756!2d110.14671761445923!3d-7.631604008243122!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a8d522ad62ccf%3A0xc4096b864e2798fc!2sNgargoretno%2C%20Salaman%2C%20Magelang%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1626883530418!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
 
 		<!--Footer-->
 		<div class="clv_footer_wrapper clv_section">
