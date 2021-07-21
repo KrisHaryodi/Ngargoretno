@@ -205,9 +205,8 @@
 												</div>
 											</div>
 										</div>
-										<!-- <div class="row"> -->
-											<div class="col-lg-12 col-md-12 col-sm-12" style="height: 200px;">
-												<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12" style="height: 200px;">
+											<div class="row">
 												<div class="fd_pro_thumnail">
 													<div class="swiper-container gallery-thumbs">
 														<div class="swiper-wrapper">
@@ -238,9 +237,8 @@
 														</div>
 													</div>
 												</div>
-												</div>
 											</div>
-										<!-- </div> -->
+										</div>
 									</div>
 								</div>
 							</div>
