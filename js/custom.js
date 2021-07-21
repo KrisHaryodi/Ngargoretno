@@ -764,7 +764,7 @@ Assigned to: Theme Forest
                     }
                 });
                 var galleryThumbs = new Swiper('.fd_pro_thumnail .swiper-container.gallery-thumbs', {
-                    direction: "vertical",
+                    direction: "horizontal",
                     spaceBetween: 0,
                     slidesPerView: 4,
                     loop: !0,
