@@ -14206,3 +14206,38 @@ ul {
  /********************************************************
 39. Responsive CSS End
 *******************************************************/
+
+/* Pagination */
+.pagination {
+    margin-top: 12px;
+}
+
+.pagination li:not(:first-child) {
+    margin-left: 12px;
+}
+
+.page-link {
+    font-size: 22px;
+    border-radius: 4px;
+    border: 1px solid #C4CDD5;
+    color: #000;
+}
+
+.active {
+    background-color: #DE281D;
+}
+
+.page-item.active .page-link {
+    background-color: transparent;
+    border-color: transparent;
+    color: #fff;
+}
+
+.disabled {
+    background-color: #C4CDD5;
+}
+
+.page-item.disabled .page-link {
+    background-color: transparent;
+    color: #fff;
+}
