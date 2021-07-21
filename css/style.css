@@ -1694,6 +1694,7 @@ ul {
      background-color: #fff;
      border-radius: 100%;
      box-shadow: 0 30px 60px rgba(32, 56, 85, 0.5);
+     cursor: pointer;
  }
 
  .left_arrow {
@@ -2776,6 +2777,8 @@ ul {
 
  .clv_features_wrapper .feature_block {
      background-color: #fff;
+     border-radius: 8px;
+     border: transparent;
      transition: all 0.3s ease-in-out;
      -webkit-transition: all 0.3s ease-in-out;
      -moz-transition: all 0.3s ease-in-out;
@@ -11691,7 +11694,7 @@ color: #666;
      }
 
      .clv_features_wrapper .feature_block {
-         padding: 30px 15px;
+         padding: 0px;
      }
 
      .gallery_grid .gallery_grid_item {
@@ -12101,9 +12104,6 @@ color: #666;
          float: none;
      }
 
-     /* .clv_features_wrapper .feature_block h3 {
-        font-size: 20px;
-    } */
      .index_v3 .dairy_about_wrapper {
          padding-top: 51px;
      }
