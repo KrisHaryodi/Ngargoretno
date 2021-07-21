@@ -1022,7 +1022,7 @@ Assigned to: Theme Forest
             $('.signup_wrapper').toggleClass('open_signup');
             $('.signin_wrapper').removeClass('open_signin');
         });
-        $(document).on('click', function() {
+        $('.close_nav').on('click', function() {
             $('.clv_right_header .clv_menu .clv_menu_nav').removeClass('nav_toggle');
         });
         $('.clv_right_header .clv_menu .clv_menu_nav').on('click', function(e) {
