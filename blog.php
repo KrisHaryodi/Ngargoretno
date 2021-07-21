@@ -120,93 +120,72 @@
 		<!--Blog With Sidebar-->
 		<div class="blog_sidebar_wrapper clv_section">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12">
-						<div class="blog_left_section">
-							<?php
-								include "lib/config.php";
-								include "lib/koneksi.php";
-								$kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_artikel ORDER BY id_artikel DESC LIMIT 1");
-								while ($abot=mysqli_fetch_array($kueriAbout)) {
-							?>
-							<div class="blog_section row">
-								<div class="col-6">
-									<div class="agri_blog_image" style="height: 70%;">
-										<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="image" style="width: 100%;">
+				<?php
+					include "lib/config.php";
+					include "lib/koneksi.php";
+					
+					$page_size = 4;
+					$page_num = isset($_GET['halaman'])?(int)$_GET['halaman'] : 1;
+					$initial_index = ($page_num > 1) ? ($page_num * $page_size) - $page_size : 0;	
 
-									</div>
-								</div>
-								<div class="col-6" style="margin-top: -20px;">
-									<div class="agri_blog_content">
-										<div class="agri_blog_date" style="margin-top: 10px;">
-											<span class="agri_blog_date"><?php echo $abot['artikel_tgl'];?></span>
-										</div>
-										<h3><a
-												href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"><?php echo $abot['artikel_judul'];?></a>
-										</h3>
-										<div class="blog_user">
-											<div class="user_name">
-												<img src="images/user.png" alt="image">
-												<a href="javascript:;"><span><?php echo $abot['artikel_penulis'];?></span></a>
-											</div>
-										</div>
-										<p><?php echo substr ($abot['artikel_isi'],0,200);?></p>
-										<a href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>">Selengkapnya
-											<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
-									</div>
-								</div>
-							</div>
-							<?php } ?>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="swiper-wrapper col-lg-4">
-						<?php
-							include "lib/config.php";
-							include "lib/koneksi.php";
-							
-							$page_size = 3;
-							$page_num = isset($_GET['halaman'])?(int)$_GET['halaman'] : 1;
-							$initial_index = ($page_num > 1) ? ($page_num * $page_size) - $page_size : 0;	
+					$previous = $page_num - 1;
+					$next = $page_num + 1;
 
-							$previous = $page_num - 1;
-							$next = $page_num + 1;
+					$data = mysqli_query($konek,"SELECT * FROM tbl_artikel");
+					$num_of_data = mysqli_num_rows($data);
+					$num_of_page = ceil($num_of_data / $page_size);
 
-							$data = mysqli_query($konek,"SELECT * FROM tbl_artikel");
-							$num_of_data = mysqli_num_rows($data);
-							$num_of_page = ceil($num_of_data / $page_size);
+					$kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_artikel ORDER BY id_artikel DESC LIMIT $initial_index, $page_size");
 
-							$kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_artikel ORDER BY id_artikel DESC LIMIT $initial_index, $page_size");
-							while ($abot=mysqli_fetch_array($kueriAbout)) {
-						?>
-						<div class="swiper-slide">
-							<div class="blog_section" style=" margin-right: 30px;">
-								<div class="agri_blog_image">
+					$first = true;
+					while ($abot=mysqli_fetch_array($kueriAbout)) {
+				?>
+					<?php if($first) { $first = false; ?>
+						<div class="col-lg-12 col-md-12 blog_section row mb-5">
+							<div class="col-6">
+								<div class="agri_blog_image_large">
 									<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="image">
 								</div>
+							</div>
+							<div class="col-6" style="margin-top: -20px;">
 								<div class="agri_blog_content">
-									<div class="agri_blog_date">
+									<div class="agri_blog_date_container" style="margin-top: 10px;">
 										<span class="agri_blog_date"><?php echo $abot['artikel_tgl'];?></span>
+										<span>oleh <?php echo $abot['artikel_penulis'];?></span>
 									</div>
 									<h3><a
 											href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"><?php echo $abot['artikel_judul'];?></a>
 									</h3>
-									<div class="blog_user">
-										<div class="user_name">
-											<img src="images/user.png" alt="image">
-											<a href="javascript:;"><span><?php echo $abot['artikel_penulis'];?></span></a>
-										</div>
-									</div>
 									<p><?php echo substr ($abot['artikel_isi'],0,200);?></p>
 									<a href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>">Selengkapnya
 										<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
 								</div>
 							</div>
 						</div>
-						<?php } ?>
+						<div class="d-flex">
+					<?php } else { ?>
+						<div class="col-4">
+							<div class="blog_section" style=" margin-right: 30px;">
+								<div class="agri_blog_image">
+									<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="image">
+								</div>
+								<div class="agri_blog_content">
+									<div class="agri_blog_date_container">
+										<span class="agri_blog_date"><?php echo $abot['artikel_tgl'];?></span>
+										<span>oleh <?php echo $abot['artikel_penulis'];?></span>
+									</div>
+									<h3><a
+											href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"><?php echo $abot['artikel_judul'];?></a>
+									</h3>
+									<p><?php echo substr ($abot['artikel_isi'],0,200);?></p>
+									<a href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>">Selengkapnya
+										<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
+								</div>
+							</div>
+						</div>
+					<?php } ?>
+				<?php } ?>
 					</div>
-				</div>
 				<div>
 					<ul class="pagination justify-content-center">
 						<li class="page-item <?php if($page_num == 1) { echo "disabled"; } ?>">
