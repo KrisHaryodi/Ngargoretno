@@ -180,26 +180,22 @@
 												<div class="swiper-wrapper">
 													<div class="swiper-slide">
 														<div class="fd_pro_img">
-															<img src="adminkan/img/<?php echo $sampul; ?>" alt="image"
-																style="width: 7.9%; object-fit: cover;">
+															<img src="adminkan/img/<?php echo $sampul; ?>" alt="image">
 														</div>
 													</div>
 													<div class="swiper-slide">
 														<div class="fd_pro_img">
-															<img src="adminkan/img/<?php echo $foto1; ?>" alt="image"
-																style="width: 7.9%; object-fit: cover;">
+															<img src="adminkan/img/<?php echo $foto1; ?>" alt="image">
 														</div>
 													</div>
 													<div class="swiper-slide">
 														<div class="fd_pro_img">
-															<img src="adminkan/img/<?php echo $foto2; ?>" alt="image"
-																style="width: 7.9%; object-fit: cover;">
+															<img src="adminkan/img/<?php echo $foto2; ?>" alt="image">
 														</div>
 													</div>
 													<div class="swiper-slide">
 														<div class="fd_pro_img">
-															<img src="adminkan/img/<?php echo $foto3; ?>" alt="image"
-																style="width: 7.9%; object-fit: cover;">
+															<img src="adminkan/img/<?php echo $foto3; ?>" alt="image">
 														</div>
 													</div>
 												</div>
