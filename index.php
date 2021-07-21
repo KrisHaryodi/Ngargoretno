@@ -428,17 +428,12 @@
 														</div>
 														<div class="agri_blog_content">
 															<span class="agri_blog_date"><?php echo $abot['artikel_tgl'];?></span>
+															<span>oleh <?php echo $abot['artikel_penulis'];?></span>
 															<h3>
 																<a href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>">
 																	<?php echo $abot['artikel_judul'];?>
 																</a>
 															</h3>
-															<div class="blog_user">
-																<div class="user_name">
-																	<img src="images/user.png" alt="gambar_penulis" />
-																	<a href="javascript:;"><span><?php echo $abot['artikel_penulis'];?></span></a>
-																</div>
-															</div>
 															<p style="text-align: justify;"><?php echo substr ($abot['artikel_isi'],0,180);?> . . .</p>
 															<a href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"> Selengkapnya
 																<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>

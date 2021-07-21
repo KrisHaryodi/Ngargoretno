@@ -141,13 +141,8 @@
 								</div>
 								<div class="agri_blog_content">
 									<span class="agri_blog_date"><?php echo $tgl; ?></span>
-									<h3><a href=""><?php echo $judul; ?></a></h3>
-									<div class="blog_user">
-										<div class="user_name">
-											<img src="images/user.png" alt="image">
-											<a href="javascript:;"><span><?php echo $penulis; ?></span></a>
-										</div>
-									</div>
+									<span>oleh <?php echo $penulis; ?></span>
+									<h3 style="margin-bottom: 24px;"><a href=""><?php echo $judul; ?></a></h3>
 									<p><?php echo $isi; ?></p>
 								</div>
 							</div>
