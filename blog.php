@@ -166,7 +166,7 @@
 							include "lib/config.php";
 							include "lib/koneksi.php";
 							
-							$page_size = 1;
+							$page_size = 3;
 							$page_num = isset($_GET['halaman'])?(int)$_GET['halaman'] : 1;
 							$initial_index = ($page_num > 1) ? ($page_num * $page_size) - $page_size : 0;	
 
