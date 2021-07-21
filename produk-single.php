@@ -173,7 +173,7 @@
 										</div>
 									</div>
 								</div> -->
-								<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="col-lg-12 col-md-12 col-sm-12" style="margin-top: 20px;">
 									<div class="row">
 										<div class="fd_product_img" >
 											<div class="swiper-container gallery-top">
@@ -181,31 +181,31 @@
 													<div class="swiper-slide">
 														<div class="fd_pro_img">
 															<img src="adminkan/img/<?php echo $sampul; ?>" alt="image"
-																style="width: 508px; height: 529px; object-fit: cover;">
+																style="width: 7.9%; object-fit: cover;">
 														</div>
 													</div>
 													<div class="swiper-slide">
 														<div class="fd_pro_img">
 															<img src="adminkan/img/<?php echo $foto1; ?>" alt="image"
-																style="width: 508px; height: 529px; object-fit: cover;">
+																style="width: 7.9%; object-fit: cover;">
 														</div>
 													</div>
 													<div class="swiper-slide">
 														<div class="fd_pro_img">
 															<img src="adminkan/img/<?php echo $foto2; ?>" alt="image"
-																style="width: 508px; height: 529px; object-fit: cover;">
+																style="width: 7.9%; object-fit: cover;">
 														</div>
 													</div>
 													<div class="swiper-slide">
 														<div class="fd_pro_img">
 															<img src="adminkan/img/<?php echo $foto3; ?>" alt="image"
-																style="width: 508px; height: 529px; object-fit: cover;">
+																style="width: 7.9%; object-fit: cover;">
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-12 col-md-12 col-sm-12" style="height: 200px;">
+										<div class="col-lg-12 col-md-12 col-sm-12" style="height: 150px; margin-top: 30px;">
 											<div class="row">
 												<div class="fd_pro_thumnail">
 													<div class="swiper-container gallery-thumbs">
