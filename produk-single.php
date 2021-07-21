@@ -243,18 +243,42 @@
 					<div class="col-lg-6 col-md-6">
 						<div class="product_single_details">
 							<div class="product_price_box">
-								<h3><?php echo $nama; ?></h3>
+								<h1><?php echo $nama; ?></h3>
 							</div>
-							<p><?php echo $cerita; ?></p>
 							<div class="product_prices">
-								<h2>Rp.<?php echo $harga; ?></h2>
+								<h4>Rp.<?php echo $harga; ?></h2>
 							</div>
-							<a href="https://<?php echo $link; ?>" class="clv_btn">order now</a>
+							<br><br>
+							<a href="https://<?php echo $link; ?>" class="clv_btn">Beli Sekarang
+								<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+									<path fill="currentColor" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+								</svg>
+							</a>
+						</div>
+						<hr>
+						<div class="product_single_details">
+							<div id="description" class="tab-pane fade show active">
+								<h5>Deskripsi</h4>
+								<p><?php echo $deskripsi; ?></p>
+							</div>
+							<div id="description" class="tab-pane fade show active">
+								<h5>Komposisi</h4>
+								<p><?php echo $komposisi; ?></p>
+							</div>
+							<div id="description" class="tab-pane fade show active">
+								<h5>Khasiat</h4>
+								<p><?php echo $khasiat; ?></p>
+							</div>
+							<div id="description" class="tab-pane fade show active">
+								<h5>Cerita</h4>
+								<p><?php echo $cerita; ?></p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<hr>
 		<!--Products Details-->
 		<div class="product_detail_wrapper">
 			<div class="container">
@@ -263,7 +287,7 @@
 						<div class="product_detail_tab">
 							<ul class="nav nav-tabs">
 								<li>
-									<h5 class="product-detail__header" data-toggle="tab">Description</h5>
+									<h5 class="product-detail__header" data-toggle="tab">Produk Lain Untukmu</h5>
 								</li>
 							</ul>
 							<div class="tab-content productDetails">
