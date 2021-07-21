@@ -429,7 +429,7 @@
 		</div>
 		<!--Copyright-->
 		<div class="clv_copyright_wrapper">
-			<p>all right reserved &copy; copyright 2020.</p>
+			<p>all right reserved &copy; copyright <span id="currentYear"></span>.</p>
 		</div>
 		<!--Popup-->
 		<div class="search_box">
