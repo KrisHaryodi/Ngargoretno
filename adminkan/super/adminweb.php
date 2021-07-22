@@ -1,16 +1,16 @@
 <?php 
-session_start();?>
+session_start();?>  
 
 <?php
 include "../lib/koneksi.php";
 include "../lib/config.php";
 $queryLihat = mysqli_query($konek, "SELECT * FROM tbl_admin WHERE id_admin =$_SESSION[id_admin]");
-while($tampilQuery = mysqli_fetch_array($queryLihat)){
+if($queryLihat==true){
+  while($tampilQuery = mysqli_fetch_array($queryLihat)){
 ?>
 
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -246,7 +246,9 @@ while($tampilQuery = mysqli_fetch_array($queryLihat)){
       reserved.
     </footer>
     <?php  
-   }
+    }}else{
+      header('location: index.php');
+    }
   ?>
     <div class="control-sidebar-bg"></div>
   </div>

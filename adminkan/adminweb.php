@@ -5,7 +5,8 @@ session_start();?>
 include "../lib/koneksi.php";
 include "../lib/config.php";
 $queryLihat = mysqli_query($konek, "SELECT * FROM tbl_admin WHERE id_admin =$_SESSION[id_admin]");
-while($tampilQuery = mysqli_fetch_array($queryLihat)){
+if($queryLihat==false){
+  while($tampilQuery = mysqli_fetch_array($queryLihat)){
 ?>
 
 <!DOCTYPE html>
@@ -239,6 +240,8 @@ while($tampilQuery = mysqli_fetch_array($queryLihat)){
     reserved.
   </footer>
   <?php  
+   }} else{
+    header('location: index.php');
    }
   ?>
   <div class="control-sidebar-bg"></div>
