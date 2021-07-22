@@ -2,10 +2,10 @@
 session_start();?>
 
 <?php
-include "../lib/koneksi.php";
-include "../lib/config.php";
+include "lib/koneksi.php";
+include "lib/config.php";
 $queryLihat = mysqli_query($konek, "SELECT * FROM tbl_admin WHERE id_admin =$_SESSION[id_admin]");
-if($queryLihat==false){
+if($queryLihat==true){
   while($tampilQuery = mysqli_fetch_array($queryLihat)){
 ?>
 
