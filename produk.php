@@ -156,7 +156,20 @@
 									<?php
 										include "lib/config.php";
 										include "lib/koneksi.php";
-										$kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_produk ORDER BY id_produk DESC");
+										
+										$page_size = 6;
+										$page_num = isset($_GET['halaman'])?(int)$_GET['halaman'] : 1;
+										$initial_index = ($page_num > 1) ? ($page_num * $page_size) - $page_size : 0;	
+
+										$previous = $page_num - 1;
+										$next = $page_num + 1;
+
+										$data = mysqli_query($konek,"SELECT * FROM tbl_produk");
+										$num_of_data = mysqli_num_rows($data);
+										$num_of_page = ceil($num_of_data / $page_size);
+
+										$kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_produk ORDER BY id_produk DESC LIMIT $initial_index, $page_size");
+
 										while ($abot=mysqli_fetch_array($kueriAbout)) {
 									?>
 									<li>
@@ -180,6 +193,71 @@
 							</div>
 						</div>
 					</div>
+				</div>
+				<div>
+					<ul class="pagination justify-content-center">
+						<li class="page-item <?php if($page_num == 1) { echo "disabled"; } ?>">
+							<a class="page-link" <?php if($page_num > 1){ echo "href='?halaman=$previous'"; } ?>>
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="20px">
+									<path 
+										fill-rule="evenodd" fill="rgb(145, 158, 171)"
+										d="M0.272,10.703 L8.434,19.703 C8.792,20.095 9.372,20.095 9.731,19.703 C10.089,19.308 10.089,18.668 9.731,18.274 L2.217,9.990 L9.730,1.706 C10.089,1.310 10.089,0.672 9.730,0.277 C9.372,-0.118 8.791,-0.118 8.433,0.277 L0.271,9.274 C-0.082,9.666 -0.082,10.315 0.272,10.703 Z" 
+									/>
+								</svg>
+							</a>
+						</li>
+						<?php if ($num_of_page > 5) { ?>
+							<?php	if ($num_of_page - $page_num <= 2) { ?>
+								<li class="page-item">
+									<span class="page-link">...</span>
+								</li>
+			
+								<?php for ($i = $num_of_page - 3; $i <= $num_of_page; $i++) { ?>
+									<li class="page-item <?php if($page_num == $i) echo 'active'; ?>">
+										<a class="page-link" href="?halaman=<?php echo $i ?>"><?php echo $i; ?></a>
+									</li>
+								<?php } ?>
+							<?php } else if ($page_num < 4) { ?>
+								<?php for ($i = 1; $i <= 4; $i++) { ?>
+									<li class="page-item <?php if($page_num == $i) echo 'active'; ?>">
+										<a class="page-link" href="?halaman=<?php echo $i ?>"><?php echo $i; ?></a>
+									</li>
+								<?php } ?>
+								<li class="page-item">
+									<span class="page-link">...</span>
+								</li>
+			
+							<?php } else { ?>
+								<li class="page-item">
+									<span class="page-link">...</span>
+								</li>
+								<?php for ($i = $page_num - 1; $i < $page_num + 2; $i++) { ?>
+									<li class="page-item <?php if($page_num == $i) echo 'active'; ?>">
+										<a class="page-link" href="?halaman=<?php echo $i ?>"><?php echo $i; ?></a>
+									</li>
+								<?php } ?>
+								<li class="page-item">
+									<span class="page-link">...</span>
+								</li>
+							<?php } ?>
+						<?php } else { ?>
+								<?php for ($i = 1; $i <= $num_of_page; $i++) { ?>
+									<li class="page-item <?php if($page_num == $i) echo 'active'; ?>">
+										<a class="page-link" href="?halaman=<?php echo $i ?>"><?php echo $i; ?></a>
+									</li>
+								<?php } ?>
+						<?php } ?>
+						<li class="page-item <?php if($page_num == $num_of_page) { echo "disabled"; } ?>">
+							<a  class="page-link" <?php if($page_num < $num_of_page) { echo "href='?halaman=$next'"; } ?>>
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="20px">
+									<path 
+										fill-rule="evenodd" fill="rgb(145, 158, 171)"
+										d="M9.728,10.703 L1.566,19.703 C1.208,20.095 0.627,20.095 0.268,19.703 C-0.090,19.308 -0.090,18.668 0.268,18.274 L7.783,9.990 L0.269,1.706 C-0.089,1.310 -0.089,0.672 0.269,0.277 C0.627,-0.118 1.209,-0.118 1.567,0.277 L9.729,9.274 C10.081,9.666 10.081,10.315 9.728,10.703 Z" 
+									/>
+								</svg>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>

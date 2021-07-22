@@ -14268,6 +14268,10 @@ color: #666;
     color: #000;
 }
 
+.page-item.active {
+    background-color: #DE281D;
+}
+
 .page-item.active .page-link {
     background-color: transparent;
     border-color: transparent;
