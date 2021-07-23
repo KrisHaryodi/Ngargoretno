@@ -11426,6 +11426,10 @@ color: #666;
          text-align: center;
      }
 
+     .clv_logo>a>img{
+         width: 180px;
+     }
+
      .index_v1 .clv_address .col-md-4 {
          padding: 0px 10px;
      }
@@ -13271,14 +13275,21 @@ color: #666;
      }
 
      .index_v3 .clv_banner_slider .clv_slide .clv_slide_inner h1 {
-         font-size: 62px;
-         line-height: 62px;
+         font-size: 42px;
+         line-height: 48px;
          max-width: unset;
+         text-align: left;
      }
 
      .clv_slide_inner {
          text-align: center;
      }
+
+     .clv_slide_inner p {
+        line-height: 1.5;
+        text-align: left;
+        font-size: 18px;
+    }
 
      .index_v3 .clv_partner_wrapper {
          padding-bottom: 60px;
