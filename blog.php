@@ -143,13 +143,13 @@
 					while ($abot=mysqli_fetch_array($kueriAbout)) {
 				?>
 					<?php if($first) { $first = false; ?>
-						<div class="col-lg-12 col-md-12 blog_section row mb-5">
-							<div class="col-6">
+						<div class="col-lg-12 col-md-12 blog_section row mb-5" id="remove_space">
+							<div class="col-lg-6 col-md-6 col-sm-12" id="remove_space">
 								<div class="agri_blog_image_large">
 									<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="image">
 								</div>
 							</div>
-							<div class="col-6" style="margin-top: -20px;">
+							<div class="col-lg-6 col-md-6 col-sm-12" id="remove_space">
 								<div class="agri_blog_content">
 									<div class="agri_blog_date_container" style="margin-top: 10px;">
 										<span class="agri_blog_date"><?php echo $abot['artikel_tgl'];?></span>
@@ -164,10 +164,10 @@
 								</div>
 							</div>
 						</div>
-						<div class="d-flex">
+						<div class="d-flex row">
 					<?php } else { ?>
-						<div class="col-4">
-							<div class="blog_section" style=" margin-right: 30px;">
+						<div class="col-lg-4 col-md-6">
+							<div class="blog_section">
 								<div class="agri_blog_image">
 									<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="image">
 								</div>
