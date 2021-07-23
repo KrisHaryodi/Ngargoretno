@@ -113,6 +113,8 @@
         $foto1 = $hasilQuery['produk_foto1'];
         $foto2 = $hasilQuery['produk_foto2'];
         $foto3 = $hasilQuery['produk_foto3'];
+		$komposisi = $hasilQuery['komposisi'];
+		$khasiat = $hasilQuery['khasiat'];
     ?>
 
 	<!--Div section V2-->
