@@ -770,7 +770,6 @@ Assigned to: Theme Forest
                     loop: !0,
                     loopedSlides: 4,
                     centeredSlides: !1,
-                    mousewheel: !0,
                     slideToClickedSlide: !0,
                     breakpoints: {
                         1400: {

@@ -144,38 +144,6 @@
 					<div class="col-lg-6 col-md-6">
 						<div class="product_single_slider" >
 							<div class="row">
-								<!-- <div class="col-lg-3 col-md-3 col-sm-3">
-									<div class="fd_pro_thumnail">
-										<div class="swiper-container gallery-thumbs">
-											<div class="swiper-wrapper">
-												<div class="swiper-slide">
-													<div class="fd_pro_img_thumnail">
-														<img style="width: 116px; height: 116px; object-fit: cover;"
-															src="adminkan/img/<?php echo $sampul; ?>" alt="image">
-													</div>
-												</div>
-												<div class="swiper-slide">
-													<div class="fd_pro_img_thumnail">
-														<img style="width: 116px; height: 116px; object-fit: cover;"
-															src="adminkan/img/<?php echo $foto1; ?>" alt="image">
-													</div>
-												</div>
-												<div class="swiper-slide">
-													<div class="fd_pro_img_thumnail">
-														<img style="width: 116px; height: 116px; object-fit: cover;"
-															src="adminkan/img/<?php echo $foto2; ?>" alt="image">
-													</div>
-												</div>
-												<div class="swiper-slide">
-													<div class="fd_pro_img_thumnail">
-														<img style="width: 116px; height: 116px; object-fit: cover;"
-															src="adminkan/img/<?php echo $foto3; ?>" alt="image">
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div> -->
 								<div class="col-lg-12 col-md-12 col-sm-12" style="margin-top: 20px;">
 									<div class="row">
 										<div class="fd_product_img" >
@@ -288,15 +256,69 @@
 				<div class="row">
 					<div class="col-lg-12 col-md-12">
 						<div class="product_detail_tab">
-							<ul class="nav nav-tabs">
-								<li>
-									<h5 class="product-detail__header" data-toggle="tab">Produk Lain Untukmu</h5>
-								</li>
-							</ul>
+							<h5 class="product-detail__header">Produk Lain Untukmu</h5>
 							<div class="tab-content productDetails">
-								<div id="description" class="tab-pane fade show active">
-									<p><?php echo $deskripsi; ?></p>
-								</div>
+								<div class="row">
+									<div class="col-lg-12 col-md-12">
+										<div class="shop_slider">
+											<div class="swiper_control_container">
+												<div class="swiper-container">
+													<div class="swiper-wrapper">
+														<?php
+															include "lib/config.php";
+															include "lib/koneksi.php";
+															$kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_produk ORDER BY id_produk DESC LIMIT 6");
+															while ($abot=mysqli_fetch_array($kueriAbout)) {
+														?>
+															<div class="swiper-slide">
+																<div class="shop_slide card">
+																	<div class="item_image">
+																		<img 
+																			src="adminkan/img/<?php echo $abot['produk_sampul'];?>" 
+																			alt="<?php echo $abot['produk_nama'];?>" 
+																			class="img-fluid"
+																		>
+																	</div>
+																	<div class="item_details item_desc">
+																		<div class="item_name">
+																			<h3><?php echo $abot['produk_nama'];?></h3>
+																			<h5>Rp.<?php echo $abot['produk_harga'];?></h5>
+																		</div>
+																	</div>
+																	<div class="item_overlay">
+																		<a href="<?php echo $base_url;?>produk-single.php?id_produk=<?php echo $abot['id_produk'];?>"
+																			class="overlay_btn">lihat produk</a>
+																	</div>
+																</div>
+															</div>
+														<?php } ?>
+													</div>
+												</div>
+												<!-- Add Arrows -->
+												<span class="slider_arrow shop_left left_arrow">
+													<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+														<path fill="#000" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+													</svg>
+												</span>
+												<span class="slider_arrow shop_right right_arrow">
+													<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+														<path fill="#000" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+													</svg>
+												</span>
+											</div>
+											<br>
+											<br>
+											<div class="row justify-content-center">
+												<a href="produk.php" class="clv_btn">
+													Lihat Semua Produk
+													<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+														<path fill="currentColor" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>	
+								</div>						
 							</div>
 						</div>
 					</div>
