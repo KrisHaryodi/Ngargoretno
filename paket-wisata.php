@@ -139,7 +139,7 @@
 					<div class="col-md-4 col-lg-4">
 						<div class="feature_block card">
 							<div class="item_image">
-								<img src="adminkan/img/<?php echo $abot['wisata_foto'];?>" alt="image" class="img-fluid">
+								<img src="adminkan/img/<?php echo $abot['wisata_foto'];?>" alt="<?php echo $abot['wisata_nama'];?>" class="img-fluid">
 							</div>
 							<br>
 							<div class="item_desc">
