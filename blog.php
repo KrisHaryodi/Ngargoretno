@@ -146,7 +146,7 @@
 						<div class="col-lg-12 col-md-12 blog_section row mb-5" id="remove_space">
 							<div class="col-lg-6 col-md-6 col-sm-12" id="remove_space">
 								<div class="agri_blog_image_large">
-									<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="image">
+									<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="<?php echo $abot['artikel_judul'];?>">
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12" id="remove_space">
@@ -169,7 +169,7 @@
 						<div class="col-lg-4 col-md-6">
 							<div class="blog_section">
 								<div class="agri_blog_image">
-									<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="image">
+									<img src="adminkan/img/<?php echo $abot['artikel_foto'];?>" alt="<?php echo $abot['artikel_judul'];?>">
 								</div>
 								<div class="agri_blog_content">
 									<div class="agri_blog_date_container">
