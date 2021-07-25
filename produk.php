@@ -176,7 +176,7 @@
 										<div class="product_item_block">
 											<div class="org_product_block card">
 												<div class="org_product_image item_image">
-													<img src="adminkan/img/<?php echo $abot['produk_sampul'];?>" alt="image">
+													<img src="adminkan/img/<?php echo $abot['produk_sampul'];?>" alt="<?php echo $abot['produk_nama'];?>">
 												</div>
 												<div class="item_desc">
 													<h3><?php echo $abot['produk_nama'];?></h3>
