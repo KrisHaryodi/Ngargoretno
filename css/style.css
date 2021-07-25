@@ -3375,6 +3375,13 @@ ul {
     height: auto;
 }
 
+#remove_space{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .agri_blog_date {
 border-right: 1px solid #666;
 padding-right: 4px;
@@ -10013,9 +10020,11 @@ color: #666;
  }
 
  .product-detail__header {
-     font-size: 24px;
+     font-size: 40px;
      font-weight: bold;
-     color: #f78e21;
+     text-align: center;
+     margin-bottom: 40px;
+     color: black;
  }
 
  .additional_info {
@@ -13512,6 +13521,10 @@ color: #666;
 
      .coffee_arrow_wrapper {
          max-width: 200px;
+     }
+
+     .blog_section .agri_blog_image_large{
+         height: 200px;
      }
 
      .blog_sidebar {
