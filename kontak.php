@@ -112,7 +112,7 @@
 		</div>
 
 		<!--Contact Block-->
-		<div class="contact_blocks_wrapper clv_section">
+		<div class="contact_blocks_wrapper clv_section mt-3">
 			<div class="container">
 				<div class="row">
 					<?php
