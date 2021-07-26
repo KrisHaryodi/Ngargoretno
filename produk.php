@@ -122,35 +122,6 @@
 					<div class="col-lg-12 col-md-12">
 
 						<div class="product_list_section">
-							<div class="product_list_filter">
-								<ul>
-									<li></li>
-									<li></li>
-									<li>
-										<ul class="list_view_toggle">
-											<li><span>view style</span></li>
-											<li>
-												<a href="javascript:;" class="active grid_view">
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-														width="12px" height="12px">
-														<path fill-rule="evenodd" fill="rgb(112, 112, 112)"
-															d="M6.861,12.000 L6.861,6.861 L12.000,6.861 L12.000,12.000 L6.861,12.000 ZM6.861,-0.000 L12.000,-0.000 L12.000,5.139 L6.861,5.139 L6.861,-0.000 ZM-0.000,6.861 L5.139,6.861 L5.139,12.000 L-0.000,12.000 L-0.000,6.861 ZM-0.000,-0.000 L5.139,-0.000 L5.139,5.139 L-0.000,5.139 L-0.000,-0.000 Z" />
-													</svg>
-												</a>
-											</li>
-											<li>
-												<a href="javascript:;" class="list_view">
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-														width="12px" height="10px">
-														<path fill-rule="evenodd" fill="rgb(112, 112, 112)"
-															d="M3.847,10.000 L3.847,7.783 L12.000,7.783 L12.000,10.000 L3.847,10.000 ZM3.847,3.892 L12.000,3.892 L12.000,6.108 L3.847,6.108 L3.847,3.892 ZM3.847,-0.000 L12.000,-0.000 L12.000,2.216 L3.847,2.216 L3.847,-0.000 ZM-0.000,7.783 L2.297,7.783 L2.297,10.000 L-0.000,10.000 L-0.000,7.783 ZM-0.000,3.892 L2.297,3.892 L2.297,6.108 L-0.000,6.108 L-0.000,3.892 ZM-0.000,-0.000 L2.297,-0.000 L2.297,2.216 L-0.000,2.216 L-0.000,-0.000 Z" />
-													</svg>
-												</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
 							<div class="product_items_section">
 								<ul>
 									<?php
