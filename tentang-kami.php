@@ -378,6 +378,14 @@
 									</a>
 								</li>
 								<li>
+									<a href="#">
+										<span>
+											<i class="fa fa-angle-right" aria-hidden="true"></i>
+										</span>
+										Downloads
+									</a>
+								</li>
+								<li>
 									<a href="kontak.php">
 										<span>
 											<i class="fa fa-angle-right" aria-hidden="true"></i>
