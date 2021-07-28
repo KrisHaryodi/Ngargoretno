@@ -40,6 +40,8 @@ if(!isset($_SESSION)) {
                 <th>Harga Produk</th>
                 <th>Cerita Produk</th>
                 <th>Deskripsi Produk</th>
+                <th>Komposisi Produk</th>
+                <th>Khasiat Produk</th>
                 <th>Link Produk</th>
                 <th>Foto Sampul</th>
                 <th>Foto Produk 1</th>
@@ -67,6 +69,12 @@ if(!isset($_SESSION)) {
                 <td>
                   <?php echo substr($mbr['produk_deskripsi'],0,200);?>...
                 </td>
+                <td>
+                  <?php echo substr($mbr['komposisi'],0,200);?>...
+                </td>
+                <td>
+                  <?php echo substr($mbr['khasiat'],0,200);?>...
+                </td>
                 <td><?php echo $mbr['produk_link'];?></td>
                 <td><img src="../img/<?php echo $mbr['produk_sampul'];?>" height="100" width="150"></td>
                 <td><img src="../img/<?php echo $mbr['produk_foto1'];?>" height="100" width="150"></td>
@@ -75,11 +83,11 @@ if(!isset($_SESSION)) {
 
                 <td>
                   <div class="btn-group">
-                    <a href="<?php echo $admin_url; ?>adminweb.php?module=edit_produk&id_produk=<?php echo $mbr['id_produk'];?>"
+                    <a href="<?php echo $super_url; ?>adminweb.php?module=edit_produk&id_produk=<?php echo $mbr['id_produk'];?>"
                       class="btn btn-warning">
                       <i class='fa fa-pencil'></i>
                     </a>
-                    <a href="<?php echo $admin_url; ?>module/produk/aksi_hapus.php?id_produk=<?php echo $mbr['id_produk'];?>"
+                    <a href="<?php echo $super_url; ?>module/produk/aksi_hapus.php?id_produk=<?php echo $mbr['id_produk'];?>"
                       onClick="return confirm('Anda yakin ingin menghapus data ini?')" class="btn btn-danger">
                       <i class='fa fa-trash'></i>
                     </a>

@@ -32,6 +32,8 @@ if(empty($_SESSION['username']) AND empty($_SESSION['passuser'])){
 	$harga = $_POST['harga'];
   $cerita = $_POST['cerita'];
   $deskripsi = $_POST['deskripsi'];
+  $komposisi = $_POST['komposisi'];
+  $khasiat = $_POST['khasiat'];
 	$link = $_POST['link'];
 
   //set folder penyimpanan foto sampul
@@ -72,7 +74,7 @@ if(empty($_SESSION['username']) AND empty($_SESSION['passuser'])){
   // }
 
   if(move_uploaded_file($lokasifile, $uploadfile)&& move_uploaded_file($lokasifile1, $uploadfile1)&& move_uploaded_file($lokasifile2, $uploadfile2)&& move_uploaded_file($lokasifile3, $uploadfile3)){
-    $querySimpan = mysqli_query($konek, "INSERT INTO tbl_produk (produk_nama, produk_harga, produk_cerita, produk_deskripsi, produk_link, produk_sampul, produk_foto1, produk_foto2, produk_foto3) VALUES ('$nama', '$harga', '$cerita', '$deskripsi', '$link', '$namafile', '$namafile1', '$namafile2', '$namafile3')");
+    $querySimpan = mysqli_query($konek, "INSERT INTO tbl_produk (produk_nama, produk_harga, produk_cerita, produk_deskripsi, komposisi, khasiat, produk_link, produk_sampul, produk_foto1, produk_foto2, produk_foto3) VALUES ('$nama', '$harga', '$cerita', '$deskripsi', '$komposisi', '$khasiat', '$link', '$namafile', '$namafile1', '$namafile2', '$namafile3')");
         if($querySimpan){
           echo "<script> alert ('Data Berhasil Ditambahkan'); window.location = '$super_url'+'adminweb.php?module=produk'; </script>";     
         }
@@ -80,7 +82,7 @@ if(empty($_SESSION['username']) AND empty($_SESSION['passuser'])){
           echo "<script> alert ('Data Gagal Ditambahkan'); window.location = '$super_url'+'adminweb.php?module=produk';</script>";
         }
     }else{
-      $querySimpan = mysqli_query($konek, "INSERT INTO tbl_produk (artikel_judul, artikel_tgl, artikel_penulis, artikel_isi) VALUES ('$nama', '$harga', '$cerita', '$deskripsi', '$link')");
+      $querySimpan = mysqli_query($konek, "INSERT INTO tbl_produk (artikel_judul, artikel_tgl, artikel_penulis, artikel_isi) VALUES ('$nama', '$harga', '$cerita', '$deskripsi', '$komposisi', '$khasiat', '$link')");
       echo "<script> alert ('Data Berhasil Ditambahkan'); window.location = '$super_url'+'adminweb.php?module=produk'; </script>";
     }
 

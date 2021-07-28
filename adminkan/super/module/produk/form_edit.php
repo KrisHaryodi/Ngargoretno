@@ -21,6 +21,8 @@ $nama = $hasilQuery['produk_nama'];
 $harga = $hasilQuery['produk_harga'];
 $cerita = $hasilQuery['produk_cerita'];
 $deskripsi = $hasilQuery['produk_deskripsi'];
+$komposisi = $hasilQuery['komposisi'];
+$khasiat = $hasilQuery['khasiat'];
 $link = $hasilQuery['produk_link'];
 $sampul = $hasilQuery['produk_sampul'];
 $foto1 = $hasilQuery['produk_foto1'];
@@ -75,6 +77,20 @@ $foto3 = $hasilQuery['produk_foto3'];
 							<label for="basicinput" class="col-sm-2 control-label">Deskripsi Produk</label>
 							<div class="col-sm-10">
                                 <textarea class="textarea" placeholder="Deskripsi tentang Produk" style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" name="deskripsi"><?php echo $deskripsi; ?>
+                        	</textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="basicinput" class="col-sm-2 control-label">Komposisi Produk</label>
+							<div class="col-sm-10">
+                                <textarea class="textarea" placeholder="Komposisi Produk" style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" name="komposisi"><?php echo $komposisi; ?>
+                        	</textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="basicinput" class="col-sm-2 control-label">Khasiat Produk</label>
+							<div class="col-sm-10">
+                                <textarea class="textarea" placeholder="Khasiat Produk" style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" name="khasiat"><?php echo $khasiat; ?>
                         	</textarea>
 							</div>
 						</div>

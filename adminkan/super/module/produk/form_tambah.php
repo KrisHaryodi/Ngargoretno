@@ -69,8 +69,24 @@ $produk = $id_produk + 1;
 							<label for="inputEmail3" class="col-sm-2 control-label">Deskripsi</label>
 							<div class="col-sm-10">
 								<textarea class="textarea" placeholder="Deskripsi tentang Produk"
-                        style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" name="deskripsi">
-              </textarea>
+                        			style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" name="deskripsi">
+              					</textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-2 control-label">Komposisi</label>
+							<div class="col-sm-10">
+								<textarea class="textarea" placeholder="Komposisi Produk"
+                        			style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" name="komposisi">
+              					</textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-2 control-label">Khasiat</label>
+							<div class="col-sm-10">
+								<textarea class="textarea" placeholder="Khasiat Produk"
+                        			style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" name="khasiat">
+              					</textarea>
 							</div>
 						</div>
 						<div class="form-group">
