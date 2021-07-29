@@ -49,6 +49,25 @@
 			background-size: cover;
 		}
 	</style>
+
+	<!-- Primary Meta Tags -->
+    <title>Deswita Ngargoretno</title>
+    <meta name="title" content="Deswita Ngargoretno">
+    <meta name="description" content="Desa Wisata Ngargoretno merupakan salah satu desa wisata yang terletak Kecamatan Salaman, Magelang, Jawa Tengah. Kami memiliki beberapa produk unggulan, seperti kopi, madu, teh, dan lain-lain.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://desangargoretno.com/">
+    <meta property="og:title" content="Deswita Ngargoretno">
+    <meta property="og:description" content="Desa Wisata Ngargoretno merupakan salah satu desa wisata yang terletak Kecamatan Salaman, Magelang, Jawa Tengah. Kami memiliki beberapa produk unggulan, seperti kopi, madu, teh, dan lain-lain.">
+    <meta property="og:image" content="https://desangargoretno.com/images/header-logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://desangargoretno.com/">
+    <meta property="twitter:title" content="Deswita Ngargoretno">
+    <meta property="twitter:description" content="Desa Wisata Ngargoretno merupakan salah satu desa wisata yang terletak Kecamatan Salaman, Magelang, Jawa Tengah. Kami memiliki beberapa produk unggulan, seperti kopi, madu, teh, dan lain-lain.">
+    <meta property="twitter:image" content="https://desangargoretno.com/images/header-logo.png">
 </head>
 
 <body>
