@@ -40,6 +40,8 @@ if(!isset($_SESSION)) {
                 <th>Harga Produk</th>
                 <th>Cerita Produk</th>
                 <th>Deskripsi Produk</th>
+                <th>Komposisi Produk</th>
+                <th>Khasiat Produk</th>
                 <th>Link Produk</th>
                 <th>Foto Sampul</th>
                 <th>Foto Produk 1</th>
@@ -66,6 +68,12 @@ if(!isset($_SESSION)) {
                 </td>
                 <td>
                   <?php echo substr($mbr['produk_deskripsi'],0,200);?>...
+                </td>
+                <td>
+                  <?php echo substr($mbr['komposisi'],0,200);?>...
+                </td>
+                <td>
+                  <?php echo substr($mbr['khasiat'],0,200);?>...
                 </td>
                 <td><?php echo $mbr['produk_link'];?></td>
                 <td><img src="img/<?php echo $mbr['produk_sampul'];?>" height="100" width="150"></td>

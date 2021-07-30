@@ -12,6 +12,8 @@ if (empty($_SESSION['username']) AND empty($_SESSION['passuser'])) {
 	$harga = $_POST['harga'];
 	$cerita = $_POST['cerita'];
     $deskripsi = $_POST['deskripsi'];
+	$komposisi = $_POST['komposisi'];
+	$khasiat = $_POST['khasiat'];
 	$link = $_POST['link'];
 
 	//FOTO SAMPUL
@@ -45,7 +47,7 @@ if (empty($_SESSION['username']) AND empty($_SESSION['passuser'])) {
     
 	
 	if(!empty($lokasifile)){
-		$queryEdit = mysqli_query($konek,"UPDATE tbl_produk SET produk_nama = '$nama', produk_harga = '$harga', produk_cerita = '$cerita', produk_deskripsi = '$deskripsi', produk_link = '$link', produk_sampul = '$namafile' WHERE id_produk='$id_produk'");
+		$queryEdit = mysqli_query($konek,"UPDATE tbl_produk SET produk_nama = '$nama', produk_harga = '$harga', produk_cerita = '$cerita', produk_deskripsi = '$deskripsi', komposisi = '$komposisi', khasiat = '$khasiat', produk_link = '$link', produk_sampul = '$namafile' WHERE id_produk='$id_produk'");
 		if($queryEdit){
 		move_uploaded_file($lokasifile, $uploadfile);
 		echo "<script>alert('Data Berhasil Diedit'); window.location = '$admin_url'+'adminweb.php?module=produk';</script>";
@@ -54,7 +56,7 @@ if (empty($_SESSION['username']) AND empty($_SESSION['passuser'])) {
 		}
 	}
     elseif(!empty($lokasifile1)){
-		$queryEdit = mysqli_query($konek,"UPDATE tbl_produk SET produk_nama = '$nama', produk_harga = '$harga', produk_cerita = '$cerita', produk_deskripsi = '$deskripsi', produk_link = '$link', produk_foto1 = '$namafile1' WHERE id_produk='$id_produk'");
+		$queryEdit = mysqli_query($konek,"UPDATE tbl_produk SET produk_nama = '$nama', produk_harga = '$harga', produk_cerita = '$cerita', produk_deskripsi = '$deskripsi', komposisi = '$komposisi', khasiat = '$khasiat', produk_link = '$link', produk_foto1 = '$namafile1' WHERE id_produk='$id_produk'");
 		if($queryEdit){
 		move_uploaded_file($lokasifile1, $uploadfile1);
 		echo "<script>alert('Data Berhasil Diedit'); window.location = '$admin_url'+'adminweb.php?module=produk';</script>";
@@ -63,7 +65,7 @@ if (empty($_SESSION['username']) AND empty($_SESSION['passuser'])) {
 		}
 	}
     elseif(!empty($lokasifile2)){
-		$queryEdit = mysqli_query($konek,"UPDATE tbl_produk SET produk_nama = '$nama', produk_harga = '$harga', produk_cerita = '$cerita', produk_deskripsi = '$deskripsi', produk_link = '$link', produk_foto2 = '$namafile2' WHERE id_produk='$id_produk'");
+		$queryEdit = mysqli_query($konek,"UPDATE tbl_produk SET produk_nama = '$nama', produk_harga = '$harga', produk_cerita = '$cerita', produk_deskripsi = '$deskripsi', komposisi = '$komposisi', khasiat = '$khasiat', produk_link = '$link', produk_foto2 = '$namafile2' WHERE id_produk='$id_produk'");
 		if($queryEdit){
 		move_uploaded_file($lokasifile2, $uploadfile2);
 		echo "<script>alert('Data Berhasil Diedit'); window.location = '$admin_url'+'adminweb.php?module=produk';</script>";
@@ -72,7 +74,7 @@ if (empty($_SESSION['username']) AND empty($_SESSION['passuser'])) {
 		}
 	}
     elseif(!empty($lokasifile3)){
-		$queryEdit = mysqli_query($konek,"UPDATE tbl_produk SET produk_nama = '$nama', produk_harga = '$harga', produk_cerita = '$cerita', produk_deskripsi = '$deskripsi', produk_link = '$link', produk_foto3 = '$namafile3' WHERE id_produk='$id_produk'");
+		$queryEdit = mysqli_query($konek,"UPDATE tbl_produk SET produk_nama = '$nama', produk_harga = '$harga', produk_cerita = '$cerita', produk_deskripsi = '$deskripsi', komposisi = '$komposisi', khasiat = '$khasiat', produk_link = '$link', produk_foto3 = '$namafile3' WHERE id_produk='$id_produk'");
 		if($queryEdit){
 		move_uploaded_file($lokasifile3, $uploadfile3);
 		echo "<script>alert('Data Berhasil Diedit'); window.location = '$admin_url'+'adminweb.php?module=produk';</script>";
@@ -81,7 +83,7 @@ if (empty($_SESSION['username']) AND empty($_SESSION['passuser'])) {
 		}
 	}
     else{
-		$queryEdit = mysqli_query($konek,"UPDATE tbl_produk SET produk_nama = '$nama', produk_harga = '$harga', produk_cerita = '$cerita', produk_deskripsi = '$deskripsi', produk_link = '$link' WHERE id_produk='$id_produk'");
+		$queryEdit = mysqli_query($konek,"UPDATE tbl_produk SET produk_nama = '$nama', produk_harga = '$harga', produk_cerita = '$cerita', produk_deskripsi = '$deskripsi', komposisi = '$komposisi', khasiat = '$khasiat', produk_link = '$link' WHERE id_produk='$id_produk'");
 		echo "<script>alert('Data Berhasil Diedit'); window.location = '$admin_url'+'adminweb.php?module=produk';</script>";
 
 	}
