@@ -113,12 +113,7 @@
 		</div>
 		<br>
 		<br>
-		<div class="container">
-			<div class="searchbar" style="text-align: right; ">
-				<input type="text" placeholder="Search.." name="search">
-				<button type="submit"><i class="fa fa-search"></i></button>
-			</div>
-		</div>
+		
 		<!--Blog With Sidebar-->
 		<div class="blog_sidebar_wrapper clv_section">
 			<div class="container">
