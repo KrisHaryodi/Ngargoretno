@@ -9638,6 +9638,18 @@ color: #666;
      left: unset;
  }
 
+ .product_price_box>h1{
+     font-family: 'Playfair Display', serif;
+     color: #222222;
+     font-weight: bold;
+ }
+
+ .product_prices>h4{
+     color: #DE281D;
+     font-weight: bold;
+     padding-top: 20px;
+ }
+
  .content_block .product_price_box {
      display: flex;
      align-items: center;
@@ -9661,6 +9673,11 @@ color: #666;
 
  .content_block .product_price_box>h5>span {
      font-size: 20px;
+ }
+
+ .desc-title{
+    font-weight: bold; 
+    color: #222222;
  }
 
  .content_block>p {
@@ -10025,6 +10042,9 @@ color: #666;
      text-align: center;
      margin-bottom: 40px;
      color: black;
+     font-family: 'Playfair Display', serif;
+     padding-top: 32px;
+     color: #DE281D;
  }
 
  .additional_info {

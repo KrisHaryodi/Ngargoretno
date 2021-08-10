@@ -231,19 +231,19 @@
 						<hr>
 						<div class="product_single_details">
 							<div id="description" class="tab-pane fade show active">
-								<h5>Deskripsi</h4>
+								<h5 class="desc-title">Deskripsi</h5>
 								<p><?php echo $deskripsi; ?></p>
 							</div>
 							<div id="description" class="tab-pane fade show active">
-								<h5>Komposisi</h4>
+								<h5 class="desc-title">Komposisi</h5>
 								<p><?php echo $komposisi; ?></p>
 							</div>
 							<div id="description" class="tab-pane fade show active">
-								<h5>Khasiat</h4>
+								<h5 class="desc-title">Khasiat</h5>
 								<p><?php echo $khasiat; ?></p>
 							</div>
 							<div id="description" class="tab-pane fade show active">
-								<h5>Cerita</h4>
+								<h5 class="desc-title">Cerita</h5>
 								<p><?php echo $cerita; ?></p>
 							</div>
 						</div>
