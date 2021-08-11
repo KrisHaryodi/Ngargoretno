@@ -9638,6 +9638,12 @@ color: #666;
      left: unset;
  }
 
+ .org_product_block.card{
+     border: transparent;
+     border-radius: 10px;
+     box-shadow: 0 8px 12px rgb(32 56 85 / 15%);
+ }
+
  .product_price_box>h1{
      font-family: 'Playfair Display', serif;
      color: #222222;
@@ -13702,6 +13708,19 @@ color: #666;
      .product_items_section.product_list_view .product_item_block .content_block {
          width: 100%;
          text-align: left;
+     }
+ }
+
+ @media (min-width: 550px) and (max-width: 767px) {
+    .item_desc{
+        padding: 16px;
+        height: 105px;
+    } 
+    .item_desc>h3{
+         font-size: 16px;
+     }
+     .item_desc>h5{
+         font-size: 16px;
      }
  }
 
