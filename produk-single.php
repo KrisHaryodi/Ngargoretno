@@ -144,70 +144,38 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-md-6">
-						<div class="product_single_slider" >
-							<div class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12" style="margin-top: 20px;">
-									<div class="row">
-										<div class="fd_product_img" >
-											<div class="swiper-container gallery-top">
-												<div class="swiper-wrapper">
-													<div class="swiper-slide">
-														<div class="fd_pro_img">
-															<img src="adminkan/img/<?php echo $sampul; ?>" alt="image">
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="fd_pro_img">
-															<img src="adminkan/img/<?php echo $foto1; ?>" alt="image">
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="fd_pro_img">
-															<img src="adminkan/img/<?php echo $foto2; ?>" alt="image">
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="fd_pro_img">
-															<img src="adminkan/img/<?php echo $foto3; ?>" alt="image">
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-lg-12 col-md-12 col-sm-12" style="height: 150px; margin-top: 30px;">
-											<div class="row">
-												<div class="fd_pro_thumnail">
-													<div class="swiper-container gallery-thumbs">
-														<div class="swiper-wrapper">
-															<div class="swiper-slide">
-																<div class="fd_pro_img_thumnail">
-																	<img style="width: 116px; height: 116px; object-fit: cover;"
-																		src="adminkan/img/<?php echo $sampul; ?>" alt="image">
-																</div>
-															</div>
-															<div class="swiper-slide">
-																<div class="fd_pro_img_thumnail">
-																	<img style="width: 116px; height: 116px; object-fit: cover;"
-																		src="adminkan/img/<?php echo $foto1; ?>" alt="image">
-																</div>
-															</div>
-															<div class="swiper-slide">
-																<div class="fd_pro_img_thumnail">
-																	<img style="width: 116px; height: 116px; object-fit: cover;"
-																		src="adminkan/img/<?php echo $foto2; ?>" alt="image">
-																</div>
-															</div>
-															<div class="swiper-slide">
-																<div class="fd_pro_img_thumnail">
-																	<img style="width: 116px; height: 116px; object-fit: cover;"
-																		src="adminkan/img/<?php echo $foto3; ?>" alt="image">
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+						<div class="product__carousel">
+							<div class="swiper-container gallery-top">
+								<div class="swiper-wrapper m-0">
+									<div class="swiper-slide">
+										<img src="adminkan/img/<?php echo $sampul; ?>" alt="image" style="width: 100%;">
+									</div>
+									<div class="swiper-slide">
+										<img src="adminkan/img/<?php echo $foto1; ?>" alt="image" style="width: 100%;">
+									</div>
+									<div class="swiper-slide">
+										<img src="adminkan/img/<?php echo $foto2; ?>" alt="image" style="width: 100%;">
+									</div>
+									<div class="swiper-slide">
+										<img src="adminkan/img/<?php echo $foto3; ?>" alt="image" style="width: 100%;">
+									</div>
+								</div>
+								<div class="swiper-button-next swiper-button-white"></div>
+    							<div class="swiper-button-prev swiper-button-white"></div>
+							</div>
+							<div class="swiper-container gallery-thumbs">
+								<div class="swiper-wrapper col-12 p-0 m-0">
+									<div class="swiper-slide col-3">
+										<img src="adminkan/img/<?php echo $sampul; ?>" alt="image">
+									</div>
+									<div class="swiper-slide col-3">
+										<img src="adminkan/img/<?php echo $foto1; ?>" alt="image">
+									</div>
+									<div class="swiper-slide col-3">
+										<img src="adminkan/img/<?php echo $foto2; ?>" alt="image">
+									</div>
+									<div class="swiper-slide col-3 m-0">
+										<img src="adminkan/img/<?php echo $foto3; ?>" alt="image">
 									</div>
 								</div>
 							</div>
@@ -640,6 +608,37 @@
 	<script src="js/revolution.extension.slideanims.min.js"></script>
 	<script src="js/revolution.extension.video.min.js"></script>
 	<script src="js/custom.js"></script>
+
+	<script>
+		var galleryThumbs = new Swiper('.gallery-thumbs', {
+			spaceBetween: 5,
+			freeMode: true,
+			watchSlidesVisibility: true,
+			watchSlidesProgress: true,
+			breakpoints: {
+				0: {
+					slidesPerView: 3,
+				},
+				992: {
+					slidesPerView: 4,
+				},
+			}
+		});
+		var galleryTop = new Swiper('.gallery-top', {
+			spaceBetween: 10,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			thumbs: {
+				swiper: galleryThumbs
+			},
+		});
+
+		// gallery-thumbs
+		let productCarouselThumbsItemWith = $('.gallery-thumbs .swiper-slide').outerWidth();
+		$('.gallery-thumbs').css('height', productCarouselThumbsItemWith);
+	</script>
 </body>
 
 </html>
