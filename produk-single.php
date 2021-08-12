@@ -160,8 +160,6 @@
 										<img src="adminkan/img/<?php echo $foto3; ?>" alt="image" style="width: 100%;">
 									</div>
 								</div>
-								<div class="swiper-button-next swiper-button-white"></div>
-    							<div class="swiper-button-prev swiper-button-white"></div>
 							</div>
 							<div class="swiper-container gallery-thumbs">
 								<div class="swiper-wrapper col-12 p-0 m-0">
@@ -189,7 +187,7 @@
 							<div class="product_prices">
 								<h4>Rp.<?php echo $harga; ?></h2>
 							</div>
-							<br><br>
+							<br>
 							<a href="https://<?php echo $link; ?>" class="clv_btn">Beli Sekarang
 								<svg style="width:24px;height:24px" viewBox="0 0 24 24">
 									<path fill="currentColor" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
@@ -204,11 +202,11 @@
 							</div>
 							<div id="description" class="tab-pane fade show active">
 								<h5 class="desc-title">Komposisi</h5>
-								<p><?php echo $komposisi; ?></p>
+								<p><?php echo (!empty($komposisi)) ? $komposisi : 'Belum tersedia'; ?></p>
 							</div>
 							<div id="description" class="tab-pane fade show active">
 								<h5 class="desc-title">Khasiat</h5>
-								<p><?php echo $khasiat; ?></p>
+								<p><?php echo (!empty($khasiat)) ? $khasiat : 'Belum tersedia'; ?></p>
 							</div>
 							<div id="description" class="tab-pane fade show active">
 								<h5 class="desc-title">Cerita</h5>
@@ -626,10 +624,6 @@
 		});
 		var galleryTop = new Swiper('.gallery-top', {
 			spaceBetween: 10,
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
 			thumbs: {
 				swiper: galleryThumbs
 			},

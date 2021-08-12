@@ -14201,6 +14201,12 @@ color: #666;
      .gallery_grid .gallery_grid_item {
          width: 100%;
      }
+     .product__carousel .gallery-thumbs .swiper-slide{
+         height: 75px;
+     }
+     .product_price_box>h1{
+         font-size: 32px;
+     }
  }
 
  @media (max-width: 320px) {
