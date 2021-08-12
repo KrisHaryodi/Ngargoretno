@@ -9653,7 +9653,8 @@ color: #666;
  .product_prices>h4{
      color: #DE281D;
      font-weight: bold;
-     padding-top: 20px;
+     padding-top: 10px;
+     font-size: 24px;
  }
 
  .content_block .product_price_box {
@@ -14205,7 +14206,10 @@ color: #666;
          height: 75px;
      }
      .product_price_box>h1{
-         font-size: 32px;
+         font-size: 28px;
+     }
+     .swiper-wrapper.col-12{
+         width: 95% !important;
      }
  }
 
