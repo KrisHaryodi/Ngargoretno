@@ -153,7 +153,7 @@
 									<h3><a
 											href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"><?php echo $abot['artikel_judul'];?></a>
 									</h3>
-									<p><?php echo substr ($abot['artikel_isi'],0,200);?></p>
+									<p><?php echo substr (strip_tags ($abot['artikel_isi']),0,200);?></p>
 									<a href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>">Selengkapnya
 										<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
 								</div>
@@ -174,7 +174,7 @@
 									<h3><a
 											href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>"><?php echo $abot['artikel_judul'];?></a>
 									</h3>
-									<p><?php echo substr ($abot['artikel_isi'],0,200);?></p>
+									<p><?php echo substr (strip_tags ($abot['artikel_isi']),0,200);?></p>
 									<a href="<?php echo $base_url;?>blog-single.php?id_artikel=<?php echo $abot['id_artikel'];?>">Selengkapnya
 										<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
 								</div>
@@ -264,7 +264,7 @@
 								$kueriAbout= mysqli_query($konek, "SELECT * FROM tbl_profile");
 								while ($abot=mysqli_fetch_array($kueriAbout)) {
 							?>
-								<p><?php echo substr ($abot['profile_isi'],0,387);?></p>
+								<p><?php echo substr (strip_tags ($abot['profile_isi']),0,388);?></p>
 							<?php } ?>
 						</div>
 					</div>
