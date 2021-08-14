@@ -148,7 +148,7 @@
 									<p><?php echo $deskripsi; ?></p>
 								</div>
 								<center>
-									<a href="https://api.whatsapp.com/send?phone=6282147435525" class="clv_btn">Order Now</a>
+									<a href="https://api.whatsapp.com/send?phone=6285161184774" class="clv_btn">Order Now</a>
 								</center>
 							</div>
 						</div>
