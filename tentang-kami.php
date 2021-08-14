@@ -134,137 +134,15 @@
 					</div>
 					<?php } ?>
 				</div>
-			</div>
-		</div>
-
-		<!--Services
-		<div class="clv_service_wrapper clv_section">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-lg-6 col-md-6">
-						<div class="clv_heading">
-							<h3>Discover Services We Provided</h3>
-							<div class="clv_underline"><img src="images/new_underline3.png" alt="image" /></div>
-							<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dole magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
-						</div>
-					</div>
-				</div>
-				<div class="service_main_wrapper">
-					<div class="row">
-						<div class="col-lg-8 col-md-8">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="service_block">
-										<span></span>
-										<div class="service_icon"><img src="images/event_service.png" alt="image" /></div>
-										<h4>education & events</h4>
-										<div class="clv_underline"><img src="images/service_underline.png" alt="image" /></div>
-										<p>Dolor sit amet consectetur adipiscing elieri sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="service_block">
-										<span></span>
-										<div class="service_icon"><img src="images/egg_service.png" alt="image" /></div>
-										<h4>organic eggs</h4>
-										<div class="clv_underline"><img src="images/service_underline.png" alt="image" /></div>
-										<p>Dolor sit amet consectetur adipiscing elieri sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="service_block">
-										<span></span>
-										<div class="service_icon"><img src="images/farm_service.png" alt="image" /></div>
-										<h4>our farms</h4>
-										<div class="clv_underline"><img src="images/service_underline.png" alt="image" /></div>
-										<p>Dolor sit amet consectetur adipiscing elieri sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="service_block">
-										<span></span>
-										<div class="service_icon"><img src="images/hens_service.png" alt="image" /></div>
-										<h4>the best hens</h4>
-										<div class="clv_underline"><img src="images/service_underline.png" alt="image" /></div>
-										<p>Dolor sit amet consectetur adipiscing elieri sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4">
-							<div class="service_girl_img">
-								<img src="images/service_girl.png" alt="image" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		-->
-
-
-
-		<!--About Agriculture
-		<div class="clv_about_product clv_section">
-			<div class="container">
 				<div class="row">
-					<div class="col-md-6 col-lg-6">
-						<div class="about_product_contect">
-							<h2>We Provide</br>High-quality organic products</h2>
-							<h6>Sed do eiusmod tempor incididunt ut labore et dolore magnaliqua Ut enim ad minim veniam ullamco </h6>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod temponcididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatiomco laboris nisi ut aliquip ex ea commodo consequat.</p>
-							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quaiitecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitrnatur aut odit aut fugit, sed quia consequuntur magni .</p>
-							<div class="about_product_contact">
-								<h4>Friendly And Dedicated Support Every Steps On The Way</h4>
-								<h3>(+61) 1080-1247-1247</h3>
-								<span>
-									
-									<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-										 viewBox="0 0 480.56 480.56" style="enable-background:new 0 0 480.56 480.56;" xml:space="preserve"  width="32px" height="32px">
-									<g>
-										<g>
-											<path style="fill:#ffffff;" d="M365.354,317.9c-15.7-15.5-35.3-15.5-50.9,0c-11.9,11.8-23.8,23.6-35.5,35.6c-3.2,3.3-5.9,4-9.8,1.8
-												c-7.7-4.2-15.9-7.6-23.3-12.2c-34.5-21.7-63.4-49.6-89-81c-12.7-15.6-24-32.3-31.9-51.1c-1.6-3.8-1.3-6.3,1.8-9.4
-												c11.9-11.5,23.5-23.3,35.2-35.1c16.3-16.4,16.3-35.6-0.1-52.1c-9.3-9.4-18.6-18.6-27.9-28c-9.6-9.6-19.1-19.3-28.8-28.8
-												c-15.7-15.3-35.3-15.3-50.9,0.1c-12,11.8-23.5,23.9-35.7,35.5c-11.3,10.7-17,23.8-18.2,39.1c-1.9,24.9,4.2,48.4,12.8,71.3
-												c17.6,47.4,44.4,89.5,76.9,128.1c43.9,52.2,96.3,93.5,157.6,123.3c27.6,13.4,56.2,23.7,87.3,25.4c21.4,1.2,40-4.2,54.9-20.9
-												c10.2-11.4,21.7-21.8,32.5-32.7c16-16.2,16.1-35.8,0.2-51.8C403.554,355.9,384.454,336.9,365.354,317.9z"/>
-											<path style="fill:#ffffff;" d="M346.254,238.2l36.9-6.3c-5.8-33.9-21.8-64.6-46.1-89c-25.7-25.7-58.2-41.9-94-46.9l-5.2,37.1
-												c27.7,3.9,52.9,16.4,72.8,36.3C329.454,188.2,341.754,212,346.254,238.2z"/>
-											<path style="fill:#ffffff;" d="M403.954,77.8c-42.6-42.6-96.5-69.5-156-77.8l-5.2,37.1c51.4,7.2,98,30.5,134.8,67.2c34.9,34.9,57.8,79,66.1,127.5
-												l36.9-6.3C470.854,169.3,444.354,118.3,403.954,77.8z"/>
-										</g>
-									</g>
-									</svg>
-								</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-6">
-						<div class="about_product_image">
-							<img src="images/about_agri_product.jpg" alt="image" />
-							<div class="play_btn_block">
-								<a href="https://www.youtube.com/watch?v=tqwRLdBsFw8" class="play_video">
-									<span class="agri_play_icon">
-										
-										<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											 viewBox="0 0 191.255 191.255" style="enable-background:new 0 0 191.255 191.255;" xml:space="preserve" width="30px" height="30px">
-										<path style="fill:#eab318;" d="M162.929,66.612c-2.814-1.754-6.514-0.896-8.267,1.917s-0.895,6.513,1.917,8.266c6.544,4.081,10.45,11.121,10.45,18.833
-											s-3.906,14.752-10.45,18.833l-98.417,61.365c-6.943,4.329-15.359,4.542-22.512,0.573c-7.154-3.97-11.425-11.225-11.425-19.406
-											V34.262c0-8.181,4.271-15.436,11.425-19.406c7.153-3.969,15.569-3.756,22.512,0.573l57.292,35.723
-											c2.813,1.752,6.513,0.895,8.267-1.917c1.753-2.812,0.895-6.513-1.917-8.266L64.512,5.247c-10.696-6.669-23.661-7-34.685-0.883
-											C18.806,10.48,12.226,21.657,12.226,34.262v122.73c0,12.605,6.58,23.782,17.602,29.898c5.25,2.913,10.939,4.364,16.616,4.364
-											c6.241,0,12.467-1.754,18.068-5.247l98.417-61.365c10.082-6.287,16.101-17.133,16.101-29.015S173.011,72.899,162.929,66.612z"/>
-										</svg>
-									</span>
-								</a>
-							</div>
-						</div>
+					<div class="col-lg-12 embed-pdf">
+						<embed src="asset/Profil_Desa_Ngargoretno.pdf" type="application/pdf"   height="800px" width="100%" class="responsive">
 					</div>
 				</div>
 			</div>
 		</div>
-  -->
+
+		
 
 		<!--Footer-->
 		<div class="clv_footer_wrapper clv_section">
