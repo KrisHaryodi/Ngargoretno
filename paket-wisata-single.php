@@ -52,7 +52,6 @@
 											<li><a href="paket-wisata.php" class="nav-active">paket wisata</a></li>
 											<li><a href="blog.php">blog</a></li>
 											<li><a href="tentang-kami.php">tentang kami</a></li>
-											<li><a href="#">downloads</a></li>
 											<li><a href="kontak.php" class="clv_btn2">kontak kami</a></li>
 										</ul>
 									</div>
@@ -299,14 +298,6 @@
 											<i class="fa fa-angle-right" aria-hidden="true"></i>
 										</span>
 										Tentang Kami
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span>
-											<i class="fa fa-angle-right" aria-hidden="true"></i>
-										</span>
-										Downloads
 									</a>
 								</li>
 								<li>
